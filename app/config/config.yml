@@ -31,6 +31,7 @@ twig:
     globals:
         ga_tracking_id: %ga_tracking_id%
         segmentio_writekey: %segmentio_writekey%
+        customerio_id: %customerio_id%
 
 # Assetic Configuration
 assetic:
