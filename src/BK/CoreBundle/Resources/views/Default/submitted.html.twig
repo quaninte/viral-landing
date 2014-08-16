@@ -36,7 +36,9 @@
 
         analytics.identify('{{ contact.id }}', {
             email: '{{ contact.email }}',
-            code: '{{ contact.code }}'
+            code: '{{ contact.code }}',
+            invited: '{{ invited }}',
+            position: '{{ position }}'
         });
 
         $('.share-facebook').click(function() {

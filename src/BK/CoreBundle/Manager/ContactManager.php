@@ -87,6 +87,12 @@ class ContactManager
             // segment io
             if ($this->segmentIOWriteKey) {
                 Segment::init($this->segmentIOWriteKey);
+                Segment::identify(array(
+                    'userId' => $refContact->getId(),
+                    'traits' => array(
+                        'invited' => $this->countInvited($refContact) + 1,
+                    )
+                ));
                 Segment::track(array(
                     'userId' => $refContact->getId(),
                     'event' => 'Complete invited',
