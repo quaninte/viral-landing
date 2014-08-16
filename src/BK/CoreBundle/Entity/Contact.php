@@ -66,6 +66,13 @@ class Contact
     protected $feedback;
 
     /**
+     * @var int
+     *
+     * @ORM\Column(name="position", type="integer", nullable=true)
+     */
+    protected $position;
+
+    /**
      * @var \DateTime $created
      *
      * @Gedmo\Timestampable(on="create")
@@ -262,4 +269,27 @@ class Contact
         return $this->refContact;
     }
 
+
+    /**
+     * Set position
+     *
+     * @param integer $position
+     * @return Contact
+     */
+    public function setPosition($position)
+    {
+        $this->position = $position;
+
+        return $this;
+    }
+
+    /**
+     * Get position
+     *
+     * @return integer 
+     */
+    public function getPosition()
+    {
+        return $this->position;
+    }
 }

@@ -91,6 +91,8 @@ class ContactManager
                     'userId' => $refContact->getId(),
                     'traits' => array(
                         'invited' => $this->countInvited($refContact) + 1,
+                        'email' => $refContact->getEmail(),
+                        'code' => $refContact->getCode(),
                     )
                 ));
                 Segment::track(array(
@@ -103,6 +105,7 @@ class ContactManager
             }
         }
         $contact->setCode($this->generateCode());
+        $contact->setPosition($this->getPosition($contact));
 
         $this->em->persist($contact);
         $this->em->flush();
@@ -147,6 +150,9 @@ class ContactManager
             ->setParameter('created', $contact->getCreated())
             ->getQuery()
             ->getSingleScalarResult();
+
+        $fakeNumber = 693;
+        $count += $fakeNumber;
 
         return $count;
     }

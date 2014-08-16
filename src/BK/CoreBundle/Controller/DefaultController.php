@@ -63,16 +63,10 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('bk_core_homepage'));
         }
 
-        $position = $contactManager->getPosition($contact);
         $invited = $contactManager->countInvited($contact);
-
-        // fake number
-        $fakeNumber = 693;
-        $position += $fakeNumber;
 
         return $this->render('@BKCore/Default/submitted.html.twig', array(
             'contact' => $contact,
-            'position' => $position,
             'invited' => $invited,
         ));
     }

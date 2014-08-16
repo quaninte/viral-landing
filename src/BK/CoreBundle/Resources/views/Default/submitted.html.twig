@@ -5,7 +5,7 @@
 {% block main_content %}
     {% set shareUrl = url('bk_core_homepage', { 'ref': contact.code }) %}
 
-        <p class="referral">You are #{{ position }} on our waiting list.</p>
+        <p class="referral">You are #{{ contact.position }} on our waiting list.</p>
 
         <h1 class="big-award">Want to cut in line and get $500 credit to use Beeketing?</h1>
 
@@ -38,7 +38,7 @@
             email: '{{ contact.email }}',
             code: '{{ contact.code }}',
             invited: '{{ invited }}',
-            position: '{{ position }}'
+            position: '{{ contact.position }}'
         });
 
         $('.share-facebook').click(function() {
