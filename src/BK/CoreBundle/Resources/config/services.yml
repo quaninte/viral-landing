@@ -4,4 +4,4 @@ parameters:
 services:
     bk_core.contact_manager:
         class: %bk_core.contact_manager.class%
-        arguments: [@doctrine.orm.entity_manager]
+        arguments: [@doctrine.orm.entity_manager, %segmentio_writekey%]

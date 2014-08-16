@@ -19,3 +19,4 @@ parameters:
     use_assetic_controller: true
 
     ga_tracking_id: null
+    segmentio_writekey: fuabfsb0xx

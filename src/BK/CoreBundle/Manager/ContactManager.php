@@ -10,6 +10,7 @@ namespace BK\CoreBundle\Manager;
 
 use BK\CoreBundle\Entity\Contact;
 use Doctrine\ORM\EntityManager;
+use Segment;
 
 class ContactManager
 {
@@ -18,12 +19,19 @@ class ContactManager
     protected $em;
 
     /**
-     * Constructor
-     * @param $em
+     * @var string
      */
-    public function __construct($em)
+    protected $segmentIOWriteKey;
+
+    /**
+     * Constructor
+     * @param \Doctrine\ORM\EntityManager $em
+     * @param $segmentIOWriteKey
+     */
+    public function __construct(EntityManager $em, $segmentIOWriteKey)
     {
         $this->em = $em;
+        $this->segmentIOWriteKey = $segmentIOWriteKey;
     }
 
     /**
@@ -75,6 +83,18 @@ class ContactManager
 
         if ($refContact = $this->findByCode($refCode)) {
             $contact->setRefContact($refContact);
+
+            // segment io
+            if ($this->segmentIOWriteKey) {
+                Segment::init($this->segmentIOWriteKey);
+                Segment::track(array(
+                    'userId' => $refContact->getId(),
+                    'event' => 'Complete invited',
+                    'properties' => array(
+                        'email' => $email,
+                    )
+                ));
+            }
         }
         $contact->setCode($this->generateCode());
 
