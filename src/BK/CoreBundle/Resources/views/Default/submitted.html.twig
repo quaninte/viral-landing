@@ -41,12 +41,14 @@
             position: '{{ contact.position }}'
         });
 
-        $('.share-facebook').click(function() {
-            analytics.track('Start Share Facebook');
-        });
+        $(function() {
+            $('.share-facebook').click(function() {
+                analytics.track('Start Share Facebook');
+            });
 
-        $('.share-twitter').click(function() {
-            analytics.track('Start Share Twitter');
+            $('.share-twitter').click(function() {
+                analytics.track('Start Share Twitter');
+            });
         });
     </script>
 {% endblock foot_scripts %}
