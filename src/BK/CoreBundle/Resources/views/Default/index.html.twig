@@ -1,1 +1,75 @@
 {% extends '@BKCore/layout.html.twig' %}
+
+{% block main_content %}
+    <section class="row">
+        <div class="col-sm-12">
+            <h1 class="headline">Wanna make more sales for your online store?</h1>
+            <div class="sub-headline">Let Beeketing, the first virtual marketer help you.</div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+            <h3>Your money-making machine</h3>
+        </div>
+    </section>
+    <section class="row">
+        <div class="col-sm-6">
+            <img class="screenshot" src="{{ asset('bundles/bkcore/images/screenshot1.png') }}">
+        </div>
+        <div class="col-sm-6">
+            <p>
+                Sit down and get ready for money to come.
+            </p>
+            {% include '@BKCore/Default/subscribe_form.html.twig' %}
+        </div>
+    </section>
+
+    <div class="inbetween"></div>
+
+    <section class="row">
+        <div class="col-sm-6">
+            <h3 style="text-align: center;">Time saver</h3>
+        </div>
+        <div class="col-sm-6"></div>
+    </section>
+    <section class="row">
+        <div class="col-sm-6">
+            <p style="text-align: center;">
+                Too busy? Beeketing saves your time by automatically setting up best email marketing
+                campaigns to convert your customers.
+            </p>
+        </div>
+        <div class="col-sm-6 column-adjust-top-margin">
+            <img class="screenshot" src="{{ asset('bundles/bkcore/images/screenshot2.png') }}">
+        </div>
+    </section>
+
+    <div class="inbetween"></div>
+
+    <section class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+            <h3 style="text-align: center;">Easy</h3>
+        </div>
+    </section>
+    <section class="row">
+        <div class="col-sm-6 column-adjust-top-margin">
+            <img class="screenshot" src="{{ asset('bundles/bkcore/images/screenshot3.png') }}">
+        </div>
+        <div class="col-sm-6">
+            <p style="text-align: center">
+                Super simple. Just 1 click and Beeketing will take care of the rest.
+            </p>
+        </div>
+    </section>
+
+    <div class="inbetween-sm"></div>
+
+    <section class="row">
+        <div class="col-sm-6 col-sm-offset-3 text-center">
+            {% include '@BKCore/Default/subscribe_form.html.twig' %}
+        </div>
+    </section>
+{% endblock main_content %}

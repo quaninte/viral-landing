@@ -1,3 +1,11 @@
 bk_core_homepage:
     path:     /
     defaults: { _controller: BKCoreBundle:Default:index }
+
+bk_core_submit:
+    path:   /submit
+    defaults: { _controller: BKCoreBundle:Default:submit }
+
+bk_core_thank:
+    path:   /thank/{code}
+    defaults: { _controller: BKCoreBundle:Default:thank }

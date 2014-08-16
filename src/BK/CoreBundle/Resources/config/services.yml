@@ -1,7 +1,7 @@
 parameters:
-#    bk_core.example.class: BK\CoreBundle\Example
+    bk_core.contact_manager.class: BK\CoreBundle\Manager\ContactManager
 
 services:
-#    bk_core.example:
-#        class: %bk_core.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    bk_core.contact_manager:
+        class: %bk_core.contact_manager.class%
+        arguments: [@doctrine.orm.entity_manager]

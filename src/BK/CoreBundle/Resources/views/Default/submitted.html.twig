@@ -1,0 +1,30 @@
+{% extends '@BKCore/layout.html.twig' %}
+
+{% block container_class %}text-center thank{% endblock %}
+
+{% block main_content %}
+    {% set shareUrl = url('bk_core_homepage', { 'ref': contact.code }) %}
+
+        <p class="referral">You are #{{ position }} on our waiting list.</p>
+
+        <h1 class="big-award">Want to cut in line and get $500 credit to use Beeketing?</h1>
+
+        <br>
+        <p class="referral">Get 5 of your friends to sign up with this unique URL:</p>
+
+        <br>
+        <p><b>{{ url('bk_core_homepage', { 'ref': contact.code }) }}</b></p>
+        <br>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center share-btns">
+                <a href="http://www.facebook.com/share.php?u={{ shareUrl | url_encode }}&amp;title=Can't wait for #Beeketing, the first virtual marketer ever. Now accepting beta users." target="_blank">
+                    <img src="{{ asset('bundles/bkcore/images/shareon.png') }}">
+                </a>
+                <a href="http://twitter.com/home?status=Can't wait for @beeketing, the first virtual marketer ever! Sign up for beta now: +{{ shareUrl | url_encode }}" target="_blank">
+                    <img src="{{ asset('bundles/bkcore/images/tweeton.png') }}">
+                </a>
+            </div>	</div>
+
+        <p style="margin-top: 1rem;">So far, you have <b>{{ invited }}</b> referrals.</p>
+{% endblock main_content %}

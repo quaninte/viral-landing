@@ -3,124 +3,47 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>The world's simplest project management tool</title>
+    <title>The first virtual marketer ever - Beeketing</title>
+
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}"/>
 
     {% stylesheets filter='cssrewrite'
     '@BKCoreBundle/Resources/public/css/bootstrap.min.css'
-    '@BKCoreBundle/Resources/public/css/style.css' %}
+    '@BKCoreBundle/Resources/public/css/style.css'
+    '@BKCoreBundle/Resources/public/css/flat-ui.css'
+    '@BKCoreBundle/Resources/public/css/custom.css' %}
     <link rel="stylesheet" href="{{ asset_url }}"/>
     {% endstylesheets %}
+
+    <meta name="description"
+          content="Beeketing, the first virtual marketer ever help businesses plan and execute the best marketing strategy to increase sales and improve customer relationship."/>
+    <meta name="keywords" content="beeketing, marekting automation, email markerting"/>
 </head>
 <body>
 <header>
     <!-- Put the toast here -->
-    <a href="http://springsled.com/">
-        <img id="header-logo" src="{{ asset('bundles/bkcore/images/logo.png') }}">
+    <a href="{{ path('bk_core_homepage') }}" title="Beeketing">
+        <img alt="Beeketing" id="header-logo" src="{{ asset('bundles/bkcore/images/logo.png') }}">
     </a>
 </header>
 <div id="main">
-    <div class="home container">
+    <div class="container {% block container_class %}home{% endblock %}">
+        {% for type, messages in app.session.flashBag.all %}
+            {% for message in messages %}
+                <div class="alert alert-{{ type }} messages-top-head">
+                    {{ message | raw }}
+                </div>
+            {% endfor %}
+        {% endfor %}
 
-        <section class="row">
-            <div class="col-sm-12">
-                <h1>Wanna have more sales for your online store?</h1>
-                <div>Let's Beeketing help you make more sales</div>
-                <h2>Meet Beeketing, the first virtual marketer ever created</h2>
-            </div>
-        </section>
-
-        <section class="row">
-            <div class="col-sm-6"></div>
-            <div class="col-sm-6">
-                <h2>Your money-making machine</h2>
-            </div>
-        </section>
-        <section class="row">
-            <div class="col-sm-6">
-                <img class="screenshot" src="{{ asset('bundles/bkcore/images/screenshot1.png') }}">
-            </div>
-            <div class="col-sm-6">
-                <p>
-                    Just sit back and wait for your money to come. Let's Beeketing sell your products to your customers
-                </p>
-
-                <form name="signup" action="./files/The world's simplest project management tool.html" method="post">
-                    <input type="hidden" id="signup-referrer" name="signup-referrer" value="">
-                    <input type="email" class="form-control input-lg" id="signup-email" name="signup-email" value=""
-                           placeholder="Email address">
-                    <button class="btn btn-success" type="submit" name="signup-button">
-		<span class="button-inner">
-			Get Early Access
-		</span>
-
-                    </button>
-                </form>
-            </div>
-        </section>
-
-        <div class="inbetween"></div>
-
-        <section class="row">
-            <div class="col-sm-6">
-                <h1 style="text-align: center;">Save your time</h1>
-            </div>
-            <div class="col-sm-6"></div>
-        </section>
-        <section class="row">
-            <div class="col-sm-6">
-                <p>
-                    Too busy with business? let's beeketing save you some time
-                    Beeketing can send the best newsletter email for you automatically without you having to touch anything.
-                </p>
-            </div>
-            <div class="col-sm-6 column-adjust-top-margin">
-                <img class="screenshot" src="{{ asset('bundles/bkcore/images/screenshot2.png') }}">
-            </div>
-        </section>
-
-        <div class="inbetween"></div>
-
-        <section class="row">
-            <div class="col-sm-6"></div>
-            <div class="col-sm-6">
-                <h1 style="text-align: center;">Easy</h1>
-            </div>
-        </section>
-        <section class="row">
-            <div class="col-sm-6 column-adjust-top-margin">
-                <img class="screenshot" src="{{ asset('bundles/bkcore/images/screenshot3.png') }}">
-            </div>
-            <div class="col-sm-6">
-                <p>
-                    No more boring walk through, just one click and then let's beeketing do the job.
-                </p>
-            </div>
-        </section>
-
-        <div class="inbetween-sm"></div>
-
-        <section class="row">
-            <div class="col-sm-6 col-sm-offset-3 text-center">
-                <form name="signup" action="./files/The world's simplest project management tool.html" method="post">
-                    <input type="hidden" id="signup-referrer" name="signup-referrer" value="">
-                    <input type="email" class="form-control input-lg" id="signup-email" name="signup-email" value=""
-                           placeholder="Email address">
-                    <button class="btn btn-success" type="submit" name="signup-button">
-		<span class="button-inner">
-			Get Early Access
-		</span>
-
-                    </button>
-                </form>
-            </div>
-        </section>
+        {% block main_content %}{% endblock main_content %}
     </div>
 </div>
 <!-- END MAIN DIV -->
 <div id="footer-wrapper">
     <div id="footer">
 				<span class="lhs">
-					<a href="mailto:quan@beeketing.com">
+					<a target="_blank" href="mailto:quan@beeketing.com">
                         Contact Us
                     </a>
 				</span>

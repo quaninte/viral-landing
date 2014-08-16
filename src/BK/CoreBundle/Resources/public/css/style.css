@@ -3,20 +3,8 @@ header {
 	border-bottom: 3px solid #f0f0f0;
 }
 
-body {
-	font-family: 'Oxygen', 'helvetica-neue', 'helvetica', 'arial', sans-serif;
-	font-weight: 300;
-	color: #535353;
-	-webkit-font-smoothing: antialiased;
-}
-
-#header-logo{
-	width: 250px;
-}
-
 .container {
 	margin: 0 auto;
-	max-width: 960px;
 	padding-top: 56px;
 }
 
@@ -114,7 +102,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Oxygen', 'helvetica-neue', 'helvetica', 'arial', sans-serif;
+    margin: 10px 0;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 20px;
+    color: inherit;
+    text-rendering: optimizelegibility;
 }
 
 h1 {
