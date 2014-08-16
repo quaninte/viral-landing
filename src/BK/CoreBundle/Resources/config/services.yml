@@ -1,0 +1,7 @@
+parameters:
+#    bk_core.example.class: BK\CoreBundle\Example
+
+services:
+#    bk_core.example:
+#        class: %bk_core.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

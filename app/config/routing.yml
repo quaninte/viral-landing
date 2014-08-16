@@ -1,0 +1,4 @@
+bk_core:
+    resource: "@BKCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
