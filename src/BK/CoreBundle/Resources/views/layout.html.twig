@@ -7,13 +7,10 @@
 
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}"/>
 
-    {% stylesheets filter='cssrewrite'
-    '@BKCoreBundle/Resources/public/css/bootstrap.min.css'
-    '@BKCoreBundle/Resources/public/css/style.css'
-    '@BKCoreBundle/Resources/public/css/flat-ui.css'
-    '@BKCoreBundle/Resources/public/css/custom.css' %}
-    <link rel="stylesheet" href="{{ asset_url }}"/>
-    {% endstylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/bkcore/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/bkcore/css/style.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/bkcore/css/flat-ui.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/bkcore/css/custom.css') }}"/>
 
     <meta property="og:image" content="{{ asset('facebook-share.png', null, true) }}" />
     <meta name="description"
