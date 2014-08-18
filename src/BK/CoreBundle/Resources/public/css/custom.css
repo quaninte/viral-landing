@@ -50,3 +50,7 @@ h3 {
 .big-award {
     font-size: 42px;
 }
+
+.button-inner {
+    padding: 0;
+}
