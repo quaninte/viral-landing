@@ -4,6 +4,7 @@ namespace BK\CoreBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Validator\Constraints\Email as EmailConstraint;
 
 class DefaultController extends Controller
 {
@@ -33,6 +34,13 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('bk_core_homepage'));
         }
 
+        // validate email
+        $errors = $this->get('validator')->validateValue($email, new EmailConstraint());
+        if ($errors->count()) {
+            $this->container->get('session')->getFlashBag()->set('error', 'Provided email is incorrect, please try again');
+            return $this->redirect($this->generateUrl('bk_core_homepage'));
+        }
+
         $contactManager = $this->container->get('bk_core.contact_manager');
 
         // find old contact
@@ -40,7 +48,18 @@ class DefaultController extends Controller
 
         // if not found -> create
         if (!$contact) {
-            $contact = $contactManager->createNew($email, $request->request->get('referrer'));
+
+            // limit ip address
+            $ipAddress = $request->getClientIp();
+            $maxSignUpPerIp = 10;
+            if ($contactManager->countByIp($ipAddress) >= $maxSignUpPerIp) {
+                $this->container->get('session')
+                    ->getFlashBag()
+                    ->set('error', 'Sorry, we already got 10 sign ups from this ip address, please try again later');
+                return $this->redirect($this->generateUrl('bk_core_homepage'));
+            }
+
+            $contact = $contactManager->createNew($email, $request->request->get('referrer'), $ipAddress);
         }
 
         return $this->redirect($this->generateUrl('bk_core_thank', array(

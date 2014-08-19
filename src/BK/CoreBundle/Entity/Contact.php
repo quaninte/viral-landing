@@ -73,6 +73,13 @@ class Contact
     protected $position;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="ip", type="string", length=255, nullable=true)
+     */
+    protected $ip;
+
+    /**
      * @var \DateTime $created
      *
      * @Gedmo\Timestampable(on="create")
@@ -291,5 +298,28 @@ class Contact
     public function getPosition()
     {
         return $this->position;
+    }
+
+    /**
+     * Set ip
+     *
+     * @param string $ip
+     * @return Contact
+     */
+    public function setIp($ip)
+    {
+        $this->ip = $ip;
+
+        return $this;
+    }
+
+    /**
+     * Get ip
+     *
+     * @return string 
+     */
+    public function getIp()
+    {
+        return $this->ip;
     }
 }
