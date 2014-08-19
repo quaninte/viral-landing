@@ -22,3 +22,4 @@ parameters:
     segmentio_writekey: fuabfsb0xx
 
     customerio_id: 082be0b5e2988933d988
+    assets_version: v1

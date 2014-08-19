@@ -1,13 +1,32 @@
 {% extends '@BKCore/layout.html.twig' %}
 
+{% block head_scripts %}
+    <!-- Facebook Conversion Code for Beeketing beta signup -->
+    <script>(function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', '6014871780461', {'value':'0.00','currency':'USD'}]);
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6014871780461&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+{% endblock head_scripts %}
+
 {% block container_class %}text-center thank{% endblock %}
 
 {% block main_content %}
     {% set shareUrl = url('bk_core_homepage', { 'ref': contact.code }) %}
 
-        <p class="referral">You are #{{ contact.position }} on our waiting list.</p>
+        <p class="referral">Congrats, You are #{{ contact.position }} on our waiting list and have $200 credit.</p>
 
-        <h1 class="big-award">Want to cut in line and get $200 credit to use Beeketing?</h1>
+        <h1 class="big-award">Want to cut in line and get $500 credit to use Beeketing?</h1>
 
         <br>
         <p class="referral">Get 5 of your friends to sign up with this unique URL:</p>
