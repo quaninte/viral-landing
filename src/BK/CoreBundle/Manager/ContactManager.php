@@ -57,6 +57,24 @@ class ContactManager
     }
 
     /**
+     * Find contact by email
+     * @param $ipAddress
+     * @return null|object
+     */
+    public function countByIp($ipAddress)
+    {
+        $count = $this->getRepository()
+            ->createQueryBuilder('c')
+            ->select('count(c.id)')
+            ->where('c.ip = :ipAddress')
+            ->setParameter('ipAddress', $ipAddress)
+            ->getQuery()
+            ->getSingleScalarResult();
+
+        return $count;
+    }
+
+    /**
      * Find contact by code
      * @param $code
      * @return null|Contact
@@ -73,13 +91,15 @@ class ContactManager
      * Create new contact
      * @param $email
      * @param $refCode
+     * @param null $ip
      * @return \BK\CoreBundle\Entity\Contact
      */
-    public function createNew($email, $refCode)
+    public function createNew($email, $refCode, $ip = null)
     {
         $contact = new Contact();
         $contact->setEmail($email);
         $contact->setRefCode($refCode);
+        $contact->setIp($ip);
 
         if ($refContact = $this->findByCode($refCode)) {
             $contact->setRefContact($refContact);
