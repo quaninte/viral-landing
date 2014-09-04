@@ -39,8 +39,8 @@ class DefaultController extends Controller
         // validate email
         $errors = $this->get('validator')->validateValue($email, new EmailConstraint());
         if ($errors->count()) {
-            $this->container->get('session')->getFlashBag()->set('error', 'Provided email is incorrect, please try again');
-            return $this->redirect($this->generateUrl('bk_core_homepage'));
+            $this->container->get('session')->getFlashBag()->set('danger', 'Provided email is incorrect, please try again');
+            return $this->redirect($this->generateUrl('bk_core_homepage') . '#sign-up');
         }
 
         $contactManager = $this->container->get('bk_core.contact_manager');
