@@ -1,11 +1,13 @@
-<form class="sign-up-form" name="signup" action="{{ path('bk_core_submit') }}" method="post">
+<form class="form sign-up-form" name="signup" action="{{ path('bk_core_submit') }}" method="post">
     <input type="hidden" id="referrer" name="referrer" value="{{ refCode }}">
-    <input type="email" class="form-control input-lg huge" id="email" name="email" value=""
-           placeholder="Email address" required="requried">
-    <button class="btn btn-success" type="submit" name="button">
-		<span class="button-inner">
-			Grab $200 credit and get early access
-		</span>
-
-    </button>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6 col-md-offset-3">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter your email address" id="email-input" name="email" >
+            </div>
+            <div>
+                <input type="submit" class="btn btn-primary" value="Get early access" />
+            </div>
+        </div>
+    </div>
 </form>

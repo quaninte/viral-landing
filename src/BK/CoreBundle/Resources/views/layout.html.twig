@@ -32,8 +32,12 @@
 
     {% block head_scripts %}
         <!--[if lt IE 9]>
-        <script src="assets/js/html5.js"></script>
-        <script src="assets/js/respond.min.js"></script>
+        {% javascripts
+        '@BKCoreBundle/Resources/public/assets/js/html5.js'
+        '@BKCoreBundle/Resources/public/assets/js/respond.min.js'
+        %}
+        <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
         <![endif]-->
     {% endblock head_scripts %}
 </head>
@@ -54,221 +58,33 @@
                         <a href="index.html" class="logo"></a>
                         <span class="sr-only">Beeketing</span>
                     </div>
-                    <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown"
-                            data-target=".navigation-navbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navigation-navbar">
-                    <ul class="navigation-bar navigation-bar-right">
-                        <li class="featured"><a href="register.html">Sign up</a></li>
-                    </ul>
                 </div>
             {% endblock navigation %}
         </div>
     </nav>
 </header>
 
-<div id="hero" class="static-header register-version light clearfix">
+{% block main_content %}{% endblock main_content %}
 
-    <div class="text-heading">
-        <h1 class="animated hiding" data-animation="bounceInDown" data-delay="0">Increase <span
-                    class="highlight">sales</span> for your online store automatically</h1>
-
-        <p class="animated hiding" data-animation="fadeInDown" data-delay="500">with world's first virtual marketer</p>
-
-        <ul class="list-inline">
-            <li><a href="#" class="btn btn-primary animated bounceIn visible" data-animation="bounceIn"
-                   data-delay="700">Get early access NOW!</a></li>
-        </ul>
-    </div>
-
-</div>
-
-<a id="showHere"></a>
-
-<section id="join-form" class="section dark">
-    <div class="container">
-        <div class="section-header animated fadeInDown visible" data-animation="fadeInDown">
-            <h2>Save your <span class="highlight">time</span> and make more <span class="highlight">money</span></h2>
-
-            <div class="sub-heading">
-                Let Beeketing help you with marketing and online selling
-            </div>
-            <br>
-
-            <p>
-
-            <form class="form">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6 col-md-offset-3">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter your email address">
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-primary">Get early access</a>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            </p>
-        </div>
-        <div class="container animated fadeInDown visible" data-animation="fadeInDown">
-            <div class="col-md-offset-1 col-md-3 col-sm-6 col-xs-12">
-                <article class="center">
-                    <i class="icon icon-office-44 icon-active"></i>
-                    <span class="h7">Increase Sales</span>
-
-                    <p class="thin">Beeketing can help you increase 20%-75% revenue. </p>
-                </article>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <article class="center">
-                    <i class="icon icon-shopping-18 icon-active"></i>
-                    <span class="h7">Happy Customers</span>
-
-                    <p class="thin">We help you send .</p>
-                </article>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <article class="center">
-                    <i class="icon icon-seo-icons-27 icon-active"></i>
-                    <span class="h7">FEATURE 3</span>
-
-                    <p class="thin">Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo
-                        elegantiam desidero. </p>
-                </article>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="about" class="section dark">
-    <div class="container">
-
-        <div class="section-header animated fadeInDown visible" data-animation="fadeInDown">
-            <h2>How it works?</h2>
-
-            <div class="sub-heading">
-                So people are visiting your online store but not buying?
-                <br>You're too busy and don't know how to fix that?
-            </div>
-            <div class="row col-sm-6 col-md-offset-3">
-                <img src="{{ asset('bundles/bkcore/assets/img/features/helmet.jpg') }}" class="img-responsive"
-                     alt="process 3">
-            </div>
-        </div>
-
-        <div class="section-content row">
-            <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">
-                <img src="{{ asset('bundles/bkcore/assets/img/features/content_image1.png') }}" class="img-responsive"
-                     alt="process 2"/>
-            </div>
-            <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
-                <br/><br/>
-                <article>
-                    <h3>Happy Customers</h3>
-
-                    <div class="sub-title">After first order, Beeketing helps to make your customers happier by sending
-                        a personalized
-                        thank-you email on behave of founder to make them surprised and engage with your brand more.
-                    </div>
-                </article>
-            </div>
-
-            <hr class="clearfix"/>
-
-            <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
-                <img src="{{ asset('bundles/bkcore/assets/img/features/content_image1.png') }}" class="img-responsive"
-                     alt="process 3"/>
-            </div>
-            <div class="col-sm-6 animated hiding" data-animation="fadeInRight">
-                <br/><br/>
-                <article>
-                    <h3>Sell More</h3>
-
-                    <div class="sub-title">By tracking and analyzing your customers' browsing and purchase history,
-                        Beeketing knows what they want and helps you promote motivating products to encourage them buy
-                        more.
-                    </div>
-                </article>
-            </div>
-
-            <hr class="clearfix"/>
-
-            <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">
-                <img src="{{ asset('bundles/bkcore/assets/img/features/content_image1.png') }}" class="img-responsive"
-                     alt="process 3"/>
-            </div>
-            <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
-                <br/><br/>
-                <article>
-                    <h3>Money-making machine</h3>
-
-                    <div class="sub-title">We know you're too busy already, that's why Beeketing was born to help you
-                        plan and execute best marketing campaigns such as: email marketing, cross-sell, up-sell,...
-                        automatically. You don't need to manage anything, just sit back and wait for more sales to come.
-                    </div>
-                </article>
-            </div>
-
-
-            <hr class="clearfix"/>
-
-            <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
-                <img src="{{ asset('bundles/bkcore/assets/img/features/content_image1.png') }}" class="img-responsive"
-                     alt="process 3"/>
-            </div>
-            <div class="col-sm-6 animated hiding" data-animation="fadeInRight">
-                <br/><br/>
-                <article>
-                    <h3>Super Easy</h3>
-
-                    <div class="sub-title">Beeketing works out-of-the-box with your online stores. Just a few clicks and
-                        Beeketing is ready to work for you.
-                    </div>
-                </article>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<section id="feedback" class="section light">
-    <div class="container">
-        <div class="section-header animated hiding" data-animation="fadeInDown">
-            <h2>Don't <span class="highlight">believe</span> what we said?</h2>
-
-            <p class="thin">Sign up for early access now and try it yourself</p>
-        </div>
-        <div class="section-content">
-            <div class="col-sm-12">
-                <form id="subscribe" class="form" action="" method="post">
-                    <div class="form-group form-inline">
-                        <input size="40" type="email" class="form-control required" id="NewsletterEmail"
-                               name="NewsletterEmail" placeholder="your@email.com">
-                    </div>
-                    <div>
-                        <input type="submit" class="btn btn-default" value="Get Early Access">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
+{% block footer %}
 <footer id="footer" class="footer light">
     <div class="container">
         <div style="height: 120px;"></div>
+        <div class="social-links">
+            <ul class="nav nav-pills">
+                <li class="facebook">
+                    <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbeeketing&amp;width=100&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>                </li>
+                <li class="twitter">
+                    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=beeketing" style="width:200px; height:20px;"></iframe>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="copyright">&copy; Beeketing 2014. All rights reserved.</div>
+    <div class="copyright"><a style="color: white;" href="mailto:quan@beeketing.com">Contact Us</a> | &copy; Beeketing 2014. All rights reserved.</div>
 </footer>
+{% endblock footer %}
 
 <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
-
 
 {% block foot_scripts %}
     {% javascripts
@@ -281,8 +97,6 @@
     '@BKCoreBundle/Resources/public/assets/js/jquery.countdown.js'
     '@BKCoreBundle/Resources/public/assets/js/waypoints.min.js'
     '@BKCoreBundle/Resources/public/assets/js/waypoints-sticky.min.js'
-    '@BKCoreBundle/Resources/public/assets/js/jquery.validate.js'
-    '@BKCoreBundle/Resources/public/assets/js/toastr.min.js'
     '@BKCoreBundle/Resources/public/assets/js/headhesive.min.js'
     '@BKCoreBundle/Resources/public/assets/mailchimp/js/mailing-list.js'
     '@BKCoreBundle/Resources/public/assets/js/scripts.js' %}

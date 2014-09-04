@@ -1,77 +1,174 @@
 {% extends '@BKCore/layout.html.twig' %}
 
 {% block main_content %}
-    <section class="row">
-        <div class="col-sm-12">
-            <h1 class="headline">Wanna make more sales for your online store?</h1>
-            <div class="sub-headline">Let Beeketing, the first virtual marketer help you.</div>
+    <div id="hero" class="static-header register-version light clearfix">
+
+        <div class="text-heading">
+            <h1 class="animated hiding" data-animation="bounceInDown" data-delay="0">Increase <span
+                        class="highlight">sales</span> for your online store automatically</h1>
+
+            <p class="animated hiding" data-animation="fadeInDown" data-delay="500">with world's first virtual marketer</p>
+
+            <div>
+                Join more than 1000 businesses all around the world
+            </div>
+            <div>
+                <a href="#sign-up" class="btn btn-primary animated bounceIn visible to-sign-up-form" data-animation="bounceIn"
+                   data-delay="700">Get early access NOW!</a>
+            </div>
+        </div>
+
+    </div>
+
+    <a id="sign-up"></a>
+    <section id="join-form" class="section dark">
+        <div class="container">
+            <div class="section-header animated fadeInDown visible" data-animation="fadeInDown">
+                <h2>Save your <span class="highlight">time</span> and make more <span class="highlight">money</span></h2>
+
+                <div class="sub-heading">
+                    Let Beeketing help you with marketing and online selling
+                </div>
+                <br>
+
+                <p>
+                    {% include 'BKCoreBundle:Default:subscribe_form.html.twig' %}
+                </p>
+            </div>
+            <div class="container animated fadeInDown visible" data-animation="fadeInDown">
+                <div class="col-md-offset-1 col-md-3 col-sm-6 col-xs-12">
+                    <article class="center">
+                        <i class="icon icon-arrows-37 icon-active"></i>
+                        <span class="h7">Increase Sales</span>
+
+                        <p class="thin">Beeketing can help you increase 20%-75% revenue. </p>
+                    </article>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <article class="center">
+                        <i class="icon icon-emoticons-25 icon-active"></i>
+                        <span class="h7">Happy Customers</span>
+
+                        <p class="thin">We help you send content that your customers actually want.</p>
+                    </article>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <article class="center">
+                        <i class="icon icon-alerts-07 icon-active"></i>
+                        <span class="h7">More Free Time</span>
+
+                        <p class="thin">You don't have to spend time managing anything, just sit back and wait for money to come. </p>
+                    </article>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="row">
-        <div class="col-sm-6"></div>
-        <div class="col-sm-6">
-            <h3>Your money-making machine</h3>
-        </div>
-    </section>
-    <section class="row">
-        <div class="col-sm-6">
-            <img class="screenshot" src="{{ asset('bundles/bkcore/images/screenshot1.png') }}">
-        </div>
-        <div class="col-sm-6">
-            <p>
-                Sit back and get ready for more orders, more money to come.
-            </p>
-            {% include '@BKCore/Default/subscribe_form.html.twig' %}
+    <section id="about" class="section dark">
+        <div class="container">
+
+            <div class="section-header animated fadeInDown visible" data-animation="fadeInDown">
+                <h2>How it works?</h2>
+
+                <div class="sub-heading">
+                    So people are visiting your online store but not buying?
+                    <br>You're too busy and don't know how to fix that?
+                </div>
+                <div class="row col-sm-6 col-md-offset-3">
+                    <img src="{{ asset('bundles/bkcore/assets/img/features/helmet.jpg') }}" class="img-responsive"
+                         alt="process 3">
+                </div>
+            </div>
+
+            <div class="section-content row">
+                <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">
+                    <img src="{{ asset('bundles/bkcore/assets/img/features/content_image1.png') }}" class="img-responsive"
+                         alt="process 2"/>
+                </div>
+                <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+                    <br/><br/>
+                    <article>
+                        <h3>Happy Customers</h3>
+
+                        <div class="sub-title">After first order, Beeketing helps to make your customers happier by sending
+                            a personalized
+                            thank-you email on behave of founder to make them surprised and engage with your brand more.
+                        </div>
+                    </article>
+                </div>
+
+                <hr class="clearfix"/>
+
+                <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+                    <img src="{{ asset('bundles/bkcore/assets/img/features/content_image1.png') }}" class="img-responsive"
+                         alt="process 3"/>
+                </div>
+                <div class="col-sm-6 animated hiding" data-animation="fadeInRight">
+                    <br/><br/>
+                    <article>
+                        <h3>Sell More</h3>
+
+                        <div class="sub-title">By tracking and analyzing your customers' browsing and purchase history,
+                            Beeketing knows what they want and helps you promote motivating products to encourage them buy
+                            more.
+                        </div>
+                    </article>
+                </div>
+
+                <hr class="clearfix"/>
+
+                <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">
+                    <img src="{{ asset('bundles/bkcore/assets/img/features/content_image1.png') }}" class="img-responsive"
+                         alt="process 3"/>
+                </div>
+                <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+                    <br/><br/>
+                    <article>
+                        <h3>Money-making machine</h3>
+
+                        <div class="sub-title">We know you're too busy already, that's why Beeketing was born to help you
+                            plan and execute best marketing campaigns such as: email marketing, cross-sell, up-sell,...
+                            automatically. You don't need to manage anything, just sit back and wait for more sales to come.
+                        </div>
+                    </article>
+                </div>
+
+
+                <hr class="clearfix"/>
+
+                <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+                    <img src="{{ asset('bundles/bkcore/assets/img/features/content_image1.png') }}" class="img-responsive"
+                         alt="process 3"/>
+                </div>
+                <div class="col-sm-6 animated hiding" data-animation="fadeInRight">
+                    <br/><br/>
+                    <article>
+                        <h3>Super Easy</h3>
+
+                        <div class="sub-title">Beeketing works out-of-the-box with your online stores. Just a few clicks and
+                            Beeketing is ready to work for you.
+                        </div>
+                    </article>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <div class="inbetween"></div>
+    <section id="sign-up-form-2" class="section dark">
+        <div class="container">
+            <div class="section-header animated fadeInDown visible" data-animation="fadeInDown">
+                <h2>Don't believe what we said?</h2>
 
-    <section class="row">
-        <div class="col-sm-6">
-            <h3 style="text-align: center;">Time saver</h3>
-        </div>
-        <div class="col-sm-6"></div>
-    </section>
-    <section class="row">
-        <div class="col-sm-6">
-            <p style="text-align: center;">
-                Too busy? Beeketing saves your time by automatically setting up best email marketing
-                campaigns to convert your customers.
-            </p>
-        </div>
-        <div class="col-sm-6 column-adjust-top-margin">
-            <img class="screenshot" src="{{ asset('bundles/bkcore/images/screenshot2.png') }}">
-        </div>
-    </section>
+                <div class="sub-heading">
+                    Sign up for early access now and try it yourself
+                </div>
+                <br>
 
-    <div class="inbetween"></div>
-
-    <section class="row">
-        <div class="col-sm-6"></div>
-        <div class="col-sm-6">
-            <h3 style="text-align: center;">Easy</h3>
-        </div>
-    </section>
-    <section class="row">
-        <div class="col-sm-6 column-adjust-top-margin">
-            <img class="screenshot" src="{{ asset('bundles/bkcore/images/screenshot3.png') }}">
-        </div>
-        <div class="col-sm-6">
-            <p style="text-align: center">
-                Super simple. Just 1 click and Beeketing will take care of the rest.
-            </p>
-        </div>
-    </section>
-
-    <div class="inbetween-sm"></div>
-
-    <section class="row">
-        <h2 class="footer-headline">Don't believe what we said?</h2>
-        <h3 class="footer-headline2">sign up for early access now to try out</h3>
-        <div class="col-sm-6 col-sm-offset-3 text-center">
-            {% include '@BKCore/Default/subscribe_form.html.twig' %}
+                <p>
+                {% include 'BKCoreBundle:Default:subscribe_form.html.twig' %}
+                </p>
+            </div>
         </div>
     </section>
 {% endblock main_content %}

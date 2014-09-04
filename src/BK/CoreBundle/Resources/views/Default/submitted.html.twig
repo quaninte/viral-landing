@@ -5,28 +5,36 @@
 {% block main_content %}
     {% set shareUrl = url('bk_core_homepage', { 'ref': contact.code }) %}
 
-        <p class="referral">Congrats, You are #{{ contact.position }} on our waiting list and have $200 credit.</p>
+    <section id="succeed" class="section dark">
+        <div class="container">
+            <div class="section-content row">
 
-        <h1 class="big-award">Want to cut in line and get $500 credit to use Beeketing?</h1>
+                <p class="referral">Congrats, You are #{{ contact.position }} on our waiting list.</p>
 
-        <br>
-        <p class="referral">Get 5 of your friends to sign up with this unique URL:</p>
+                <h2 class="big-award">Want to cut in line and get $200 credit to use Beeketing?</h2>
 
-        <br>
-        <p><b>{{ url('bk_core_homepage', { 'ref': contact.code }) }}</b></p>
-        <br>
+                <br>
+                <p class="referral">Get 5 of your friends to sign up with this unique URL:</p>
 
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center share-btns">
-                <a class="share-facebook" href="http://www.facebook.com/share.php?u={{ shareUrl | url_encode }}&amp;title=Can't wait for #Beeketing, the first virtual marketer ever. Now accepting beta users." target="_blank">
-                    <img src="{{ asset('bundles/bkcore/images/shareon.png') }}">
-                </a>
-                <a class="share-twitter" href="http://twitter.com/home?status=Can't wait for @beeketing, the first virtual marketer ever! Sign up for beta now: +{{ shareUrl | url_encode }}" target="_blank">
-                    <img src="{{ asset('bundles/bkcore/images/tweeton.png') }}">
-                </a>
-            </div>	</div>
+                <br>
+                <p><b>{{ url('bk_core_homepage', { 'ref': contact.code }) }}</b></p>
+                <br>
 
-        <p style="margin-top: 1rem;">So far, you have <b>{{ invited }}</b> referrals.</p>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center share-btns">
+                        <a class="share-facebook" href="http://www.facebook.com/share.php?u={{ shareUrl | url_encode }}&amp;title=Can't wait for #Beeketing, the first virtual marketer ever. Now accepting beta users." target="_blank">
+                            <img src="{{ asset('bundles/bkcore/images/shareon.png') }}">
+                        </a>
+                        <a class="share-twitter" href="http://twitter.com/home?status=Can't wait for @beeketing, the first virtual marketer ever! Sign up for beta now: +{{ shareUrl | url_encode }}" target="_blank">
+                            <img src="{{ asset('bundles/bkcore/images/tweeton.png') }}">
+                        </a>
+                    </div>	</div>
+
+                <p style="margin-top: 1rem;">So far, you have <b>{{ invited }}</b> referrals.</p>
+
+            </div>
+        </div>
+    </section>
 {% endblock main_content %}
 
 {% block foot_scripts %}
