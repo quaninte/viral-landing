@@ -55,8 +55,8 @@
             {% block navigation %}
                 <div class="navigation-brand">
                     <div class="brand-logo">
-                        <a href="index.html" class="logo"></a>
-                        <span class="sr-only">Beeketing</span>
+                        <a href="{{ path('bk_core_homepage') }}" class="logo" title="Beeketing">
+                            <span class="sr-only">Beeketing</span></a>
                     </div>
                 </div>
             {% endblock navigation %}
@@ -67,21 +67,29 @@
 {% block main_content %}{% endblock main_content %}
 
 {% block footer %}
-<footer id="footer" class="footer light">
-    <div class="container">
-        <div style="height: 120px;"></div>
-        <div class="social-links">
-            <ul class="nav nav-pills">
-                <li class="facebook">
-                    <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbeeketing&amp;width=100&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>                </li>
-                <li class="twitter">
-                    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=beeketing" style="width:200px; height:20px;"></iframe>
-                </li>
-            </ul>
+    <footer id="footer" class="footer light">
+        <div class="container">
+            <div style="height: 120px;"></div>
+            <div class="social-links">
+                <ul class="nav nav-pills">
+                    <li class="facebook">
+                        <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbeeketing&amp;width=100&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21"
+                                scrolling="no" frameborder="0"
+                                style="border:none; overflow:hidden; width:100px; height:21px;"
+                                allowTransparency="true"></iframe>
+                    </li>
+                    <li class="twitter">
+                        <iframe allowtransparency="true" frameborder="0" scrolling="no"
+                                src="//platform.twitter.com/widgets/follow_button.html?screen_name=beeketing"
+                                style="width:200px; height:20px;"></iframe>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="copyright"><a style="color: white;" href="mailto:quan@beeketing.com">Contact Us</a> | &copy; Beeketing 2014. All rights reserved.</div>
-</footer>
+        <div class="copyright"><a style="color: white;" href="mailto:quan@beeketing.com">Contact Us</a> | &copy;
+            Beeketing 2014. All rights reserved.
+        </div>
+    </footer>
 {% endblock footer %}
 
 <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>

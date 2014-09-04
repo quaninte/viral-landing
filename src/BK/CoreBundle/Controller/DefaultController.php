@@ -16,9 +16,11 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
+        $businessesCount = $this->container->get('bk_core.contact_manager')->countTotal();
 
         return $this->render('BKCoreBundle:Default:index.html.twig', array(
             'refCode' => $request->get('ref'),
+            'businessesCount' => $businessesCount,
         ));
     }
 

@@ -140,6 +140,8 @@ class ContactManager
      */
     protected function generateCode($length = 7)
     {
+        $code = null;
+
         while (true) {
             $charset='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
             $code = '';
@@ -190,6 +192,23 @@ class ContactManager
             ->where('c.refContact = :refContact')
             ->setParameter('refContact', $contact)
             ->getQuery()
+            ->getSingleScalarResult();
+
+        return $count;
+    }
+
+    /**
+     * Count how many contacts signed up
+     * @return int
+     */
+    public function countTotal()
+    {
+        $count = $this->getRepository()
+            ->createQueryBuilder('c')
+            ->select('count(c.id)')
+            ->getQuery()
+            ->useResultCache(true)
+            ->setResultCacheLifetime(60 * 5)
             ->getSingleScalarResult();
 
         return $count;
