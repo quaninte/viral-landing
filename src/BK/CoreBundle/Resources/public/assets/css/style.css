@@ -23,20 +23,58 @@
 *    17. Desktop large screen 1200px
 *
 */
+/*font-face*/
+
+@font-face {
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    src: url('../fonts/itcavantgardestd-demi.eot');
+    src: url('../fonts/itcavantgardestd-demi.eot') format('embedded-opentype'),
+    url('../fonts/itcavantgardestd-demi.woff2') format('woff2'),
+    url('../fonts/itcavantgardestd-demi.woff') format('woff'),
+    url('../fonts/itcavantgardestd-demi.ttf') format('truetype'),
+    url('../fonts/itcavantgardestd-demi.svg#ITCAvantGardeGothicStdDemi') format('svg');
+}
+@font-face {
+    font-family: 'ITCAvantGardeGothicStdBook';
+    src: url('../fonts/itcavantgardestd-bk.eot');
+    src: url('../fonts/itcavantgardestd-bk.eot') format('embedded-opentype'),
+    url('../fonts/itcavantgardestd-bk.woff2') format('woff2'),
+    url('../fonts/itcavantgardestd-bk.woff') format('woff'),
+    url('../fonts/itcavantgardestd-bk.ttf') format('truetype'),
+    url('../fonts/itcavantgardestd-bk.svg#ITCAvantGardeGothicStdBook') format('svg');
+}
+@font-face {
+    font-family: 'ITCAvantGardeGothicStdExtraLight';
+    src: url('../fonts/itcavantgardestd-xlt.eot');
+    src: url('../fonts/itcavantgardestd-xlt.eot') format('embedded-opentype'),
+    url('../fonts/itcavantgardestd-xlt.woff2') format('woff2'),
+    url('../fonts/itcavantgardestd-xlt.woff') format('woff'),
+    url('../fonts/itcavantgardestd-xlt.ttf') format('truetype'),
+    url('../fonts/itcavantgardestd-xlt.svg#ITCAvantGardeGothicStdExtraLight') format('svg');
+}
+@font-face {
+    font-family: 'ITCAvantGardeGothicStdMedium';
+    src: url('../fonts/itcavantgardestd-md.eot');
+    src: url('../fonts/itcavantgardestd-md.eot') format('embedded-opentype'),
+    url('../fonts/itcavantgardestd-md.woff2') format('woff2'),
+    url('../fonts/itcavantgardestd-md.woff') format('woff'),
+    url('../fonts/itcavantgardestd-md.ttf') format('truetype'),
+    url('../fonts/itcavantgardestd-md.svg#ITCAvantGardeGothicStdMedium') format('svg');
+}
 /* Fonts */
 .thin {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
 
 input,
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
 strong {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
 
@@ -50,7 +88,7 @@ body {
 }
 
 h1 {
-    font-size: 58px;
+    font-size: 65px;
     font-weight: 300;
     display: block;
 }
@@ -403,7 +441,7 @@ article {
 .navigation-brand .brand-logo .logo {
     display: block;
     height: 60px;
-    background: url(../img/logo.png) center center no-repeat;
+    background: url(../img/logo.png) 19px 0px no-repeat;
 }
 
 .fixmenu-clone .brand-logo .logo {
@@ -1191,28 +1229,340 @@ blockquote:after {
 
 /* Header versions */
 .plain-version .text-heading {
-    padding-top: 15%;
+    padding-top:180px;
 }
 
 .register-version.static-header {
     background: url('../img/background/people_relax_beach_overlay.jpg') top center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
     background-attachment: fixed;
     min-height: 1155px;
     position: relative;
 }
 
 .register-version .text-heading {
-    padding-top: 20%;
+    padding-top: 180px;
 }
-
+.static-header.register-version.light .text-heading{
+    position: static;
+}
+.static-header.register-version.light .text-heading .button-access{
+    position: absolute;
+    bottom: 67px;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+}
+.static-header.register-version.light .text-heading .button-access .count{
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+.static-header.register-version.light .text-heading .button-access .button-signup{
+    margin-top:5px;
+}
+.static-header.register-version.light .text-heading .button-access .button-signup a{
+    font-family: 'ITCAvantGardeGothicStdMedium';
+    font-size:23px;
+    color:#fff;
+    padding: 18px 40px 12px 40px;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+.static-header .text-heading h1{
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    text-transform: uppercase;
+    margin-bottom:6px;
+}
+.thiner{
+    font-family: 'ITCAvantGardeGothicStdBook';
+}
+#landing-page .section{
+    padding-top:40px;
+}
+#landing-page .section .section-header{
+    margin-top:0;
+    margin-bottom: 113px;
+}
+#landing-page .section .section-header h2{
+    text-transform: uppercase;
+    color:#2e2f31;
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size:40px;
+    margin-bottom:0;
+}
+p.word-hard{
+    color:#2e2f31;
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size:25px;
+    margin-top: 102px;
+}
+#landing-page .section .section-header .sub-heading{
+    color:#2e2f31;
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size:23px;
+    margin-top:2px;
+}
+#landing-page .form .form-group{
+    margin-bottom:19px;
+}
+#landing-page .form .button-access .btn.btn-primary{
+    font-family: 'ITCAvantGardeGothicStdMedium';
+    font-size:20px;
+    color:#fff;
+    padding: 18px 40px 12px 40px;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+#landing-page .form .form-control{
+    background: #eef7fa;
+    border:1px solid #00ace4;
+    font-size:25px;
+    color:#2e2f31;
+    font-family: 'ITCAvantGardeGothicStdExtraLight';
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    height: 70px;
+    margin-top:77px;
+}
+#landing-page .container.animated.fadeInDown.visible .increase{
+    padding-left:74px;
+    padding-right:0;
+}
+#landing-page .container.animated.fadeInDown.visible .clock{
+    padding-left:0;
+    padding-right:112px;
+}
+#landing-page .container.animated.fadeInDown.visible article .layout-img{
+    min-height: 120px;
+    position: relative;
+}
+#landing-page .container.animated.fadeInDown.visible article .layout-img img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#landing-page .container.animated.fadeInDown.visible article span.h7{
+    color:#2e2f31;
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size:23px;
+    margin-top:35px;
+    text-transform: uppercase;
+    margin-bottom:0;
+}
+#landing-page .container.animated.fadeInDown.visible article p{
+    font-size:18px;
+    color:#2e2f31;
+    margin-top:20px;
+}
 .video-version .text-heading {
     padding-top: 12%;
 }
+#landing-page .section .section-header.work{
+    padding-left:160px;
+    position: relative;
+    margin-bottom: 102px;
+}
+#landing-page .section .section-header.work h2{
+    font-size:50px;
+    font-family: 'ITCAvantGardeGothicStdBook';
+    color:#2e2f31;
+    padding-left: 70px;
+    margin-top: 3px;
+}
+#landing-page .section .section-header.work h2 span{
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size:50px;
+}
+#landing-page .section .section-header.work .sub-heading{
+    position: absolute;
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+    color:#fff;
+    z-index: 999;
+    right: 204px;
+    top: 110px;
+}
+#landing-page .section .section-header.work .col-md-12 img{
+    margin-top:-11px;
+}
+#landing-page .section-content .col-sm-6.pull-right.animated.fadeInRight.visible{
+    padding-right:0;
+}
+#landing-page .section-content .col-sm-6.pull-right.animated.fadeInRight.visible img{
+    display: inline-block;
+    margin-top:-15px;
+}
+#landing-page .section-content .col-sm-6.animated.fadeInLeft.visible article{
+    margin-top: 79px;
+    padding-left: 42px;
+}
+#landing-page .section-content .col-sm-6.animated.fadeInLeft.visible article h3{
+    font-family: 'ITCAvantGardeGothicStdBook';
+    color:#2e2f31;
+    text-transform: uppercase;
+    font-size:50px;
+}
+#landing-page .section-content .col-sm-6.animated.fadeInLeft.visible article h3 span{
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size:50px;
+}
+#landing-page .section-content .col-sm-6.animated.fadeInLeft.visible article .sub-title{
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+    color:#000;
+    margin-top: 28px;
+    line-height: 23px;
+}
+#landing-page hr.clearfix{
+    border:none;
+}
+#landing-page .col-sm-6.animated.fadeInLeft.visible img{
+    margin-top: 81px;
+    margin-left: 7px;
+}
+#landing-page .col-sm-6.animated.fadeInRight.visible{
+    padding:0;
 
+}
+#landing-page .col-sm-6.animated.fadeInRight.visible article{
+    margin-top: 160px;
+}
+#landing-page .col-sm-6.animated.fadeInRight.visible article h3{
+    font-family: 'ITCAvantGardeGothicStdBook';
+    color:#2e2f31;
+    text-transform: uppercase;
+    font-size:50px;
+}
+#landing-page .col-sm-6.animated.fadeInRight.visible article h3 span{
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size:50px;
+}
+#landing-page .col-sm-6.animated.fadeInRight.visible article .sub-title{
+    margin-top: 27px;
+    line-height: 24px;
+    margin-left: 5px;
+}
+#landing-page .col-sm-6.pull-right.animated.money-making.fadeInRight.visible{
+    width: 45%;
+}
+#landing-page .col-sm-6.pull-right.animated.money-making.fadeInRight.visible img{
+    margin-top:126px;
+}
+#landing-page .col-sm-6.animated.money-making.fadeInLeft.visible{
+    width: 55%;
+}
+#landing-page .col-sm-6.animated.money-making.fadeInLeft.visible article{
+    margin-top: 142px;
+    padding-left: 12px;
+}
+#landing-page .col-sm-6.animated.money-making.fadeInLeft.visible article h3{
+    font-size:46px;
+}
+#landing-page .col-sm-6.animated.money-making.fadeInLeft.visible article h3 span{
+    font-size:46px;
+    color:#66d7ff;
+}
+#landing-page .col-sm-6.animated.super-easy.fadeInLeft.visible{
+    padding-right:0;
+}
+#landing-page .col-sm-6.animated.super-easy.fadeInLeft.visible img{
+    margin-top: 94px;
+}
+#landing-page .col-md-offset-1.col-sm-5.animated.super-easy.fadeInRight.visible article{
+    margin-top: 119px;
+    margin-left: 5px;
+}
+#landing-page .col-md-offset-1.col-sm-5.animated.super-easy.fadeInRight.visible article h3{
+    font-family: 'ITCAvantGardeGothicStdBook';
+    color:#2e2f31;
+    text-transform: uppercase;
+    font-size: 46px;
+}
+#landing-page .col-md-offset-1.col-sm-5.animated.super-easy.fadeInRight.visible article h3 span{
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size: 46px;
+}
+#landing-page .col-md-offset-1.col-sm-5.animated.super-easy.fadeInRight.visible article .sub-title{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 27px;
+    line-height: 24px;
+}
+#landing-page #sign-up-form-2{
+    padding-bottom:125px;
+}
+#landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size: 50px;
+    color:#fff;
+    margin-top:106px;
+}
+#landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .sub-heading{
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size: 23px;
+    color:#fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+#landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control{
+    margin-top:57px;
+    border:1px solid #fff;
+    background:rgba(255,255,255,0.1);
+    color:#fff;
+}
+#landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+
+#landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control:-moz-placeholder {
+    color: #fff;
+}
+
+#landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control::-moz-placeholder {
+    color: #fff;
+}
+
+#landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control:-ms-input-placeholder {
+    color: #fff;
+}
+#landing-page footer{
+    margin-top: -214px;
+    background: transparent;
+    position: relative;
+}
+#landing-page footer:before{
+    position: absolute;
+    left: 0;
+    height: 125px;
+    bottom:0;
+    width: 100%;
+    z-index: 1;
+    content:'';
+    background: rgba(0,0,0,0.5);
+}
+#landing-page footer .copyright{
+    position: relative;
+    z-index: 2;
+    margin-top:8px;
+    font-family: 'ITCAvantGardeGothicStdBook';
+    font-size:14px;
+    color:#fff;
+    opacity: 1;
+}
+#landing-page footer .copyright a{
+    font-family: 'ITCAvantGardeGothicStdBook';
+    font-size:14px;
+    color:#fff;
+}
 .form-version {
 }
 
@@ -1453,6 +1803,8 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 .static-header .text-heading p {
     color: #fff;
+    font-size:25px;
+    font-family: 'ITCAvantGardeGothicStdBook';
 }
 
 .static-header .list-inline {
@@ -2009,7 +2361,20 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 #features-list article .icon, #join-form article .icon {
     font-size: 5em;
 }
-
+#join-form article img{
+    display: inline-block;
+}
+#sign-up-form-2{
+    background: url('../img/background/low_poly_background.jpg') no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ababab;
+    font-weight: 300;
+    padding: 0px 0px 30px 0px;
+    margin-top:90px;
+}
 #features-list article p {
     font-size: 15px;
     color: #8A8A8A;
@@ -2311,6 +2676,53 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Mobile device 767px */
 @media (max-width: 767px) {
+    .navigation-brand .brand-logo .logo{
+        background: url(../img/logo.png) 19px 0px no-repeat;
+    }
+    #landing-page .container.animated.fadeInDown.visible .increase,
+    #landing-page .container.animated.fadeInDown.visible .clock{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #landing-page .section .section-header.work{
+        padding-left: 0;
+    }
+    #landing-page .form .button-access .btn.btn-primary{
+        font-size: 12px;
+    }
+    #landing-page .form .form-control{
+        font-size:15px;
+        height: 50px;
+    }
+    #landing-page .section .section-header.work .sub-heading{
+        right: 42px;
+        top: 20%;
+        width: 50%;
+        font-size:12px;
+        line-height: normal;
+    }
+    .col-sm-6.animated.hiding.sell-more .row{
+        margin:0;
+    }
+    #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control{
+        font-size: 15px;
+    }
+    #landing-page .section-content .col-sm-6.pull-right.animated.fadeInRight.visible img{
+        max-width: 100%;
+        margin:0;
+    }
+    #landing-page .section .section-header.work h2,
+    #landing-page .section .section-header.work h2 span{
+        font-size:30px;
+    }
+    #landing-page .section .section-header.work h2{
+        padding-left: 0;
+        text-align: right;
+        padding-right: 30px;
+    }
+    .static-header .text-heading h1{
+        font-size:35px;
+    }
     p {
         font-size: 14px;
         line-height: 25px;
@@ -2738,6 +3150,16 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 
 @media (max-width: 480px) {
+    .sign-up-form .col-md-6.col-sm-6.col-xs-6.col-md-offset-3.col-xs-offset-3{
+        width: 100%;
+        margin:0;
+    }
+    #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
+        font-size:30px;
+    }
+    #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .sub-heading{
+        font-size:18px;
+    }
     .section {
         padding: 35px 0;
     }
@@ -2970,6 +3392,32 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Tablet device Landscape 1024px and 768px */
 @media (max-width: 1024px) and (min-width: 768px) {
+    #landing-page .container.animated.fadeInDown.visible .increase,
+    #landing-page .container.animated.fadeInDown.visible .clock
+    {
+        padding-left:15px;
+        padding-right:15px;
+    }
+    #landing-page .section .section-header.work{
+        padding-left:0;
+    }
+    #landing-page .section .section-header.work .sub-heading{
+        right: 40px;
+        top: 100px;
+        font-size:16px;
+    }
+    #landing-page .section .section-header h2{
+        font-size:34px;
+    }
+    #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
+        font-size:40px;
+    }
+    #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .sub-heading{
+        font-size:18px;
+    }
+    #landing-page .section .section-header .sub-heading{
+        font-size:21px;
+    }
     p {
         font-size: 14px;
         line-height: 25px;
@@ -3116,7 +3564,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
 
     #landing-page .static-header h1 {
-        font-size: 48px;
+        font-size: 38px;
     }
 
     #landing-page .static-header {
@@ -3252,6 +3700,20 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Desktop medium screen 992px and 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
+    #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
+        font-size:48px;
+    }
+    #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .sub-heading{
+        font-size:21px;
+    }
+
+    #landing-page .section .section-header.work .sub-heading{
+        right: 35px;
+        top: 105px;
+    }
+    .static-header .text-heading h1{
+        font-size:48px;
+    }
     .package-column .package-detail {
         height: 425px;
     }
@@ -3390,7 +3852,18 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         text-align: center;
     }
 }
-
+@media (min-width: 1920px){
+    .register-version.static-header {
+        background: url('../img/background/people_relax_beach_overlay.jpg') top center no-repeat;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        background-attachment: fixed;
+        min-height: 1155px;
+        position: relative;
+    }
+}
 /* Desktop large screen 1200px */
 @media (min-width: 1200px) {
     .container {
@@ -3427,7 +3900,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
 
     #landing-page .static-header {
-        min-height: 800px;
+        min-height: 820px;
     }
 
     #landing-page .plain-version.static-header {
