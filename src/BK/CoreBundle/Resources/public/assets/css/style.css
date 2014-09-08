@@ -1563,6 +1563,18 @@ p.word-hard{
     font-size:14px;
     color:#fff;
 }
+#landing-page #succeed{
+    padding-top:100px;
+}
+#landing-page #succeed + footer{
+    background: url('../img/background/low_poly_background.jpg') no-repeat top center!important;
+    margin-top: 0;
+    width: 100%;
+    height: 125px;
+}
+#landing-page #succeed + footer .social-links{
+    margin-top:-90px;
+}
 .form-version {
 }
 
@@ -2676,6 +2688,46 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Mobile device 767px */
 @media (max-width: 767px) {
+    #landing-page #succeed h2{
+        font-size:35px;
+    }
+    #landing-page .col-sm-6.animated{
+        padding:0;
+    }
+    #landing-page .col-sm-6.pull-right.animated{
+        width: 100%;
+    }
+    #landing-page .section-content{
+        margin:0;
+    }
+    #landing-page .col-sm-6.animated.fadeInRight.visible .row{
+        margin:0;
+    }
+    #landing-page .section-content .col-sm-6.animated article{
+        margin:0!important;
+        padding:0!important;
+    }
+    #landing-page .section-content .col-sm-6.animated img{
+        margin:0!important;
+    }
+    #landing-page .col-sm-6.animated,
+    #landing-page .col-md-offset-1.col-sm-5.animated{
+        width: 100%!important;
+        float:left!important;
+        padding:0;
+    }
+    #landing-page .col-sm-6.animated article h3,
+    #landing-page .col-sm-6.animated article h3 span,
+    #landing-page .col-md-offset-1.col-sm-5.animated h3,
+    #landing-page .col-md-offset-1.col-sm-5.animated h3 span{
+        font-size:35px!important;
+    }
+    #landing-page .section-content .col-sm-6.pull-right.animated.fadeInRight.visible{
+        padding:0;
+    }
+    #landing-page .col-md-offset-1.col-sm-5.animated.super-easy.fadeInRight.visible article{
+        margin-top:0px;
+    }
     .navigation-brand .brand-logo .logo{
         background: url(../img/logo.png) 19px 0px no-repeat;
     }
@@ -3150,6 +3202,78 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 
 @media (max-width: 480px) {
+    #landing-page #succeed h2 {
+        font-size: 30px;
+    }
+    #landing-page #succeed .share-btns a{
+        margin-bottom:10px;
+        display: inline-block;
+    }
+    #landing-page .col-sm-6.animated{
+        width: 100%!important;
+        float:none!important;
+        margin:0!important;
+    }
+    #landing-page .section-content{
+        margin:0;
+    }
+    #landing-page .col-sm-6.animated article{
+        margin-top:0!important;
+    }
+    #landing-page .section-content .col-sm-6.animated.fadeInLeft.visible article h3,
+    #landing-page .section-content .col-sm-6.animated.fadeInLeft.visible article h3 span{
+        font-size:35px;
+    }
+    #landing-page .col-sm-6.animated.fadeInLeft.visible img{
+        margin:0!important;
+    }
+    #landing-page .section-content .col-sm-6.animated.fadeInLeft.visible article{
+        padding-left:0;
+    }
+    #landing-page br{
+        display: none;
+    }
+    #landing-page footer{
+        padding-bottom: 0px;
+    }
+    #landing-page footer .copyright,
+    #landing-page footer .copyright a{
+        font-size:12px;
+    }
+    .static-header.register-version.light .text-heading .button-access{
+        width: 300px;
+        margin-left: -150px;
+    }
+    #landing-page .section .section-header.work h2{
+        text-align: center;
+        padding-right:0;
+    }
+    #landing-page .section .section-header.work .sub-heading{
+        position: static;
+        color: #2e2f31;
+        margin-top: 20px;
+        font-size: 18px;
+        width: 100%;
+    }
+    #landing-page .section .section-header.work .col-md-12 img{
+        display: none;
+    }
+    #landing-page .section .section-header .sub-heading{
+        font-size:18px;
+    }
+    #landing-page .section .section-header h2{
+        font-size:25px;
+    }
+    .static-header.register-version.light .text-heading .button-access .count{
+        font-size:13px;
+    }
+    .static-header .text-heading h1 {
+        font-size: 25px;
+    }
+    .static-header.register-version.light .text-heading .button-access .button-signup a{
+        font-size: 16px;
+        width: auto!important;
+    }
     .sign-up-form .col-md-6.col-sm-6.col-xs-6.col-md-offset-3.col-xs-offset-3{
         width: 100%;
         margin:0;
