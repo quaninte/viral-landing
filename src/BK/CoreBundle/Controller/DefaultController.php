@@ -21,6 +21,7 @@ class DefaultController extends Controller
         return $this->render('BKCoreBundle:Default:index.html.twig', array(
             'refCode' => $request->get('ref'),
             'businessesCount' => $businessesCount,
+            'showSumo' => $request->query->get('show_sumo'),
         ));
     }
 

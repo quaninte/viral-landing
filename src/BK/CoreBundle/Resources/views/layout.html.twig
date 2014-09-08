@@ -28,6 +28,14 @@
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+
+        {% if showSumo is not defined or showSumo == false %}
+        <style type="text/css">
+            #sumotest-badge {
+                display: none !important;
+            }
+        </style>
+        {% endif %}
     {% endblock head_styles %}
 
     {% block head_scripts %}
@@ -39,6 +47,26 @@
         <script src="{{ asset_url }}"></script>
         {% endjavascripts %}
         <![endif]-->
+
+        {% if ga_tracking_id %}
+            <script>
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                            m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', '{{ ga_tracking_id }}', 'auto');
+                ga('send', 'pageview');
+
+            </script>
+        {% endif %}
     {% endblock head_scripts %}
 </head>
 
@@ -111,25 +139,7 @@
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
 
-    {% if ga_tracking_id %}
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', '{{ ga_tracking_id }}', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    {% endif %}
+    <script src="//load.sumome.com/" data-sumo-site-id="92f0b1f8732995232a813fbf01fde978f7b7662d9de4bc285475e60b9f5bf4a6" async></script>
 {% endblock foot_scripts %}
 </body>
 </html>
