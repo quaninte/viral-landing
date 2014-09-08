@@ -1571,6 +1571,9 @@ p.word-hard{
     margin-top: 0;
     width: 100%;
     height: 125px;
+    position: fixed;
+    bottom:0;
+    background-size: 100%!important;
 }
 #landing-page #succeed + footer .social-links{
     margin-top:-90px;
@@ -1592,7 +1595,11 @@ p.word-hard{
     height: 30px;
     background: url(../img/logo-white.png) center center no-repeat;
 }
-
+#landing-page .navigation-brand .brand-logo2 .logo{
+    background: url(../img/logo2.png) center center no-repeat;
+    height: 60px;
+    background-size: auto 100%;
+}
 #color-landing-page .fixmenu-stick .navigation-brand .brand-logo .logo {
     background: url(../img/logo-inverted.png) center center no-repeat;
 }
@@ -3300,7 +3307,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
 
     #landing-page .static-header {
-        min-height: 570px;
+        min-height: 400px;
     }
 
     #color-landing-page .static-header {
@@ -3318,7 +3325,18 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     .text-heading {
         padding-top: 85px;
     }
-
+    .register-version .text-heading{
+        padding-top:85px;
+    }
+    #landing-page .section .section-header{
+        margin-bottom: 50px;
+    }
+    .static-header.register-version.light .text-heading .button-access{
+        bottom:20px;
+    }
+    #landing-page #join-form{
+        padding-top:5px;
+    }
     .text-heading h1 {
         font-size: 35px;
     }
@@ -3326,11 +3344,15 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     .text-heading .btn {
         margin-bottom: 10px;
     }
-
+    p.word-hard{
+        margin-top:40px;
+    }
     .plain-version .text-heading {
         padding-top: 30%;
     }
-
+    #landing-page .form .form-control{
+        margin-top:0;
+    }
     #about {
         padding: 40px 0px 0px 0px;
     }

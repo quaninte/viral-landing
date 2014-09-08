@@ -2,6 +2,14 @@
 
 {% block container_class %}text-center thank{% endblock %}
 
+{% block navigation %}
+    <div class="navigation-brand">
+        <div class="brand-logo brand-logo2">
+            <a href="{{ path('bk_core_homepage') }}" class="logo" title="Beeketing">
+                <span class="sr-only">Beeketing</span></a>
+        </div>
+    </div>
+{% endblock %}
 {% block main_content %}
     {% set shareUrl = url('bk_core_homepage', { 'ref': contact.code }) %}
 
