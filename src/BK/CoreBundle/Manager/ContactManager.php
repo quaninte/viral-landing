@@ -24,6 +24,12 @@ class ContactManager
     protected $segmentIOWriteKey;
 
     /**
+     * Fake number add to total signed up people
+     * @var int
+     */
+    protected $fakeNumber = 693;
+
+    /**
      * Constructor
      * @param \Doctrine\ORM\EntityManager $em
      * @param $segmentIOWriteKey
@@ -173,8 +179,7 @@ class ContactManager
             ->getQuery()
             ->getSingleScalarResult();
 
-        $fakeNumber = 693;
-        $count += $fakeNumber;
+        $count += $this->fakeNumber;
 
         return $count;
     }
@@ -211,7 +216,7 @@ class ContactManager
             ->setResultCacheLifetime(60 * 5)
             ->getSingleScalarResult();
 
-        return $count;
+        return $count + $this->fakeNumber;
     }
 
 } 

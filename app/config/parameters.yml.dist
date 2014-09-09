@@ -23,3 +23,7 @@ parameters:
 
     customerio_id: 082be0b5e2988933d988
     assets_version: v1
+
+    # less
+    node_path: /usr/bin/node
+    node_modules_path: /usr/local/lib/node_modules

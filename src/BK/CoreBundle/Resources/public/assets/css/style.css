@@ -10,13 +10,13 @@
 *    4. Elements
 *    5. Alternative tab slider
 *    6. ShortCodes
-*    7. Navigation Header 
+*    7. Navigation Header
 *    8. Top Hero Section
 *    9. Page versions
 *    10. Footer
-*    11. Mobile device 767px 
-*    12. Mobile device 540px 
-*    13. Mobile device 340px 
+*    11. Mobile device 767px
+*    12. Mobile device 540px
+*    13. Mobile device 340px
 *    14. Tablet device Landscape 1024px and 768px
 *    15. Tablet device Portrait 768px and 1024px
 *    16. Desktop medium screen 992px and 1199px
@@ -1229,7 +1229,7 @@ blockquote:after {
 
 /* Header versions */
 .plain-version .text-heading {
-    padding-top:180px;
+    padding-top: 180px;
 }
 
 .register-version.static-header {
@@ -1244,7 +1244,7 @@ blockquote:after {
 }
 
 .register-version .text-heading {
-    padding-top: 180px;
+    padding-top: 288px;
 }
 .static-header.register-version.light .text-heading{
     position: static;
@@ -1812,7 +1812,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 
 #landing-page .static-header {
-    min-height: 974px;
+    min-height: 830px;
 }
 
 .static-header .text-heading {
