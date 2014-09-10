@@ -3549,6 +3549,10 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Tablet device Landscape 1024px and 768px */
 @media (max-width: 1024px) and (min-width: 768px) {
+    #landing-page .section .section-header {
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
     #landing-page .container.animated.fadeInDown.visible .increase,
     #landing-page .container.animated.fadeInDown.visible .clock
     {
