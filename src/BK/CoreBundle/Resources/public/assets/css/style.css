@@ -4051,7 +4051,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
 }
 @media (min-width: 1200px) and (max-width: 1366px){
-    #landing-page .static-header {
+    body#landing-page .static-header {
         min-height: 607px;
     }
     .static-header.register-version.light .text-heading .button-access{
@@ -4062,6 +4062,9 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
     #landing-page .form .form-control{
         margin-top:0;
+    }
+    .register-version .text-heading{
+        padding-top:194px;
     }
     p.word-hard{
         margin-top:55px;
