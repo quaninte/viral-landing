@@ -4050,7 +4050,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         right:165px;
     }
 }
-@media (min-width: 1200px) and (max-width: 1366px){
+@media (min-width: 1200px) and (max-width: 1367px){
     body#landing-page .static-header {
         min-height: 607px;
     }
