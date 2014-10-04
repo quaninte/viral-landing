@@ -434,14 +434,17 @@ article {
 }
 
 .navigation-brand .brand-logo {
-    width: 215px;
-    height: 50px;
+    width: 146px;
+    height: 55px;
+    margin: auto;
 }
 
 .navigation-brand .brand-logo .logo {
     display: block;
-    height: 60px;
-    background: url(../img/logo.png) 19px 0px no-repeat;
+    height: 55px;
+    width: 146px;
+    background: url(../img/logo2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
 }
 
 .fixmenu-clone .brand-logo .logo {
@@ -1130,8 +1133,10 @@ blockquote:after {
 }
 
 .navigation-header .navigation-brand {
-    margin-right: 125px;
-    margin-top: 17px;
+    margin-right: 0;
+    margin-top: 2px;
+    width: 100%;
+    text-align: center;
 }
 
 .navigation-header .navigation-bar > li {
@@ -1233,7 +1238,7 @@ blockquote:after {
 }
 
 .register-version.static-header {
-    background: url('../img/background/people_relax_beach_overlay.jpg') top center no-repeat;
+    background: url('../img/background/beello.jpg') top center no-repeat;
     -webkit-background-size: auto;
     -moz-background-size: auto;
     -o-background-size: auto;
@@ -1244,14 +1249,14 @@ blockquote:after {
 }
 
 .register-version .text-heading {
-    padding-top: 288px;
+    padding-top: 202px;
 }
 .static-header.register-version.light .text-heading{
     position: static;
 }
 .static-header.register-version.light .text-heading .button-access{
     position: absolute;
-    bottom: 67px;
+    bottom: 262px;
     left: 50%;
     width: 400px;
     margin-left: -200px;
@@ -1272,10 +1277,19 @@ blockquote:after {
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
 }
+.static-header .text-heading p{
+    font-family: 'ITCAvantGardeGothicStdExtraLight';
+    margin-bottom:6px;
+    font-size: 55px;
+    color: #fff;
+}
 .static-header .text-heading h1{
     font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size: 65px;
     text-transform: uppercase;
-    margin-bottom:6px;
+    color: #fff;
+    margin-top: 23px;
+    margin-bottom: 12px;
 }
 .thiner{
     font-family: 'ITCAvantGardeGothicStdBook';
@@ -1330,14 +1344,7 @@ p.word-hard{
     height: 70px;
     margin-top:77px;
 }
-#landing-page .container.animated.fadeInDown.visible .increase{
-    padding-left:74px;
-    padding-right:0;
-}
-#landing-page .container.animated.fadeInDown.visible .clock{
-    padding-left:0;
-    padding-right:112px;
-}
+
 #landing-page .container.animated.fadeInDown.visible article .layout-img{
     min-height: 120px;
     position: relative;
@@ -1366,34 +1373,7 @@ p.word-hard{
 .video-version .text-heading {
     padding-top: 12%;
 }
-#landing-page .section .section-header.work{
-    padding-left:160px;
-    position: relative;
-    margin-bottom: 102px;
-}
-#landing-page .section .section-header.work h2{
-    font-size:50px;
-    font-family: 'ITCAvantGardeGothicStdBook';
-    color:#2e2f31;
-    padding-left: 70px;
-    margin-top: 3px;
-}
-#landing-page .section .section-header.work h2 span{
-    font-family: 'ITCAvantGardeGothicStdDemi';
-    font-size:50px;
-}
-#landing-page .section .section-header.work .sub-heading{
-    position: absolute;
-    font-size:18px;
-    font-family: 'Open Sans', sans-serif;
-    color:#fff;
-    z-index: 999;
-    right: 204px;
-    top: 110px;
-}
-#landing-page .section .section-header.work .col-md-12 img{
-    margin-top:-11px;
-}
+
 #landing-page .section-content .col-sm-6.pull-right.animated.fadeInRight.visible{
     padding-right:0;
 }
@@ -1818,12 +1798,6 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 .static-header .text-heading {
     margin-bottom: -10px;
     z-index: 20;
-}
-
-.static-header .text-heading p {
-    color: #fff;
-    font-size:25px;
-    font-family: 'ITCAvantGardeGothicStdBook';
 }
 
 .static-header .list-inline {
@@ -2736,16 +2710,10 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         margin-top:0px;
     }
     .navigation-brand .brand-logo .logo{
-        background: url(../img/logo.png) 19px 0px no-repeat;
+        background: url(../img/logo.png) 0 0 no-repeat;
     }
-    #landing-page .container.animated.fadeInDown.visible .increase,
-    #landing-page .container.animated.fadeInDown.visible .clock{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    #landing-page .section .section-header.work{
-        padding-left: 0;
-    }
+
+
     #landing-page .form .button-access .btn.btn-primary{
         font-size: 12px;
     }
@@ -2753,13 +2721,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         font-size:15px;
         height: 50px;
     }
-    #landing-page .section .section-header.work .sub-heading{
-        right: 42px;
-        top: 20%;
-        width: 50%;
-        font-size:12px;
-        line-height: normal;
-    }
+
     .col-sm-6.animated.hiding.sell-more .row{
         margin:0;
     }
@@ -2770,15 +2732,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         max-width: 100%;
         margin:0;
     }
-    #landing-page .section .section-header.work h2,
-    #landing-page .section .section-header.work h2 span{
-        font-size:30px;
-    }
-    #landing-page .section .section-header.work h2{
-        padding-left: 0;
-        text-align: right;
-        padding-right: 30px;
-    }
+
     .static-header .text-heading h1{
         font-size:35px;
     }
@@ -3262,20 +3216,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         width: 300px;
         margin-left: -150px;
     }
-    #landing-page .section .section-header.work h2{
-        text-align: center;
-        padding-right:0;
-    }
-    #landing-page .section .section-header.work .sub-heading{
-        position: static;
-        color: #2e2f31;
-        margin-top: 20px;
-        font-size: 18px;
-        width: 100%;
-    }
-    #landing-page .section .section-header.work .col-md-12 img{
-        display: none;
-    }
+
     #landing-page .section .section-header .sub-heading{
         font-size:18px;
     }
@@ -3553,20 +3494,8 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         margin-top: 0;
         margin-bottom: 100px;
     }
-    #landing-page .container.animated.fadeInDown.visible .increase,
-    #landing-page .container.animated.fadeInDown.visible .clock
-    {
-        padding-left:15px;
-        padding-right:15px;
-    }
-    #landing-page .section .section-header.work{
-        padding-left:0;
-    }
-    #landing-page .section .section-header.work .sub-heading{
-        right: 40px;
-        top: 100px;
-        font-size:16px;
-    }
+
+
     #landing-page .section .section-header h2{
         font-size:34px;
     }
@@ -3867,10 +3796,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .sub-heading{
         font-size:21px;
     }
-    #landing-page .section .section-header.work .sub-heading{
-        right: 35px;
-        top: 105px;
-    }
+
     .static-header .text-heading h1{
         font-size:48px;
     }
@@ -4014,7 +3940,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 @media (min-width: 1920px){
     .register-version.static-header {
-        background: url('../img/background/people_relax_beach_overlay.jpg') top center no-repeat;
+        background: url('../img/background/beello.jpg') top center no-repeat;
         -webkit-background-size: 100%;
         -moz-background-size: 100%;
         -o-background-size: 100%;
@@ -4046,9 +3972,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #landing-page .plain-version.static-header {
         min-height: 700px;
     }
-    #landing-page .section .section-header.work .sub-heading{
-        right:165px;
-    }
+
 }
 @media (min-width: 1200px) and (max-width: 1367px){
     body#landing-page .static-header {
