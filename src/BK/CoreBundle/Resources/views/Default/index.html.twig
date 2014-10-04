@@ -15,11 +15,14 @@
                     <a href="#sign-up" class="btn btn-success animated bounceIn visible to-sign-up-form"
                        data-animation="bounceIn"
                        data-delay="700">Join now</a>
+                    <div class="arrow-down">
+                        <a href="#down2">
+                            <img src="{{ asset('bundles/bkcore/images/icons/arrow-down-white.png') }}" alt="arrow"/>
+                        </a>
+                    </div>
                 </div>
             </div>
-
         </div>
-
     </div>
 
     <a id="sign-up"></a>
@@ -27,13 +30,10 @@
         <div class="container">
             <div class="section-header animated fadeInDown visible" data-animation="fadeInDown">
                 <h2>Do you want more sales?</h2>
-
                 <div class="sub-heading">
                     Beeketing grows our revenue by 20% right after the first month!
                     Will the next be yours?
                 </div>
-                <br>
-
                 <p>
                     {% include 'BKCoreBundle:Default:subscribe_form.html.twig' %}
                 </p>
@@ -46,19 +46,17 @@
     <section id="about" class="section dark">
         <div class="container">
 
-
-
             <div class="section-content row">
-                <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">
+                <div class="col-sm-7 pull-right animated hiding" data-animation="fadeInRight">
                     <img src="{{ asset('bundles/bkcore/images/story/viewed.jpg') }}"
                          class="img-responsive"
                          alt="process 2"/>
                 </div>
-                <div class="col-sm-6 animated hiding clearfix" data-animation="fadeInLeft">
+                <div class="col-sm-5 animated hiding clearfix" data-animation="fadeInLeft">
                     <br/><br/>
                     <article>
-                        <h3>Track & Analyze</br>
-                            Customers' browsing history</h3>
+                        <h3>Track & Analyze</h3>
+                        <h3>Customers' browsing history</h3>
 
                         <div class="sub-title">
                             <ul>
@@ -70,7 +68,15 @@
                 </div>
 
                 <hr class="clearfix"/>
-
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="arrow-down-red">
+                            <a href="#down2">
+                                <img src="{{ asset('bundles/bkcore/images/icons/arrow-down.png') }}" alt="arrow"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
                     <img src="{{ asset('bundles/bkcore/images/story/increase_sales.png') }}"
                          class="img-responsive"
@@ -93,7 +99,15 @@
                 </div>
 
                 <hr class="clearfix"/>
-
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="arrow-down-red">
+                            <a href="#down2">
+                                <img src="{{ asset('bundles/bkcore/images/icons/arrow-down.png') }}" alt="arrow"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-6 pull-right animated hiding money-making clearfix" data-animation="fadeInRight">
                     <img src="{{ asset('bundles/bkcore/images/story/love-these.png') }}"
                          class="img-responsive"
@@ -113,6 +127,15 @@
                 </div>
 
                 <hr class="clearfix"/>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="arrow-down-red">
+                            <a href="#down2">
+                                <img src="{{ asset('bundles/bkcore/images/icons/arrow-down.png') }}" alt="arrow"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
