@@ -24,7 +24,15 @@
 *
 */
 /*font-face*/
-
+@font-face {
+    font-family: 'ITCAvantGardeGothicStdBold';
+    src: url('../fonts/itcavantgardestd-bold.eot');
+    src: url('../fonts/itcavantgardestd-bold.eot') format('embedded-opentype'),
+         url('../fonts/itcavantgardestd-bold.woff2') format('woff2'),
+         url('../fonts/itcavantgardestd-bold.woff') format('woff'),
+         url('../fonts/itcavantgardestd-bold.ttf') format('truetype'),
+         url('../fonts/itcavantgardestd-bold.svg#ITCAvantGardeGothicStdBold') format('svg');
+}
 @font-face {
     font-family: 'ITCAvantGardeGothicStdDemi';
     src: url('../fonts/itcavantgardestd-demi.eot');
@@ -66,7 +74,13 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
-
+span.red{
+    color: #e45136;
+}
+html{
+    height: 100%;
+    background-color: #F5F5F5;
+}
 input,
 body {
     font-family: 'Open Sans', sans-serif;
@@ -1284,15 +1298,23 @@ blockquote:after {
 .static-header.register-version.light .text-heading .button-access .button-signup a:hover{
     background: #f71f80;
 }
-.static-header.register-version.light .text-heading .button-access .button-signup .arrow-down a{
+.static-header.register-version.light .text-heading .button-access .button-signup .arrow-down .arrow{
     padding:0;
     border: none;
 }
 .static-header.register-version.light .text-heading .button-access .button-signup .arrow-down{
     margin-top: 37px;
 }
-.static-header.register-version.light .text-heading .button-access .button-signup .arrow-down a:hover{
+.static-header.register-version.light .text-heading .button-access .button-signup .arrow-down .arrow:hover{
     background: transparent;
+}
+.arrow-down .arrow{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
 }
 .static-header .text-heading p{
     font-family: 'ITCAvantGardeGothicStdExtraLight';
@@ -1314,6 +1336,9 @@ blockquote:after {
 #landing-page .section{
     padding-top: 50px;
     padding-bottom: 0px;
+}
+#landing-page .section.dark{
+    background-color: #f5f5f5;
 }
 #landing-page .section .section-header{
     margin-top:0;
@@ -1394,143 +1419,185 @@ p.word-hard{
 .video-version .text-heading {
     padding-top: 12%;
 }
-
-#landing-page .section-content .col-sm-7.pull-right.animated.fadeInRight.visible{
+#landing-page .section-content .money-making {
+    margin-top: 134px;
+}
+#landing-page .section-content .col-md-7.pull-right.animated.fadeInRight.visible{
     padding-right:0;
 }
-#landing-page .section-content .col-sm-7.pull-right.animated.fadeInRight.visible img{
+#landing-page .section-content .col-md-7.pull-right.animated.fadeInRight.visible img{
     margin-top:-5px;
 }
 .arrow-down-red{
     margin-top: 43px;
 }
-#landing-page .section-content .col-sm-5.animated.fadeInLeft.visible article{
+.arrow-down-red.arrow-down-red-2{
+    margin-top: 58px;
+    margin-bottom: 22px;
+}
+.arrow-down .arrow,
+.arrow-down-red .arrow{
+    display:block;
+}
+.arrow-down-red-mobile .arrow img,
+.arrow-down .arrow img,
+.arrow-down-red .arrow img{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+.arrow-down-red-mobile .arrow img:hover,
+.arrow-down .arrow img:hover,
+.arrow-down-red .arrow img:hover{
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+#landing-page .section-content .col-md-5.animated.fadeInLeft.visible article{
     margin-top: 39px;
     padding-left: 0px;
 }
-#landing-page .section-content .col-sm-5.animated.fadeInLeft.visible article h3{
+#landing-page .section-content .col-md-5.animated.fadeInLeft.visible article h3{
     font-family: 'ITCAvantGardeGothicStdBook';
     color: #2e2f31;
     font-size: 34px;
     margin-top: 0;
     margin-bottom: 4px;
 }
-#landing-page .section-content .col-sm-5.animated.fadeInLeft.visible article h3 span{
+#landing-page .section-content .col-md-5.animated.fadeInLeft.visible article h3 span{
     font-family: 'ITCAvantGardeGothicStdDemi';
     font-size:50px;
 }
-#landing-page .section-content .col-sm-5.animated.fadeInLeft.visible article .sub-title{
+#landing-page .section-content .col-md-5.animated.fadeInLeft.visible article .sub-title{
     font-size: 19px;
     font-family: 'ITCAvantGardeGothicStdBook';
     color:#000;
     margin-top: 28px;
     line-height: 23px;
 }
-#landing-page .section-content .col-sm-5.animated.fadeInLeft.visible article .sub-title ul{
+#landing-page .section-content .col-md-5.animated.visible article .sub-title ul{
     padding-left: 0;
 }
-#landing-page .section-content .col-sm-5.animated.fadeInLeft.visible article .sub-title ul li{
+#landing-page .section-content .col-md-5.animated.visible article .sub-title ul li{
     list-style: none;
     padding-left: 33px;
-    background: url(../../images/icons/icon-check.png) no-repeat 0 50%;
+    background: url(../../images/icons/icon-check.png) no-repeat 0 50%!important;
     margin-bottom: 5px;
 }
 #landing-page hr.clearfix{
     border:none;
 }
-#landing-page .col-sm-6.animated.fadeInLeft.visible img{
+#landing-page .col-md-6.animated.fadeInLeft.visible img{
     margin-top: 111px;
     margin-left: 0px;
 }
-#landing-page .col-sm-6.animated.fadeInRight.visible{
+#landing-page .col-md-6.animated.fadeInRight.visible{
     padding:0;
 
 }
-#landing-page .col-sm-6.animated.fadeInRight.visible article{
-    margin-top: 160px;
+#landing-page .col-md-6.animated.fadeInRight.visible article{
+    margin-top: 98px;
 }
-#landing-page .col-sm-6.animated.fadeInRight.visible article h3{
+#landing-page .col-md-6.animated.fadeInRight.visible article h3{
     font-family: 'ITCAvantGardeGothicStdBook';
-    color:#2e2f31;
-    text-transform: uppercase;
-    font-size:50px;
+    color: #2e2f31;
+    font-size: 35px;
 }
-#landing-page .col-sm-6.animated.fadeInRight.visible article h3 span{
+#landing-page .col-md-6.animated.fadeInRight.visible article h3 span{
     font-family: 'ITCAvantGardeGothicStdDemi';
     font-size:50px;
 }
-#landing-page .col-sm-6.animated.fadeInRight.visible article .sub-title{
-    margin-top: 27px;
-    line-height: 24px;
-    margin-left: 5px;
+#landing-page .col-md-6.animated.fadeInRight.visible article .sub-title{
+    margin-top: 44px;
+    font-size: 19px;
 }
-#landing-page .col-sm-6.pull-right.animated.money-making.fadeInRight.visible{
-    width: 45%;
+
+#landing-page .col-md-5.animated.money-making.fadeInLeft.visible article{
+    margin-top: 7px;
+    padding-left: 0;
 }
-#landing-page .col-sm-6.pull-right.animated.money-making.fadeInRight.visible img{
-    margin-top:126px;
+#landing-page .col-md-5.animated.money-making.fadeInLeft.visible article h3{
+    font-size: 35px;
+    color: #2e2f31;
+    line-height: 40px;
 }
-#landing-page .col-sm-6.animated.money-making.fadeInLeft.visible{
-    width: 55%;
-}
-#landing-page .col-sm-6.animated.money-making.fadeInLeft.visible article{
-    margin-top: 142px;
-    padding-left: 12px;
-}
-#landing-page .col-sm-6.animated.money-making.fadeInLeft.visible article h3{
-    font-size:46px;
-}
-#landing-page .col-sm-6.animated.money-making.fadeInLeft.visible article h3 span{
+#landing-page .col-md-5.animated.money-making.fadeInLeft.visible article h3 span{
     font-size:46px;
     color:#66d7ff;
 }
-#landing-page .col-sm-6.animated.super-easy.fadeInLeft.visible{
+#landing-page .col-md-5.animated.money-making.fadeInLeft.visible article .sub-title{
+    margin-top: 28px;
+}
+#landing-page .col-md-6.animated.super-easy.fadeInLeft.visible{
     padding-right:0;
 }
-#landing-page .col-sm-6.animated.super-easy.fadeInLeft.visible img{
+#landing-page .col-md-6.animated.super-easy.fadeInLeft.visible img{
     margin-top: 94px;
 }
-#landing-page .col-md-offset-1.col-sm-5.animated.super-easy.fadeInRight.visible article{
+#landing-page .col-md-offset-1.col-md-5.animated.super-easy.fadeInRight.visible article{
     margin-top: 119px;
     margin-left: 5px;
 }
-#landing-page .col-md-offset-1.col-sm-5.animated.super-easy.fadeInRight.visible article h3{
+#landing-page .col-md-offset-1.col-md-5.animated.super-easy.fadeInRight.visible article h3{
     font-family: 'ITCAvantGardeGothicStdBook';
     color:#2e2f31;
     text-transform: uppercase;
     font-size: 46px;
 }
-#landing-page .col-md-offset-1.col-sm-5.animated.super-easy.fadeInRight.visible article h3 span{
+#landing-page .col-md-offset-1.col-md-5.animated.super-easy.fadeInRight.visible article h3 span{
     font-family: 'ITCAvantGardeGothicStdDemi';
     font-size: 46px;
 }
-#landing-page .col-md-offset-1.col-sm-5.animated.super-easy.fadeInRight.visible article .sub-title{
+#landing-page .col-md-offset-1.col-md-5.animated.super-easy.fadeInRight.visible article .sub-title{
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     margin-top: 27px;
     line-height: 24px;
 }
+#landing-page .grow-revenue{
+    max-width: 75%;
+    margin: 75px auto 0 auto;
+    text-align: center;
+}
+#landing-page .grow-revenue h3{
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #2e2f31;
+    line-height: 52px;
+}
+#landing-page .grow-revenue h3 span{
+    font-size: 50px;
+}
+#landing-page .grow-revenue img{
+    margin-top: 44px;
+}
 #landing-page #sign-up-form-2{
-    padding-bottom:125px;
+    padding-bottom: 241px;
 }
 #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
     font-family: 'ITCAvantGardeGothicStdDemi';
-    font-size: 50px;
-    color:#fff;
-    margin-top:106px;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 81px;
 }
 #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .sub-heading{
-    font-family: 'ITCAvantGardeGothicStdDemi';
-    font-size: 23px;
+    font-family: 'open sans';
+    font-size: 20px;
     color:#fff;
-    margin-top: 10px;
-    text-transform: uppercase;
+    margin-top: 5px;
 }
 #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control{
-    margin-top:57px;
+    margin-top: 28px;
+    margin-bottom: 28px;
     border:1px solid #fff;
-    background:rgba(255,255,255,0.1);
-    color:#fff;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    font-size: 23px;
 }
 #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control::-webkit-input-placeholder {
     color: #fff;
@@ -1547,10 +1614,17 @@ p.word-hard{
 #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control:-ms-input-placeholder {
     color: #fff;
 }
+.copyright-mobile,.referral.mobile{
+    display: none;
+}
+.arrow-down-red-mobile{
+    display: none;
+}
 #landing-page footer{
-    margin-top: -214px;
+    margin-top: -204px;
     background: transparent;
     position: relative;
+    padding-bottom: 20px;
 }
 #landing-page footer:before{
     position: absolute;
@@ -1560,7 +1634,7 @@ p.word-hard{
     width: 100%;
     z-index: 1;
     content:'';
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
 }
 #landing-page footer .copyright{
     position: relative;
@@ -1579,17 +1653,78 @@ p.word-hard{
 #landing-page #succeed{
     padding-top:100px;
 }
+#landing-page #succeed .share-btns a{
+    display: inline-block;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    padding: 0;
+}
+#landing-page #succeed .share-btns a:hover{
+    -webkit-transform: translate(0, 5px);
+    -ms-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+}
+#landing-page #succeed .share-btns a.share-facebook:hover,
+#landing-page #succeed .share-btns a.share-twitter:hover{
+    box-shadow: 0 0 0 #0064A4;
+}
+.imac-flat{
+    margin-top: 102px;
+}
+.big-award{
+    font-family: 'ITCAvantGardeGothicStdDemi';
+    font-size: 55px;
+    color: #2b2b2b;
+    line-height: 65px;
+    margin-top: 9px;
+}
+p.referral{
+    font-size: 23px;
+    margin-top: 83px;
+    margin-bottom: 0;
+}
+p.referral.second{
+    margin-top: 65px;
+}
+a.referral.third{
+    font-size: 18px;
+    color: #0034c7;
+    margin-top: 5px;
+    display: inline-block;
+    margin-bottom: 26px;
+}
+span.bold{
+    font-family: 'ITCAvantGardeGothicStdBold';
+    color: #2b2b2b;   
+}
+#landing-page #succeed .share-btns a.share-facebook{
+    width: 232px;
+    height: 100px;
+    background: #3b5998 url('../../images/shareon.png') no-repeat 26px center;
+    box-shadow: 0 5px 0 #14316e;
+}
+#landing-page #succeed .share-btns a.share-twitter{
+    width: 232px;
+    height: 100px;
+    background: #00d2ff url('../../images/tweeton.png') no-repeat 13px center;
+    box-shadow: 0 5px 0 #0082ab;
+    display: inline-block;
+    margin-left: 10px;
+}
 #landing-page #succeed + footer{
     background: url('../img/background/low_poly_background.jpg') no-repeat top center!important;
     margin-top: 0;
     width: 100%;
     height: 125px;
-    position: fixed;
-    bottom:0;
     background-size: 100%!important;
 }
 #landing-page #succeed + footer .social-links{
-    margin-top:-90px;
+    margin-top:-80px;
 }
 .form-version {
 }
@@ -1609,9 +1744,9 @@ p.word-hard{
     background: url(../img/logo-white.png) center center no-repeat;
 }
 #landing-page .navigation-brand .brand-logo2 .logo{
-    background: url(../img/logo2.png) center center no-repeat;
-    height: 60px;
+    background: url(../img/logo2.png) 0 0 no-repeat;
     background-size: auto 100%;
+    margin-top: 9px;
 }
 #color-landing-page .fixmenu-stick .navigation-brand .brand-logo .logo {
     background: url(../img/logo-inverted.png) center center no-repeat;
@@ -2400,7 +2535,6 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     color: #ababab;
     font-weight: 300;
     padding: 0px 0px 30px 0px;
-    margin-top:90px;
 }
 #features-list article p {
     font-size: 15px;
@@ -2703,51 +2837,71 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Mobile device 767px */
 @media (max-width: 767px) {
-    #landing-page #succeed h2{
-        font-size:35px;
+    .section-content .big-award{
+        line-height: 38px;
     }
-    #landing-page .col-sm-6.animated{
+    .section-content p.referral.second{
+        font-size: 17px;
+    }
+    #landing-page #succeed h2{
+        font-size:30px;
+    }
+    .section-content a.referral.third{
+        font-size: 15px;
+    }
+    #landing-page .col-md-6.animated{
         padding:0;
     }
-    #landing-page .col-sm-6.pull-right.animated{
+    #landing-page .col-md-6.pull-right.animated{
         width: 100%;
     }
     #landing-page .section-content{
         margin:0;
     }
-    #landing-page .col-sm-6.animated.fadeInRight.visible .row{
+    #landing-page .col-md-6.animated.fadeInRight.visible .row{
         margin:0;
     }
-    #landing-page .section-content .col-sm-6.animated article{
+    #landing-page .section-content .col-md-6.animated article{
         margin:0!important;
         padding:0!important;
     }
-    #landing-page .section-content .col-sm-6.animated img{
+    #landing-page .section-content .col-md-6.animated img{
         margin:0!important;
     }
-    #landing-page .col-sm-6.animated,
-    #landing-page .col-md-offset-1.col-sm-5.animated{
+    #landing-page .col-md-6.animated,
+    #landing-page .col-md-offset-1.col-md-5.animated{
         width: 100%!important;
         float:left!important;
         padding:0;
     }
-    #landing-page .col-sm-6.animated article h3,
-    #landing-page .col-sm-6.animated article h3 span,
-    #landing-page .col-md-offset-1.col-sm-5.animated h3,
-    #landing-page .col-md-offset-1.col-sm-5.animated h3 span{
+    #landing-page .col-md-6.animated article h3,
+    #landing-page .col-md-6.animated article h3 span,
+    #landing-page .col-md-offset-1.col-md-5.animated h3,
+    #landing-page .col-md-offset-1.col-md-5.animated h3 span{
         font-size:35px!important;
     }
-    #landing-page .section-content .col-sm-7.pull-right.animated.fadeInRight.visible{
+    #landing-page .section-content .col-md-7.pull-right.animated.fadeInRight.visible{
         padding:0;
     }
-    #landing-page .col-md-offset-1.col-sm-5.animated.super-easy.fadeInRight.visible article{
+    #landing-page .col-md-offset-1.col-md-5.animated.super-easy.fadeInRight.visible article{
         margin-top:0px;
     }
     .navigation-brand .brand-logo .logo{
-        background: url(../img/logo.png) 0 0 no-repeat;
+        background: url(../img/logo.png) 0 0 no-repeat;        
     }
-
-
+    .navigation-brand .brand-logo2{
+        width: 100%;
+        padding: 0!important;
+        margin: 0!important;
+    }
+    .navigation-brand .brand-logo2 .logo{
+        height: 36px;
+        width: 95px;
+        display: inline-block;
+    }
+    #landing-page .sell-more article{
+        margin-top: 97px;
+    }
     #landing-page .form .button-access .btn.btn-primary{
         font-size: 12px;
     }
@@ -2756,13 +2910,13 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         height: 50px;
     }
 
-    .col-sm-6.animated.hiding.sell-more .row{
+    .col-md-6.animated.hiding.sell-more .row{
         margin:0;
     }
     #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control{
         font-size: 15px;
     }
-    #landing-page .section-content .col-sm-7.pull-right.animated.fadeInRight.visible img{
+    #landing-page .section-content .col-md-7.pull-right.animated.fadeInRight.visible img{
         max-width: 100%;
         margin:0;
     }
@@ -3197,8 +3351,92 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 
 @media (max-width: 480px) {
+    .copyright-mobile{
+        display: inline-block;
+        width: 100%;
+        text-align: center;     
+        font-size: 12px;
+        color: #FFF;
+        position: relative;
+        z-index: 2; 
+    }
+    .referral.mobile{
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 0;
+        line-height: 20px;
+    }
+    .referral-first{
+        display: none;
+    }
+    #landing-page #succeed + footer .social-links{
+        margin-top: -85px;
+    }
+    .copyright-mobile a,
+    .copyright-mobile p{
+        font-size: 12px;
+    }
+    .copyright-mobile p{
+        margin-top: -5px;
+    }
+    .copyright{
+        display: none;
+    }
+    #footer .social-links ul li{
+        display: inline-block;
+        max-width: 50%;
+        float: none;
+    }
+    .section-content a.referral.third {
+        font-size: 15px;
+        margin-bottom: 20px;
+        line-height: 16px;
+    }
+    #landing-page .navigation-brand .brand-logo2 .logo{
+        margin-top: 0;
+    }
+    #landing-page #succeed{
+        padding-top: 50px;
+    }
+    .section-content .share-btns{
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    #landing-page #succeed .share-btns a.share-facebook{
+        height: 60px !important;
+        width: 140px !important;
+        background-size: 111px 42px !important;
+        margin: 0 !important;
+        background-position: 16px center!important;
+    }
+    p.referral.second{
+        margin-top: 50px !important;
+    }
+    #landing-page #succeed .share-btns a.share-twitter{
+        height: 60px !important;
+        width: 140px !important;
+        background-size: 120px 37px !important;
+        margin-left: 5px !important;
+        background-position: 8px center!important;
+    }
+    .imac-flat{
+        display: none;
+    }
+    .navigation-header{
+        top: 0;
+    }
+    .section-content p.referral{
+        font-size: 16px;
+        margin-top: 0;
+        line-height: 20px;
+    }
+    .section-content .big-award{
+        line-height: 30px;
+    }
     #landing-page #succeed + footer{
         position: relative;
+        background-position: -350px -370px;
+        background-size: 1147px 591px!important;
     }
     #landing-page #succeed .share-btns
     #landing-page #succeed h2 {
@@ -3215,7 +3453,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #landing-page #succeed .share-btns a img{
         width: 100%;
     }
-    #landing-page .col-sm-6.animated{
+    #landing-page .col-md-6.animated{
         width: 100%!important;
         float:none!important;
         margin:0!important;
@@ -3223,17 +3461,17 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #landing-page .section-content{
         margin:0;
     }
-    #landing-page .col-sm-6.animated article{
+    #landing-page .col-md-6.animated article{
         margin-top:0!important;
     }
-    #landing-page .section-content .col-sm-5.animated.fadeInLeft.visible article h3,
-    #landing-page .section-content .col-sm-5.animated.fadeInLeft.visible article h3 span{
+    #landing-page .section-content .col-md-5.animated.fadeInLeft.visible article h3,
+    #landing-page .section-content .col-md-5.animated.fadeInLeft.visible article h3 span{
         font-size:35px;
     }
-    #landing-page .col-sm-6.animated.fadeInLeft.visible img{
+    #landing-page .col-md-6.animated.fadeInLeft.visible img{
         margin:0!important;
     }
-    #landing-page .section-content .col-sm-5.animated.fadeInLeft.visible article{
+    #landing-page .section-content .col-md-5.animated.fadeInLeft.visible article{
         padding-left:0;
     }
     #landing-page br{
@@ -3268,7 +3506,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         width: auto!important;
     }
 
-    .sign-up-form .col-md-6.col-sm-6.col-xs-6.col-md-offset-3.col-xs-offset-3{
+    .sign-up-form .col-md-6.col-xs-6.col-md-offset-3.col-xs-offset-3{
         width: 100%;
         margin:0;
     }
@@ -3525,6 +3763,24 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Tablet device Landscape 1024px and 768px */
 @media (max-width: 1024px) and (min-width: 768px) {
+    section#about .section-content .animated {
+        width: 100%!important;
+        text-align: center;
+    }
+    section#about .section-content .animated img{
+        display: inline-block;
+    }
+    section#about .section-content .animated article h3,
+    section#about .section-content .animated article .sub-title{
+        text-align: center;
+    }
+    section#about .section-content .animated article .sub-title ul{
+        text-align: center;
+        display: inline-block;
+    }
+    section#about .section-content .animated article .sub-title ul li{
+        text-align: left;
+    }
     #landing-page .section .section-header {
         margin-top: 0;
         margin-bottom: 100px;
@@ -3814,11 +4070,40 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 
 @media (max-width: 1024px) {
-
+    .imac-flat{
+        width: 241px;
+        height: 175px;
+        margin-top:39px;
+    }
+    #landing-page #succeed .share-btns a.share-facebook{
+        height: 76px;
+        width: 170px;
+        background-size: 128px 48px;
+    }
+    #landing-page #succeed .share-btns a.share-twitter{
+        height: 76px;
+        width: 170px;
+        background-size: 138px 44px;
+    }
+    a.referral.third{
+        font-size: 16px;
+    }
+    p.referral.second{
+        font-size: 19px;
+        margin-top: 42px;
+    }
+    p.referral{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .big-award{
+        font-size: 50px;
+        margin-top: 0;
+        line-height: 50px;
+    }
     .static-header, #newsletter, #feedback, .footer {
-        background-size: auto !important;
-        background-size: auto !important;
-        background-position: top center;
+        background-size: auto auto!important;
+        background-position: center center!important;
         background-attachment: scroll !important;
     }
 }
@@ -3987,7 +4272,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 @media (min-width: 997px) and (max-width: 1024px){
     #landing-page .static-header {
-        min-height: 607px;
+        min-height: 705px;
     }
     .static-header.register-version.light .text-heading .button-access{
         bottom:40px;
@@ -4010,11 +4295,130 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 }
 @media (min-width: 1200px) and (max-width: 1367px){
+    #sign-up-form-2{
+        -webkit-background-size: auto auto;
+        -moz-background-size: auto auto;
+        -o-background-size: auto auto;
+        background-size: auto auto;
+    }
+    #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .sub-heading{
+        margin-bottom: 0;
+    }
+    #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
+        margin-top: 100px;
+    }
+    #landing-page .grow-revenue img{
+        margin-top:36px;
+    }
+    #landing-page .grow-revenue{
+        margin-top: 123px;
+    }
+    .arrow-down-red-3{
+        margin-top: 76px;
+    }
+    #landing-page .section-content .col-md-5.money-making article{
+        padding-left: 0;
+    }
+    #landing-page .section-content .col-md-5.money-making{
+        margin-top: 165px;
+    }
+    #landing-page .section-content .col-md-7.money-making{
+        margin-top: 167px!important;
+    }
+    .arrow-down-red.arrow-down-red-2{
+        margin-top: 30px;
+    }
+    #landing-page .col-md-6.sell-more article{
+        margin-top: 170px!important;
+    }
+    #landing-page .col-md-6.animated.fadeInLeft.visible img{
+        margin-top: 185px;
+    }
+    #landing-page .section-content .col-md-5.animated.fadeInLeft.visible article{
+        padding-left: 80px;
+    }
+    #landing-page .section-content .col-md-7.pull-right.animated.fadeInRight.visible{
+        margin-top:50px;
+    }
+    .col-md-5.Track{
+        margin-top: 54px;
+    }
+    .arrow-down-red {
+        margin-top: 71px;
+    }
+    p.word-hard{
+        margin-top: 80px;
+    }
+    .col-md-7.Track,.col-md-5.Track{
+        width: 50%;
+    }
+    .arrow-down-red-mobile{
+        display: inline-block;
+        margin-top: 81px;        
+    }
+    #landing-page .form .button-access .btn.btn-primary{
+        margin-top: 6px;
+    }
+    #landing-page .section .section-header .sub-heading{
+        margin: 5px auto 50px auto;
+    }
+    #landing-page .section .section-header h2{
+        margin-top: 75px;
+    }
+    .register-version.static-header{
+        background-size: 100% 100%;
+        background-position: 0px -76px;
+    }
+    .navigation-brand .brand-logo .logo{
+        width: 109px;
+        height: 42px;
+        margin-top: 10px;
+    }
+    .static-header .text-heading p{
+        font-size: 45px;
+    }
+    .static-header .text-heading h1{
+        font-size: 55px;
+    }
+    .imac-flat{
+        width: 241px;
+        height: 175px;
+        margin-top:39px;
+    }
+    #landing-page #succeed .share-btns a.share-facebook{
+        height: 76px;
+        width: 170px;
+        background-size: 128px 48px;
+    }
+    #landing-page #succeed .share-btns a.share-twitter{
+        height: 76px;
+        width: 170px;
+        background-size: 138px 44px;
+    }
+    a.referral.third{
+        font-size: 16px;
+    }
+    p.referral.second{
+        font-size: 19px;
+        margin-top: 42px;
+    }
+    p.referral{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .big-award{
+        font-size: 50px;
+        margin-top: 0;
+        line-height: 50px;
+    }
     body#landing-page .static-header {
-        min-height: 607px;
+        min-height: 680px;
     }
     .static-header.register-version.light .text-heading .button-access{
-        bottom:40px;
+        bottom:78px;
+    }
+    .static-header.register-version.light .text-heading .button-access .button-signup .arrow-down{
+        margin-top: 122px;
     }
     #landing-page .section{
         padding-top:18px;
@@ -4023,7 +4427,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         margin-top:0;
     }
     .register-version .text-heading{
-        padding-top:194px;
+        padding-top:106px;
     }
     p.word-hard{
         margin-top:55px;
@@ -4065,7 +4469,6 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
     .social-icons li {
         margin-bottom: 50px;
-        width: 16%;
         width: 16.2%;
         text-align: center;
     }
