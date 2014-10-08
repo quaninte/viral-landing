@@ -379,6 +379,17 @@ article {
 }
 
 /* Preloader */
+.move-bounce{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
 #mask {
     position: fixed;
     top: 0;
@@ -2978,6 +2989,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
     #landing-page .form .button-access .btn.btn-primary{
         font-size: 12px;
+
     }
     #landing-page .form .form-control{
         font-size:15px;
@@ -3441,7 +3453,108 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) {  
+    .space-height{
+        display: none;
+    }
+    #landing-page footer{
+        margin-top: -96px;
+        padding-bottom: 12px;
+    }
+    #landing-page footer:before{
+        height: 128px;
+    }
+    #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control{
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    #landing-page #sign-up-form-2{
+        height: 483px!important;
+    }
+    #landing-page .grow-revenue img{
+        margin-top: 39px;
+    }
+    #landing-page .grow-revenue{
+        margin-top: 37px;
+    }
+    #landing-page .grow-revenue h3{
+        font-size: 25px;
+        line-height: 28px;
+    }
+    #landing-page .grow-revenue h3 span{
+        font-size: 30px;
+    }
+    .arrow-down-red.arrow-down-red-3{
+        margin-top: 60px;
+    }
+    #landing-page .section-content .money-making article h3{
+        font-size: 25px;
+    }
+    #landing-page .section-content .pull-right.money-making{
+        margin-top: 30px;
+    }
+    #landing-page .section-content .money-making{
+        margin-top: 60px;
+    }
+    .arrow-down-red.arrow-down-red-2{
+        margin-top: 88px;
+        margin-bottom: 0;
+    }
+    #landing-page .col-md-6.animated.sell-more{
+        margin-bottom: 45px!important;
+    }
+    section#about .section-content .animated article h3,
+    section#about .section-content .animated article .sub-title {
+        text-align: center!important;
+    }
+    section#about .section-content .animated article .sub-title{
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #landing-page .section-content .col-md-6.animated article{
+        padding: 0!important;
+    }
+    section#about .section-content .animated.sell-more article h3{
+        margin-top: 20px!important;
+        font-size: 25px!important;
+        line-height: 30px;
+    }
+    #landing-page hr.clearfix{
+        display: none;
+    }
+    section#about .section-content .animated{
+        padding: 0;
+    }
+    section#about .section-content .animated article .sub-title ul li{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    section#about .section-content .animated article .sub-title ul{
+        padding:0;
+        text-align: left;
+    }
+    #landing-page .section{
+        height: auto!important;
+    }
+    section#about .section-content .animated.Track article h3{
+        font-size: 25px;
+    }
+    section#about .section-content .animated.Track article, 
+    section#about .section-content .animated.Track article h3{
+        text-align: center!important;
+    }
+    #landing-page .form .form-group{
+        margin-bottom: 9px;
+    }
+    #landing-page .form .button-access .btn.btn-primary{
+        font-size: 18px;
+        padding: 9px 32px;
+        font-weight: normal;
+    }
+    .arrow-down-red-mobile{
+        margin-top: 60px;
+    }
     .static-header .text-heading p{
         font-size: 20px;
     }
@@ -3479,7 +3592,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #footer .social-links ul li{
         display: inline-block;
         max-width: 50%;
-        float: none;
+        float: left;
     }
     .section-content a.referral.third {
         font-size: 15px;
@@ -3571,9 +3684,6 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #landing-page br{
         display: none;
     }
-    #landing-page footer{
-        padding-bottom: 0px;
-    }
     #landing-page footer .copyright,
     #landing-page footer .copyright a{
         font-size:12px;
@@ -3584,10 +3694,13 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
 
     #landing-page .section .section-header .sub-heading{
-        font-size:18px;
+        font-size:15px;
+        line-height: 20px;
+        margin-top: 11px;
     }
     #landing-page .section .section-header h2{
         font-size:25px;
+        margin-top: 33px!important;
     }
     .static-header.register-version.light .text-heading .button-access .count{
         font-size:13px;
@@ -3601,6 +3714,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     .static-header.register-version.light .text-heading .button-access .button-signup a{
         font-size: 16px;
         width: auto!important;
+        padding: 7px 37px 7px 37px;
     }
 
     .sign-up-form .col-md-6.col-xs-6.col-md-offset-3.col-xs-offset-3{
@@ -3608,10 +3722,11 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         margin:0;
     }
     #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
-        font-size:30px;
+        font-size: 25px;
+        margin-top: 30px!important;
     }
     #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .sub-heading{
-        font-size:18px;
+        font-size: 15px;
     }
     .section {
         padding: 35px 0;
@@ -3630,7 +3745,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
     #landing-page .static-header {
         min-height: 460px;
-        background-size: 1103px 576px!important;
+        background-size: 881px 459px!important;
         background-position: center 0!important;
     }
     #color-landing-page .static-header {
@@ -3668,13 +3783,15 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         margin-bottom: 10px;
     }
     p.word-hard{
-        margin-top:40px;
+        margin-top:35px;
+        font-size: 20px;
     }
     .plain-version .text-heading {
         padding-top: 30%;
     }
     #landing-page .form .form-control{
-        margin-top:0;
+        margin-top: 15px;
+        height: 45px;
     }
     #about {
         padding: 40px 0px 0px 0px;
@@ -3965,7 +4082,9 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         font-size: 18px;
     }
     #landing-page .section .section-header .sub-heading{
-        font-size: 20px;
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 13px;
     }
     p {
         font-size: 14px;
@@ -4615,11 +4734,24 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         padding-top:18px;
     }
     #landing-page .form .form-control{
-        margin-top:0;
+        margin-top: 32px;
+        height: 45px;
     }
     .register-version .text-heading{
         padding-top:106px;
     }
+    #landing-page .form .button-access .btn.btn-primary{
+        font-size: 18px;
+        padding: 9px 32px;
+        font-weight: normal;
+    }
+    .arrow-down-red-mobile{
+        margin-top: 68px;
+        display: block;
+    }
+    #landing-page .sign-up-form .form-group{
+        margin-bottom: 9px;
+    }    
     p.word-hard{
         margin-top:55px;
     }
