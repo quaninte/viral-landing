@@ -2837,6 +2837,83 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Mobile device 767px */
 @media (max-width: 767px) {
+
+    #landing-page .grow-revenue{
+        max-width: 100%;
+    }
+    #landing-page .grow-revenue img{
+        max-width: 100%;
+    }
+    section#about .section-content .animated {
+        width: 100%!important;
+        text-align: center;
+    }
+    section#about .section-content .animated img{
+        margin-top: 30px;
+        display: inline-block;
+    }
+    section#about .section-content .animated.sell-more article h3{
+        margin-top: 100px;
+    }
+    section#about .section-content .animated.Track article,
+    section#about .section-content .animated.Track article h3{
+        text-align: center;
+    }
+    section#about .section-content .animated.Track article .sub-title{
+        text-align: center;
+    }
+    section#about .section-content .animated article{
+        text-align: left;
+    }
+    section#about .section-content .animated article h3{
+        margin:0;
+        color: #2e2f31;
+        font-family: 'ITCAvantGardeGothicStdBook';
+
+    }
+    section#about .section-content .animated article .sub-title{
+        margin-top: 20px;
+    }
+    section#about .section-content .animated article h3,
+    section#about .section-content .animated article .sub-title{
+        text-align: left;
+    }
+    section#about .section-content .animated article .sub-title ul{
+        text-align: center;
+        display: inline-block;
+    }
+    section#about .section-content .animated article .sub-title ul li{
+        text-align: left;
+        list-style: none;
+        padding-left: 33px;
+        background: url(../../images/icons/icon-check.png) no-repeat 0 50%!important;
+        margin-bottom: 5px;
+    }
+    p.word-hard{
+        font-size: 25px;
+    }
+    .arrow-down-red-mobile{
+        display: block;
+        margin-top: 20px;
+    }
+    #landing-page .section{
+        padding-top: 20px;
+        height: 747px;
+    }
+    #landing-page .section .section-header h2{
+        font-size: 35px;
+        margin-top: 151px;
+    }
+    #landing-page .section-content .money-making{
+        margin-top: 114px;
+    }
+    #landing-page footer{
+        padding-bottom: 60px;
+        margin-top: -244px;
+    }
+    #landing-page footer:before{
+        height: 183px;
+    }
     .section-content .big-award{
         line-height: 38px;
     }
@@ -2863,7 +2940,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
     #landing-page .section-content .col-md-6.animated article{
         margin:0!important;
-        padding:0!important;
+        padding:0 40px!important;
     }
     #landing-page .section-content .col-md-6.animated img{
         margin:0!important;
@@ -2885,9 +2962,6 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
     #landing-page .col-md-offset-1.col-md-5.animated.super-easy.fadeInRight.visible article{
         margin-top:0px;
-    }
-    .navigation-brand .brand-logo .logo{
-        background: url(../img/logo.png) 0 0 no-repeat;        
     }
     .navigation-brand .brand-logo2{
         width: 100%;
@@ -2920,9 +2994,16 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         max-width: 100%;
         margin:0;
     }
-
+    .static-header.register-version.light .text-heading .button-access{
+        bottom: 65px;
+    }
     .static-header .text-heading h1{
-        font-size:35px;
+        font-size:44px;
+        margin-top: 14px;
+        margin-bottom: 6px;
+    }
+    .static-header.register-version.light .text-heading .button-access .button-signup .arrow-down{
+        margin-top:55px;
     }
     p {
         font-size: 14px;
@@ -2955,10 +3036,19 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
     .navigation-brand .brand-logo {
         padding: 8px 0px 0px 0px;
-        margin-left: 15px;
-        float: left;
-    }
+        margin-left: 0;
+        float: none;
+        display: inline-block;
 
+    }
+    .navigation-brand .brand-logo .logo{
+        width: 111px;
+        height: 42px;
+    }
+    .register-version.static-header{
+        background-size: 534px 407px;
+        background-position: center 0;
+    }
     .navigation-header .navigation-brand {
         margin: 0px 0px 0px 0px;
     }
@@ -3135,8 +3225,8 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         top: 90%;
     }
 
-    .text-heading {
-        padding-top: 150px;
+    .register-version .text-heading {
+        padding-top: 93px;
     }
 
     .form-register {
@@ -3175,9 +3265,8 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         font-size: 44px;
     }
 
-    .text-heading p {
-        font-size: 18px;
-        line-height: 24px;
+    .static-header .text-heading p {
+        font-size: 40px;
     }
 
     .text-heading .btn {
@@ -3185,7 +3274,9 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
 
     #landing-page .static-header {
-        min-height: 850px;
+        min-height: 575px;
+        background-size: 1103px 576px!important;
+        background-position: center 0!important;
     }
 
     .static-header .video-container {
@@ -3351,6 +3442,9 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 
 @media (max-width: 480px) {
+    .static-header .text-heading p{
+        font-size: 20px;
+    }
     .copyright-mobile{
         display: inline-block;
         width: 100%;
@@ -3499,7 +3593,10 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         font-size:13px;
     }
     .static-header .text-heading h1 {
-        font-size: 25px;
+        font-size: 30px;
+    }
+    .static-header.register-version.light .text-heading .button-access .button-signup .arrow-down{
+        margin-top: 67px;
     }
     .static-header.register-version.light .text-heading .button-access .button-signup a{
         font-size: 16px;
@@ -3532,9 +3629,10 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
 
     #landing-page .static-header {
-        min-height: 400px;
+        min-height: 460px;
+        background-size: 1103px 576px!important;
+        background-position: center 0!important;
     }
-
     #color-landing-page .static-header {
         min-height: 570px;
     }
@@ -3760,19 +3858,87 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         margin: 0px 10px 25px 0px;
     }
 }
-
+@media (max-width: 997px) and (min-width: 768px){
+    .static-header.register-version.light .text-heading .button-access{
+        bottom: 225px;
+    }
+    #landing-page .static-header{
+        min-height: 705px;
+    }
+}
 /* Tablet device Landscape 1024px and 768px */
 @media (max-width: 1024px) and (min-width: 768px) {
+    .register-version.static-header{
+        background-size: 1351px 705px!important;
+        background-position: center 0!important;
+    }
+    #landing-page footer{
+        margin-top: -234px;
+        padding-bottom: 50px;
+    }
+    #landing-page footer:before{
+        height: 183px;
+    }
+    #landing-page section#sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
+        font-size: 40px;
+        margin-top: 100px;
+    }
+    #landing-page .section-content .money-making .sub-title{
+        font-size: 19px;
+    }
+    #landing-page .section-content .money-making{
+        margin-top: 0;
+    }
+    .arrow-down-red.arrow-down-red-2{
+        display: none;
+    }
+    section#about .section-content .animated.sell-more{
+        margin-top: 80px;
+    }
+    section#about .section-content .animated.sell-more .sub-title{
+        text-align: left;
+        display: inline-block;
+        font-size: 20px;
+    }
+    .static-header .text-heading p{
+        font-size: 45px;
+    }
+    .navigation-brand .brand-logo .logo{
+        width: 107px;
+        height: 40px;
+        margin-top: 14px;
+    }
     section#about .section-content .animated {
         width: 100%!important;
         text-align: center;
     }
     section#about .section-content .animated img{
         display: inline-block;
+        margin-top: 70px;
+    }
+    section#about .section-content .animated.Track article,
+    section#about .section-content .animated.Track article h3{
+        text-align: center;
+    }
+    section#about .section-content .animated article{
+        text-align: left;
+        width: 50%;
+        float: left;
+        margin-left: 25%;
+    }
+    section#about .section-content .animated article h3{
+        font-size: 35px;
+        margin:0;
+        color: #2e2f31;
+        font-family: 'ITCAvantGardeGothicStdBook';
+
+    }
+    section#about .section-content .animated article .sub-title{
+        margin-top: 20px;
     }
     section#about .section-content .animated article h3,
     section#about .section-content .animated article .sub-title{
-        text-align: center;
+        text-align: left;
     }
     section#about .section-content .animated article .sub-title ul{
         text-align: center;
@@ -3780,24 +3946,26 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
     section#about .section-content .animated article .sub-title ul li{
         text-align: left;
+        list-style: none;
+        padding-left: 33px;
+        background: url(../../images/icons/icon-check.png) no-repeat 0 50%!important;
+        margin-bottom: 5px;
     }
     #landing-page .section .section-header {
         margin-top: 0;
         margin-bottom: 100px;
     }
-
-
     #landing-page .section .section-header h2{
-        font-size:34px;
+        font-size: 40px;
     }
     #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
-        font-size:40px;
+        font-size: 40px;
     }
     #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .sub-heading{
-        font-size:18px;
+        font-size: 18px;
     }
     #landing-page .section .section-header .sub-heading{
-        font-size:21px;
+        font-size: 20px;
     }
     p {
         font-size: 14px;
@@ -3835,7 +4003,12 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     .text-heading {
         padding-top: 95px;
     }
-
+    .register-version .text-heading{
+        padding-top: 112px;
+    }
+    .static-header .text-heading h1{
+        margin-bottom: 13px;
+    }
     .wrapper {
         width: 90%;
     }
@@ -3945,7 +4118,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
 
     #landing-page .static-header h1 {
-        font-size: 38px;
+        font-size: 55px;
     }
 
     #landing-page .static-header {
@@ -4271,20 +4444,38 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
 }
 @media (min-width: 997px) and (max-width: 1024px){
+    section#about .section-content .animated.Track br{
+        display: none;
+    }
+    #landing-page section#about{
+        padding-top: 0px;
+    }
+    .arrow-down-red-mobile{
+        display: block;
+        margin-top: 94px;
+    }
+    #landing-page .form .button-access .btn.btn-primary{
+        font-weight: normal;
+    }
+    .static-header.register-version.light .text-heading .button-access .button-signup .arrow-down{
+        margin-top: 137px;
+    }
     #landing-page .static-header {
         min-height: 705px;
     }
     .static-header.register-version.light .text-heading .button-access{
-        bottom:40px;
+        bottom:70px;
     }
     #landing-page .section{
-        padding-top:18px;
+        padding-top: 80px;
     }
     #landing-page .form .form-control{
-        margin-top:0;
+        margin-top: 55px;
+        background: #E5EEF1;
     }
     p.word-hard{
         margin-top:55px;
+        margin-bottom: 55px;
     }
     #landing-page .section .section-header{
         margin-bottom:30px;
