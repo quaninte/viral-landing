@@ -3454,6 +3454,10 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 
 @media (max-width: 480px) {  
+    #sign-up-form-2{
+        background-size: 1147px 591px;
+        background-position: 45% 0;
+    }
     .space-height{
         display: none;
     }
