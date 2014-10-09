@@ -1383,7 +1383,7 @@ p.word-hard{
     font-family: 'ITCAvantGardeGothicStdMedium';
     font-size:20px;
     color:#fff;
-    padding: 15px 52px 14px 52px;
+    padding: 15px 50px 14px 50px;
     text-transform: none;
     border-radius:5px;
     -moz-border-radius:5px;
@@ -4670,10 +4670,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     .arrow-down-red-mobile{
         display: inline-block;
         margin-top: 81px;        
-    }
-    #landing-page .form .button-access .btn.btn-primary{
-        margin-top: 6px;
-    }
+    }   
     #landing-page .section .section-header .sub-heading{
         margin: 5px auto 50px auto;
     }
@@ -4740,15 +4737,16 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
     #landing-page .form .form-control{
         margin-top: 32px;
-        height: 45px;
+        height: 50px;
     }
     .register-version .text-heading{
         padding-top:106px;
     }
     #landing-page .form .button-access .btn.btn-primary{
-        font-size: 18px;
-        padding: 9px 32px;
+        font-size: 20px;
         font-weight: normal;
+        padding: 15px 50px 14px 50px;
+        margin-top: 6px;
     }
     .arrow-down-red-mobile{
         margin-top: 68px;
