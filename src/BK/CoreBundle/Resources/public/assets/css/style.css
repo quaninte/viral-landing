@@ -2849,12 +2849,22 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Mobile device 767px */
 @media (max-width: 767px) {
-
+    #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
+        margin-top: 154px;
+    }
+    #landing-page #sign-up-form-2{
+        height: 748px;        
+    }
+    .arrow-down-red.arrow-down-red-2{
+        margin-top: 45px;
+        margin-bottom: 7px;
+    }
     #landing-page .grow-revenue{
         max-width: 100%;
     }
     #landing-page .grow-revenue img{
         max-width: 100%;
+        margin-top: 110px;
     }
     section#about .section-content .animated {
         width: 100%!important;
@@ -2864,12 +2874,26 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         margin-top: 30px;
         display: inline-block;
     }
+    #landing-page .section-content .money-making{
+        margin-top: 50px;
+    }
+    #landing-page .section-content .money-making article{
+        padding-left: 18%;
+        margin-top: 60px!important;
+    }
+    #landing-page .section-content .money-making article h3 .sub-title{
+        font-size: 19px;
+    }
     section#about .section-content .animated.sell-more article h3{
         margin-top: 100px;
     }
     section#about .section-content .animated.Track article,
     section#about .section-content .animated.Track article h3{
         text-align: center;
+
+    }
+    section#about .section-content .animated.sell-more{
+        margin-bottom: 100px;
     }
     section#about .section-content .animated.Track article .sub-title{
         text-align: center;
@@ -2900,31 +2924,31 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         padding-left: 33px;
         background: url(../../images/icons/icon-check.png) no-repeat 0 50%!important;
         margin-bottom: 5px;
+        font-size: 20px;
     }
     p.word-hard{
         font-size: 25px;
+        margin-top: 78px;
     }
     .arrow-down-red-mobile{
         display: block;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     #landing-page .section{
         padding-top: 20px;
-        height: 747px;
+        height: auto;
     }
     #landing-page .section .section-header h2{
         font-size: 35px;
-        margin-top: 151px;
-    }
-    #landing-page .section-content .money-making{
-        margin-top: 114px;
-    }
+        margin-top: 20px;
+    }  
     #landing-page footer{
         padding-bottom: 60px;
         margin-top: -244px;
     }
     #landing-page footer:before{
         height: 183px;
+        background: rgba(0, 0, 59, 0.6);
     }
     .section-content .big-award{
         line-height: 38px;
@@ -2988,15 +3012,13 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #landing-page .sell-more article{
         margin-top: 97px;
     }
-    #landing-page .form .button-access .btn.btn-primary{
-        font-size: 12px;
-
-    }
     #landing-page .form .form-control{
-        font-size:15px;
+        font-size:20px;
         height: 50px;
     }
-
+    #landing-page #join-form{
+        height: auto;
+    }
     .col-md-6.animated.hiding.sell-more .row{
         margin:0;
     }
@@ -3475,6 +3497,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
     #landing-page #sign-up-form-2{
         height: 483px!important;
+        background-size: 1147px 591px;
     }
     #landing-page .grow-revenue img{
         margin-top: 39px;
@@ -3597,7 +3620,8 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #footer .social-links ul li{
         display: inline-block;
         max-width: 50%;
-        float: left;
+        float: none;
+        overflow: hidden;
     }
     .section-content a.referral.third {
         font-size: 15px;
@@ -3795,7 +3819,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         padding-top: 30%;
     }
     #landing-page .form .form-control{
-        margin-top: 15px;
+        margin-top: 34px;
         height: 45px;
     }
     #about {
@@ -3984,7 +4008,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     .static-header.register-version.light .text-heading .button-access{
         bottom: 225px;
     }
-    #landing-page .static-header{
+    #landing-page #hero.static-header{
         min-height: 705px;
     }
 }
@@ -4367,6 +4391,10 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 
 @media (max-width: 1024px) {
+    #landing-page #sign-up-form-2 {
+        background-size: 2071px 1067px;
+        background-position: 46% 0%;
+    }
     .imac-flat{
         width: 241px;
         height: 175px;
