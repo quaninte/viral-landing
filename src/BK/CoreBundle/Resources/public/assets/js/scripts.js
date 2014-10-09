@@ -81,7 +81,7 @@
         $('html, body').animate({
             scrollTop: $("#sign-up").offset().top,
             easing: 'swing'
-        }, 300, function() {
+        }, 750, function() {
             $('#email-input').focus();
         });
 
@@ -95,10 +95,10 @@
         image.addClass('move-bounce');
         setInterval(function () {
             image.toggleClass('move-bounce');
-        }, 3000);
+        }, 2000);
         image2.addClass('move-bounce');
         setInterval(function () {
             image2.toggleClass('move-bounce');
-        }, 3000);
+        }, 2000);
     });
 })();

@@ -384,8 +384,8 @@ article {
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
+    -webkit-animation-name: movebounce;
+    animation-name: movebounce;
     -webkit-transform-origin: center bottom;
     -ms-transform-origin: center bottom;
     transform-origin: center bottom;
@@ -1388,9 +1388,10 @@ p.word-hard{
     border-radius:5px;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
+    font-weight: normal;
 }
 #landing-page .form .form-control{
-    background: #eef7fa;
+    background: #E5EEF1;
     border:1px solid #00ace4;
     font-size:20px;
     color: #2e2f31;
@@ -1462,8 +1463,8 @@ p.word-hard{
 .arrow-down-red-mobile .arrow img:hover,
 .arrow-down .arrow img:hover,
 .arrow-down-red .arrow img:hover{
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
+    -webkit-animation-name: movebounce;
+    animation-name: movebounce;
     -webkit-transform-origin: center bottom;
     -ms-transform-origin: center bottom;
     transform-origin: center bottom;
@@ -4680,8 +4681,8 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         margin-top: 75px;
     }
     .register-version.static-header{
-        background-size: 100% 100%;
-        background-position: 0px -76px;
+        background-size: 1368px 713px;
+        background-position: 0px -33px;
     }
     .navigation-brand .brand-logo .logo{
         width: 109px;
@@ -4934,3 +4935,11 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     display: inline-block;
     vertical-align: top;
 }
+
+
+.animation-target {
+  -webkit-animation: animation 1000ms linear infinite both;
+  animation: animation 1000ms linear infinite both;
+}
+
+/* Generated with Bounce.js. Edit at http://goo.gl/VrGxNu */
