@@ -95,10 +95,10 @@
         image.addClass('move-bounce');
         setInterval(function () {
             image.toggleClass('move-bounce');
-        }, 2000);
+        }, 900);
         image2.addClass('move-bounce');
         setInterval(function () {
             image2.toggleClass('move-bounce');
-        }, 2000);
+        }, 900);
     });
 })();

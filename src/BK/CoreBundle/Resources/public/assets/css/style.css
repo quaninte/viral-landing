@@ -552,7 +552,7 @@ article {
 /* Elements */
 .sub-title {
     font-weight: 300;
-    color: #2E2E2E;
+    color: #2E2f31;
     padding: 0px 0px 8px 0px;
 }
 
@@ -1305,6 +1305,8 @@ blockquote:after {
     -webkit-border-radius:5px;
     font-weight: normal;
     border: 2px solid #fff;
+    background-color: #F71F80;
+    height: 58px;
 }
 .static-header.register-version.light .text-heading .button-access .button-signup a:hover{
     background: #f71f80;
@@ -1460,15 +1462,6 @@ p.word-hard{
     animation-fill-mode: both;
     cursor: pointer;
 }
-.arrow-down-red-mobile .arrow img:hover,
-.arrow-down .arrow img:hover,
-.arrow-down-red .arrow img:hover{
-    -webkit-animation-name: movebounce;
-    animation-name: movebounce;
-    -webkit-transform-origin: center bottom;
-    -ms-transform-origin: center bottom;
-    transform-origin: center bottom;
-}
 #landing-page .section-content .col-md-5.animated.fadeInLeft.visible article{
     margin-top: 39px;
     padding-left: 0px;
@@ -1487,7 +1480,7 @@ p.word-hard{
 #landing-page .section-content .col-md-5.animated.fadeInLeft.visible article .sub-title{
     font-size: 19px;
     font-family: 'ITCAvantGardeGothicStdBook';
-    color:#000;
+    color: #2e2f31;
     margin-top: 28px;
     line-height: 23px;
 }
