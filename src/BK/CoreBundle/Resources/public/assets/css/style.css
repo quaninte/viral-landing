@@ -381,6 +381,8 @@ article {
 /* Preloader */
 .move-bounce{
     -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-iteration-count: infinite;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
@@ -1306,7 +1308,6 @@ blockquote:after {
     font-weight: normal;
     border: 2px solid #fff;
     background-color: #F71F80;
-    height: 58px;
 }
 .static-header.register-version.light .text-heading .button-access .button-signup a:hover{
     background: #f71f80;

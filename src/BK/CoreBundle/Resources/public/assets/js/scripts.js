@@ -88,17 +88,4 @@
         e.preventDefault();
     });
 
-    //add class timeout
-    $('.arrow-down').ready(function(temp){
-        var image = $('.arrow-down .arrow img'),
-            image2 = $('.arrow-down-red .arrow img');
-        image.addClass('move-bounce');
-        setInterval(function () {
-            image.toggleClass('move-bounce');
-        }, 900);
-        image2.addClass('move-bounce');
-        setInterval(function () {
-            image2.toggleClass('move-bounce');
-        }, 900);
-    });
 })();
