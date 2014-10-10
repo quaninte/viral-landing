@@ -4406,17 +4406,6 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
 
 }
-@media (min-width: 1024px) and (max-width: 1199px){
-    .static-header.register-version.light .text-heading .button-access{
-        bottom: 180px;
-    }
-    #landing-page .col-md-6.animated.fadeInRight.visible.sell-more{
-        padding-left: 40px;
-    }
-    .register-version.static-header{
-        background-position: center 0;
-    }
-}
 @media (max-width: 1024px) {
     #landing-page #sign-up-form-2 {
         background-size: 2071px 1067px;
@@ -4462,15 +4451,24 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Desktop medium screen 992px and 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .static-header.register-version.light .text-heading .button-access{
+        bottom: 180px;
+    }
+    #landing-page .col-md-6.animated.fadeInRight.visible.sell-more{
+        padding-left: 40px;
+    }
+    .register-version.static-header{
+        background-position: center 0;
+    }
     #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
-        font-size:48px;
+        font-size:40px;
     }
     #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .sub-heading{
         font-size:21px;
     }
 
     .static-header .text-heading h1{
-        font-size:48px;
+        font-size:40px;
     }
     .package-column .package-detail {
         height: 425px;
