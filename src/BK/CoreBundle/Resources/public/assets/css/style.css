@@ -2874,6 +2874,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #landing-page .section-content .money-making article{
         padding-left: 18%;
         margin-top: 60px!important;
+        padding-right: 18%;
     }
     #landing-page .section-content .money-making article h3 .sub-title{
         font-size: 19px;
@@ -3531,8 +3532,9 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
     section#about .section-content .animated article .sub-title{
         margin-top: 15px;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 20px;
+        font-family: 'ITCAvantGardeGothicStdBook';
     }
     #landing-page .section-content .col-md-6.animated article{
         padding: 0!important;
@@ -3549,12 +3551,13 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         padding: 0;
     }
     section#about .section-content .animated article .sub-title ul li{
-        font-size: 14px;
+        font-size: 15px;
         margin-bottom: 0;
     }
     section#about .section-content .animated article .sub-title ul{
         padding:0;
         text-align: left;
+        font-family: 'ITCAvantGardeGothicStdBook';
     }
     #landing-page .section{
         height: auto!important;
@@ -3588,6 +3591,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         color: #FFF;
         position: relative;
         z-index: 2; 
+        font-family: 'ITCAvantGardeGothicStdBook';
     }
     .referral.mobile{
         display: inline-block;
@@ -3689,7 +3693,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         margin:0!important;
     }
     #landing-page .section-content{
-        margin:0;
+        margin:0 -5px;
     }
     #landing-page .col-md-6.animated article{
         margin-top:0!important;
@@ -3720,10 +3724,16 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         font-size:15px;
         line-height: 20px;
         margin-top: 11px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     #landing-page .section .section-header h2{
         font-size:25px;
         margin-top: 33px!important;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .static-header.register-version.light .text-heading .button-access .count{
         font-size:13px;
@@ -3790,13 +3800,23 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         padding-top:85px;
     }
     #landing-page .section .section-header{
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
     .static-header.register-version.light .text-heading .button-access{
         bottom:20px;
     }
     #landing-page #join-form{
         padding-top:5px;
+    }
+    section#about .section-content .animated.Track img{
+        margin-top: 45px;
+    }
+    #landing-page .section-content .money-making article{
+        padding-left: 0;
+        padding-right: 0;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .text-heading h1 {
         font-size: 35px;
@@ -3808,6 +3828,9 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     p.word-hard{
         margin-top:35px;
         font-size: 20px;
+        width: 68%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .plain-version .text-heading {
         padding-top: 30%;
