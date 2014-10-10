@@ -1620,9 +1620,10 @@ p.word-hard{
 #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control:-ms-input-placeholder {
     color: #fff;
 }
-.copyright-mobile,.referral.mobile{
-    display: none;
-}
+.copyright-mobile,
+.referral.mobile,
+.big-award.mobile,
+.referral.second.mobile,
 .arrow-down-red-mobile{
     display: none;
 }
@@ -1689,6 +1690,9 @@ p.word-hard{
     line-height: 65px;
     margin-top: 9px;
 }
+big-award.mobile{
+    display: none;
+}
 p.referral{
     font-size: 23px;
     margin-top: 83px;
@@ -1711,13 +1715,13 @@ span.bold{
 #landing-page #succeed .share-btns a.share-facebook{
     width: 232px;
     height: 100px;
-    background: #3b5998 url('../../images/shareon.png') no-repeat 26px center;
+    background: #3b5998 url('../../images/shareon.png') no-repeat 0 center;
     box-shadow: 0 5px 0 #14316e;
 }
 #landing-page #succeed .share-btns a.share-twitter{
     width: 232px;
     height: 100px;
-    background: #00d2ff url('../../images/tweeton.png') no-repeat 13px center;
+    background: #00d2ff url('../../images/tweeton.png') no-repeat 0 center;
     box-shadow: 0 5px 0 #0082ab;
     display: inline-block;
     margin-left: 10px;
@@ -2843,6 +2847,9 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Mobile device 767px */
 @media (max-width: 767px) {
+    #landing-page #succeed + footer{
+        height: 183px;
+    }
     #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible h2{
         margin-top: 154px;
     }
@@ -3019,6 +3026,9 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
     #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control{
         font-size: 15px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     #landing-page .section-content .col-md-7.pull-right.animated.fadeInRight.visible img{
         max-width: 100%;
@@ -3472,6 +3482,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 
 @media (max-width: 480px) {  
+
     #sign-up-form-2{
         background-size: 1147px 591px;
         background-position: 45% 0;
@@ -3489,6 +3500,9 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #landing-page #sign-up-form-2 .section-header.animated.fadeInDown.visible .form .form-control{
         margin-top: 40px;
         margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
     #landing-page #sign-up-form-2{
         height: 483px!important;
@@ -3599,11 +3613,14 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         margin-top: 0;
         line-height: 20px;
     }
-    .referral-first{
+    #landing-page #succeed br{
+        display: block;
+    }
+    .referral.first{
         display: none;
     }
     #landing-page #succeed + footer .social-links{
-        margin-top: -85px;
+        margin-top: 30px;
     }
     .copyright-mobile a,
     .copyright-mobile p{
@@ -3625,12 +3642,13 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         font-size: 15px;
         margin-bottom: 20px;
         line-height: 16px;
+        margin-top: 0;
     }
     #landing-page .navigation-brand .brand-logo2 .logo{
         margin-top: 0;
     }
     #landing-page #succeed{
-        padding-top: 50px;
+        padding-top: 43px;
     }
     .section-content .share-btns{
         margin-bottom: 15px;
@@ -3639,19 +3657,23 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #landing-page #succeed .share-btns a.share-facebook{
         height: 60px !important;
         width: 140px !important;
-        background-size: 111px 42px !important;
+        background-size: 100% 100% !important;
         margin: 0 !important;
-        background-position: 16px center!important;
+        background-position: 0 center!important;
     }
     p.referral.second{
-        margin-top: 50px !important;
+        margin-top: 58px !important;
+        display: none;
+    }
+    p.referral.second.mobile{
+        display: inline-block;
     }
     #landing-page #succeed .share-btns a.share-twitter{
         height: 60px !important;
         width: 140px !important;
-        background-size: 120px 37px !important;
+        background-size: 100% 100% !important;
         margin-left: 5px !important;
-        background-position: 8px center!important;
+        background-position: 0 center!important;
     }
     .imac-flat{
         display: none;
@@ -3661,16 +3683,24 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     }
     .section-content p.referral{
         font-size: 16px;
-        margin-top: 0;
-        line-height: 20px;
+        margin-top: 20px;
+        line-height: 18px;
     }
     .section-content .big-award{
-        line-height: 30px;
+        line-height: 26px;
+        margin-top: 9px!important;
+    }
+    .big-award.mobile{
+        display: inline-block;
+    }
+    .big-award {
+        display: none;
     }
     #landing-page #succeed + footer{
         position: relative;
-        background-position: -350px -370px;
+        background-position: -350px -370px!important;
         background-size: 1147px 591px!important;
+        height: 128px;
     }
     #landing-page #succeed .share-btns
     #landing-page #succeed h2 {
@@ -3680,6 +3710,9 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         display: inline-block;
         width: 48%;
         float: left;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
     }
     #landing-page #succeed .share-btns a.share-facebook{
         margin-right:4%;
@@ -4031,6 +4064,22 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 /* Tablet device Landscape 1024px and 768px */
 @media (max-width: 1024px) and (min-width: 768px) {
+    #landing-page #succeed + footer{
+        height: 183px;
+    }
+    #landing-page #succeed + footer .social-links {
+        margin-top: -60px;
+    }
+    #landing-page #succeed + footer .social-links ul .facebook{
+        width: 49%;
+        display: inline-block;
+        text-align: right;
+    }
+    #landing-page #succeed + footer .social-links ul .twitter{
+        width: 49%;
+        display: inline-block;
+        text-align: left;    
+    }
     .register-version.static-header{
         background-size: 1351px 705px!important;
         background-position: center 0!important;
@@ -4419,12 +4468,12 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #landing-page #succeed .share-btns a.share-facebook{
         height: 76px;
         width: 170px;
-        background-size: 128px 48px;
+        background-size: 100% 100%;
     }
     #landing-page #succeed .share-btns a.share-twitter{
         height: 76px;
         width: 170px;
-        background-size: 138px 44px;
+        background-size: 100% 100%;
     }
     a.referral.third{
         font-size: 16px;
@@ -4753,12 +4802,12 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     #landing-page #succeed .share-btns a.share-facebook{
         height: 76px;
         width: 170px;
-        background-size: 128px 48px;
+        background-size: 100% 100%;
     }
     #landing-page #succeed .share-btns a.share-twitter{
         height: 76px;
         width: 170px;
-        background-size: 138px 44px;
+        background-size: 100% 100%;
     }
     a.referral.third{
         font-size: 16px;
