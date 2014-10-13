@@ -146,7 +146,7 @@
         else if (wi > 767){
             $('.arrow1').click(function(e) {
                 $('html, body').animate({
-                    scrollTop: $(".arrow3").offset().top,
+                    scrollTop: $("#join-form .word-hard").offset().top,
                     easing: 'linear'
                 }, 1000, function() {
                     $('.arrow3').hover();
