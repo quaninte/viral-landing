@@ -72,7 +72,7 @@
     $('.back-to-top').click(function () {
         $('html, body').animate({
             scrollTop: 0,
-            easing: 'swing'
+            easing: 'linear'
         }, 750);
         return false;
     });
@@ -80,7 +80,7 @@
     $('.to-sign-up-form').click(function(e) {
         $('html, body').animate({
             scrollTop: $("#sign-up").offset().top,
-            easing: 'swing'
+            easing: 'linear'
         }, 750, function() {
             $('#email-input').focus();
         });
@@ -88,4 +88,72 @@
         e.preventDefault();
     });
 
+    $('.arrow2').click(function(e) {
+        $('html, body').animate({
+            scrollTop: $(".arrow3").offset().top,
+            easing: 'linear'
+        }, 1000, function() {
+            $('.arrow3').hover();
+        });
+
+        e.preventDefault();
+    });
+    $('.arrow3').click(function(e) {
+        $('html, body').animate({
+            scrollTop: $(".arrow4").offset().top,
+            easing: 'linear'
+        }, 1000, function() {
+            $('.arrow4').hover();
+        });
+
+        e.preventDefault();
+    });
+    $('.arrow4').click(function(e) {
+        $('html, body').animate({
+            scrollTop: $(".arrow5").offset().top,
+            easing: 'linear'
+        }, 1000, function() {
+            $('.arrow5').hover();
+        });
+
+        e.preventDefault();
+    });
+    $('.arrow5').click(function(e) {
+        $('html, body').animate({
+            scrollTop: $("#sign-up-form-2 #email-input").offset().top,
+            easing: 'linear'
+        }, 1000, function() {
+            $('#sign-up-form-2 #email-input').focus();
+        });
+
+        e.preventDefault();
+    });
+
+    $(window).ready(function() {
+        var wi = $(window).width();
+        if (wi <= 767){
+            $('.arrow1').click(function(e) {
+                $('html, body').animate({
+                    scrollTop: $(".arrow2").offset().top,
+                    easing: 'linear'
+                }, 1000, function() {
+                    $('.arrow2').hover();
+                });
+
+                e.preventDefault();
+            });
+        }
+        else if (wi > 767){
+            $('.arrow1').click(function(e) {
+                $('html, body').animate({
+                    scrollTop: $(".arrow3").offset().top,
+                    easing: 'linear'
+                }, 1000, function() {
+                    $('.arrow3').hover();
+                });
+
+                e.preventDefault();
+            });
+        }
+    });
 })();

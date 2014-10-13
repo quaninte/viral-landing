@@ -1316,6 +1316,11 @@ blockquote:after {
     padding:0;
     border: none;
 }
+.static-header.register-version.light .text-heading .button-access .button-signup .arrow-down .arrow a{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
 .static-header.register-version.light .text-heading .button-access .button-signup .arrow-down{
     margin-top: 37px;
 }
