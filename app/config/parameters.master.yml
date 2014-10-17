@@ -1,0 +1,23 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: beeketing_landing
+    database_user: beeketing
+    database_password: UEyFx9CEsX6xSXNj
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: q384yt87uhdfuaisdbjasdf
+    debug_toolbar: true
+    debug_redirects: false
+    use_assetic_controller: true
+    ga_tracking_id: null
+    segmentio_writekey: fuabfsb0xx
+    customerio_id: 082be0b5e2988933d988
+    assets_version: 100
+    node_path: /usr/bin/node
+    node_modules_path: /usr/lib/node_modules/
