@@ -27,3 +27,7 @@ parameters:
     # less
     node_path: /usr/bin/node
     node_modules_path: /usr/local/lib/node_modules
+
+    # Webhost info
+    web_host: bklanding.vn
+    web_scheme: http

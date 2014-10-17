@@ -21,3 +21,5 @@ parameters:
     assets_version: v1
     node_path: /usr/bin/node
     node_modules_path: /usr/lib/node_modules
+    web_host: beeketing-landing.t.brodev.com
+    web_scheme: http

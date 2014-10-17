@@ -21,3 +21,5 @@ parameters:
     assets_version: v6
     node_path: /usr/bin/node
     node_modules_path: /usr/lib/node_modules
+    web_host: beeketing.com
+    web_scheme: http
