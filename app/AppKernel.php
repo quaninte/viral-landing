@@ -20,7 +20,8 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new BK\CoreBundle\BKCoreBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
-            new Kachkaev\AssetsVersionBundle\KachkaevAssetsVersionBundle()
+            new Kachkaev\AssetsVersionBundle\KachkaevAssetsVersionBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
