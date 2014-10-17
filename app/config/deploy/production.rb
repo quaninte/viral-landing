@@ -1,4 +1,4 @@
-server 'scn.brodev.com', :app, :web, :primary => true
+server 'do.brodev.com', :app, :web, :primary => true
 set :stage_folder, "production"
 
 set :domain, "do.brodev.com"
