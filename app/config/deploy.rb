@@ -63,9 +63,6 @@ namespace :symfony do
     capifony_puts_ok
 
     capifony_pretty_print "--> Dump assets"
-    # dump helper js
-    run "cd #{latest_release} && mkdir -p web/dist/js && #{php_bin} app/console scn:dump-helper -e prod"
-
     # dump js routing
     run "cd #{latest_release} && #{php_bin} app/console fos:js-routing:dump -e prod"
 

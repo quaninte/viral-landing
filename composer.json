@@ -20,7 +20,8 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "segmentio/analytics-php": "*",
         "stof/doctrine-extensions-bundle": "1.*",
-        "kachkaev/assets-version-bundle": "1.0.2"
+        "kachkaev/assets-version-bundle": "1.0.2",
+        "friendsofsymfony/jsrouting-bundle": "1.5.3"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
