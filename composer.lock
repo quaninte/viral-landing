@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a7dc3355e70650dc8771784a7ccef2c6",
+    "hash": "e36055347808d7897afdb84a020a0b60",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -810,6 +810,72 @@
                 "sql"
             ],
             "time": "2014-01-12 16:20:24"
+        },
+        {
+            "name": "kachkaev/assets-version-bundle",
+            "version": "v1.0.2",
+            "target-dir": "Kachkaev/AssetsVersionBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kachkaev/KachkaevAssetsVersionBundle.git",
+                "reference": "f2578effeeb320da83ec60858cf40ef3df62942e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kachkaev/KachkaevAssetsVersionBundle/zipball/f2578effeeb320da83ec60858cf40ef3df62942e",
+                "reference": "f2578effeeb320da83ec60858cf40ef3df62942e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": ">=2.0,<3.0-dev"
+            },
+            "require-dev": {
+                "symfony/filesystem": ">=2.1,<3.0-dev",
+                "symfony/finder": ">=2.1,<3.0-dev"
+            },
+            "suggest": {
+                "symfony/assetic-bundle": ">=2.1.0,<3.0-dev",
+                "symfony/twig-bundle": ">=2.1.0,<3.0-dev"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Kachkaev\\AssetsVersionBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kachkaev",
+                    "email": "alexander@kachkaev.ru",
+                    "homepage": "http://en.kachkaev.ru/"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/kachkaev/KachkaevAssetsVersionBundle/contributors"
+                }
+            ],
+            "description": "Automates the process of updating assets version in Symfony2 projects",
+            "homepage": "http://github.com/kachkaev/KachkaevAssetsVersionBundle",
+            "keywords": [
+                "assetic",
+                "assets",
+                "autoincrement",
+                "config",
+                "console",
+                "deploy",
+                "version"
+            ],
+            "time": "2014-04-10 10:05:56"
         },
         {
             "name": "kriswallsmith/assetic",
