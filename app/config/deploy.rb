@@ -63,6 +63,9 @@ namespace :symfony do
     capifony_puts_ok
 
     capifony_pretty_print "--> Dump assets"
+    # dump assetic
+    run "cd #{latest_release} && #{php_bin} app/console assetic:dump --env=prod"
+
     # dump js routing
     run "cd #{latest_release} && #{php_bin} app/console fos:js-routing:dump -e prod"
 
