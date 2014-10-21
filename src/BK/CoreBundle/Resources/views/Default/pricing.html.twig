@@ -1,0 +1,45 @@
+{% extends '@BKCore/layout.html.twig' %}
+
+
+{% block main_content %}
+    {#Html here#}
+    <section id="pricing">
+        <div class="container">
+            <div class="col-md-6 information">
+                <h1>Super simple <span>pricing</span></h1>
+                <div class="information-1">
+                    <h2>That's only</h2>
+                    <div class="price">
+                        <h1>$0.09</h1>
+                    </div>
+                    <p>per customer per month</p>
+                </div>
+                <div class="information-2">
+                    <p class="price">$22.5<span>/Montth<span></p>
+                    <p>for every 250 customers</p>
+                </div>
+                <div class="information-3">
+                    <div class="col-md-6">
+                        <p>30 days free trial, cancel anytime </p>
+                    </div>
+                    <div class="col-md-6 button-access">
+                        <input type="submit" class="btn btn-primary" value="Get started now">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 pull-right information-img">
+                <img src="{{ asset('bundles/bkcore/images/login/xinh.png') }}" alt="cuoi"/>
+                <div class="information-img-1">
+                    <h3>All plans include</h3>
+                    <ul>
+                        <li>Automatically integreate and sync with online stores</li>
+                        <li>Unlimited tracking actions</li>
+                        <li>Smart recommendation system</li>
+                        <li>Unlimited emails</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

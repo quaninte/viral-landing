@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/bebasneue.eot');
+    src: url('../fonts/bebasneue.eot') format('embedded-opentype'),
+    url('../fonts/bebasneue.woff2') format('woff2'),
+    url('../fonts/bebasneue.woff') format('woff'),
+    url('../fonts/bebasneue.ttf') format('truetype'),
+    url('../fonts/bebasneue.svg#BebasNeueRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/opensans-light.eot');
+    src: url('../fonts/opensans-light.eot') format('embedded-opentype'),
+    url('../fonts/opensans-light.woff2') format('woff2'),
+    url('../fonts/opensans-light.woff') format('woff'),
+    url('../fonts/opensans-light.ttf') format('truetype'),
+    url('../fonts/opensans-light.svg#OpenSansLight') format('svg');
+}
+
+
+
+#landing-page #pricing {
+    text-align: center;
+    padding: 180px 0 244px 0;
+}
+#landing-page #pricing .container .information {
+    background: #fff;
+    padding-right: 30px;
+    padding-bottom: 44px;
+    padding-left: 30px;
+    margin-left: 53px;
+}
+#landing-page #pricing .container .information  {
+    position: relative;
+}
+#landing-page #pricing .container .information:before {
+    position: absolute;
+    content: '';
+    left: 11px;
+    top: -10px;
+    height: 4px;
+    width: 560px;
+    border: 1px solid #fff;
+}
+#landing-page #pricing .container .information:after {
+    position: absolute;
+    content: '';
+    left: 16px;
+    top: -18px;
+    height: 4px;
+    width: 545px;
+    border: 1px solid #fff;
+}
+
+
+#landing-page #pricing .container h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: ITCAvantGardeGothicStdDemi;
+    color: #5c5761;
+    margin-top: 31px;
+    line-height: 52px;
+    letter-spacing: 3px;
+}
+#landing-page #pricing .container h1 span {
+    font-size: 74px;
+    text-transform: uppercase;
+    font-family: ITCAvantGardeGothicStdDemi;
+    color: #5c5761;
+    letter-spacing: normal;
+}
+#landing-page #pricing .container .information-1 h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'open sans';
+    color: #5c5761;
+    margin-top: 42px;
+}
+#landing-page #pricing .container .information-1 .price {
+    margin-top: 45px;
+    margin-bottom: 27px;
+}
+#landing-page #pricing .container .information-1 .price h1{
+    font-size: 140px;
+    text-transform: uppercase;
+    font-family: 'BebasNeueRegular';
+    color: #0088ff;
+}
+#landing-page #pricing .container .information-1 p {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'open sans';
+    color: #0088ff;
+    font-weight: bold;
+    margin-bottom: 41px;
+}
+#landing-page #pricing .container .information-2 {
+    border-bottom: 1px solid #756f7c;
+    border-top: 1px solid #756f7c;
+    margin-bottom: 38px;
+}
+#landing-page #pricing .container .information-2 .price {
+    font-size: 55px;
+    text-transform: uppercase;
+    font-family: ITCAvantGardeGothicStdDemi;
+    margin-top: 32px;
+    color: #5c5761;
+}
+#landing-page #pricing .container .information-2 .price span {
+    font-size: 30px;
+    font-family: ITCAvantGardeGothicStdBook;
+}
+#landing-page #pricing .container .information-2 p {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: 'OpenSansLight';
+    margin-bottom: 10px;
+}
+#landing-page #pricing .container .information-3 p {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: 'open sans';
+    color: #0088ff;
+    line-height: 29px;
+    margin-left: -45px;
+}
+#landing-page #pricing .container .information-3 .button-access {
+    border-left: 1px solid #756f7c;
+}
+#landing-page #pricing .container .information-3 .button-access input {
+    font-family: 'OpenSansLight';
+    background: #f71f80;
+    border: transparent;
+    font-size: 26px;
+    padding: 11px 21px;
+    text-transform: none;
+    font-weight: normal;
+    border-radius: 0;
+    margin-left: 18px;
+}
+
+#landing-page #pricing .container .information-img h3 {
+    font-size: 26px;
+    font-family: 'open sans';
+    font-weight: bold;
+    color: #5c5761;
+    margin-bottom: 28px;
+}
+#landing-page #pricing .container .information-img .information-img-1 {
+    background: #fff;
+    margin-top: 63px;
+    padding: 27px 10px 35px 7px;
+    margin-left: 8px;
+}
+#landing-page #pricing .container .information-img ul {
+    list-style: none;
+    text-align: left;
+    line-height: 31px;
+}
+#landing-page #pricing .container .information-img ul li {
+    font-size: 20px;
+    font-family: 'open sans';
+    color: #5c5761;
+    position: relative;
+}
+#landing-page #pricing .container .information-img ul li:before {
+    position: absolute;
+    content: '-';
+    left: -13px;
+    top: 1px;
+    font-size: 20px;
+    font-family: 'open sans';
+    color: #5c5761;
+}
+

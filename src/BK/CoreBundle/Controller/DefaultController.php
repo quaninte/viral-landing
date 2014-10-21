@@ -93,4 +93,10 @@ class DefaultController extends Controller
         ));
     }
 
+    public function pricingAction()
+    {
+        return $this->render('@BKCore/Default/pricing.html.twig');
+    }
+
+
 }

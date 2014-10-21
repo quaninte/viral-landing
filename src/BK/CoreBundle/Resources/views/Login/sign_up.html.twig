@@ -1,0 +1,31 @@
+{% extends '@BKCore/layout.html.twig' %}
+
+{% block main_content %}
+    {#Html here#}
+    <section id="join-signup">
+        <div class="container">
+            <h2>Try with <span> <img src="{{ asset('bundles/bkcore/images/login/img-shopify.png') }}" alt="shopify"/></span> shop </h2>
+            <p>Enter your shopify address to get started </p>
+            <div class="col-md-offset-3 col-md-6">
+                <div class="form-group">
+                    <input type="email" required="required" class="form-control" placeholder="Enter your email address" id="email-input" name="email">
+                </div>
+                <div class="button-login">
+                    <a href="#login">Login in</a>
+                </div>
+            </div>
+            <h2>Not using shopify  </h2>
+            <p>Enter your shopify address to get started </p>
+            <div class="col-md-offset-3 col-md-6">
+                <div class="form-group">
+                    <input type="email" required="required" class="form-control" placeholder="yourshop@email.com" id="email-input" name="email">
+                </div>
+
+            </div>
+            <div class="button-login">
+                <a href="#signip">Sign Up</a>
+            </div>
+
+        </div>
+    </section>
+{% endblock %}
