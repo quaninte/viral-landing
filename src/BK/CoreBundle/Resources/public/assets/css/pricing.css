@@ -22,7 +22,7 @@
 
 #landing-page #pricing {
     text-align: center;
-    padding: 180px 0 244px 0;
+    padding: 180px 0 118px 0;
 }
 #landing-page #pricing .container .information {
     background: #fff;
@@ -42,6 +42,7 @@
     height: 4px;
     width: 560px;
     border: 1px solid #fff;
+    background: #fcfcfc;
 }
 #landing-page #pricing .container .information:after {
     position: absolute;
@@ -51,6 +52,7 @@
     height: 4px;
     width: 545px;
     border: 1px solid #fff;
+    background: #fcfcfc;
 }
 
 
@@ -174,3 +176,114 @@
     color: #5c5761;
 }
 
+/*mobile 340*/
+@media (max-width: 340px) {
+    #landing-page #pricing {
+        padding: 63px 0 244px 0;
+    }
+    #landing-page #pricing .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    #landing-page #pricing .container h1 {
+        font-size: 18px;
+        padding-top: 13px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        margin-bottom: 13px;
+    }
+    #landing-page #pricing .container h1 span {
+        font-size: 33px;
+    }
+    #landing-page #pricing .container .information {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    #landing-page #pricing .container .information:before {
+        position: absolute;
+        content: '';
+        height: 2px;
+        border: 1px solid #fff;
+        background: #fcfcfc;
+        width: 98%;
+        left: 1%;
+        top: -4px;
+    }
+    #landing-page #pricing .container .information:after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        border: 1px solid #fff;
+        background: #fcfcfc;
+        width: 96%;
+        left: 2%;
+        top: -8px;
+    }
+    #landing-page #pricing .container .information-1 h2 {
+         font-size: 18px;
+         margin-top: 0px;
+    }
+    #landing-page #pricing .container .information-1 .price {
+        margin-top: -23px;
+        margin-bottom: -2px;
+    }
+    #landing-page #pricing .container .information-1 .price h1 {
+        font-size: 66px;
+    }
+    #landing-page #pricing .container .information-1 p {
+        font-size: 15px;
+        margin-bottom: 13px;
+    }
+    #landing-page #pricing .container .information-2 .price {
+        font-size: 28px;
+        margin: 0 -15px 10px -15px;
+        border-top: 1px solid #c4c1c7;
+        border-bottom: 1px solid #c4c1c7;
+    }
+    #landing-page #pricing .container .information-2 .price span {
+        font-size: 16px;
+    }
+    #landing-page #pricing .container .information-2 p {
+        font-size: 14px;
+        margin-top: -13px;
+        margin-bottom: 4px;
+    }
+    #landing-page #pricing .container .information-2 {
+        margin-bottom: 10px;
+    }
+    #landing-page #pricing .container .information-3 p {
+        font-size: 14px;
+        line-height: 15px;
+        margin-left: -55px;
+    }
+    #landing-page #pricing .container .information-3 .button-access input {
+        font-size: 13px;
+    }
+    #landing-page #pricing .container .information-img {
+        position: relative;
+    }
+    #landing-page #pricing .container .information-img img {
+        height: 92px;
+        width: 92px;
+        position: absolute;
+        top: 0;
+        left: -4px;
+    }
+    #landing-page #pricing .container .information-img h3 {
+        font-size: 20px;
+    }
+    #landing-page #pricing .container .information-img ul li {
+        font-size: 14px;
+    }
+    #landing-page #pricing .container .information-img ul {
+        line-height: 20px;
+    }
+    #landing-page #pricing .container .information-img .information-img-1 {
+        padding: 16px 10px 35px 7px;
+    }
+    
+    
+
+    
+}

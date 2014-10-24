@@ -1,20 +1,50 @@
 #landing-page {
     background: url('../../images/login/bg-login.png') top center no-repeat;
+    background-size: 100%;
 }
 #landing-page #join-login {
 	text-align: center;
-    padding: 153px 0 495px 0;
+    padding: 153px 0 148px 0;
 }
-#landing-page #join-login .container {
+#landing-page #join-login .container .bg-login {
     background: #fff;
+    width: 770px;
+    margin: auto;
+    position: relative;
+    padding-top: 1px;
+}
+#landing-page #join-login .container .bg-login:before {
+    position: absolute;
+    content: '';
+    left: 15px;
+    bottom: -10px;
+    height: 4px;
+    width: 750px;
+    border: 1px solid #fff;
+    background: #fcfcfc;
+}
+#landing-page #join-login .container .bg-login:after {
+    position: absolute;
+    content: '';
+    left: 25px;
+    bottom: -18px;
+    height: 4px;
+    width: 730px;
+    border: 1px solid #fff;
+    background: #fcfcfc;
 }
 #landing-page #join-login .container h2 {
     font-size: 30px;
     text-transform: uppercase;
     font-family: ITCAvantGardeGothicStdDemi;
     color: #5c5761;
-    margin-bottom: 105px;
-    margin-top: 98px;
+    margin-bottom: 100px;
+    margin-top: 91px;
+    height: 65px;
+    line-height: 65px;
+}
+#landing-page #join-login .container h2 span img {
+    vertical-align: top;
 }
 #landing-page #join-login .container p {
     font-size: 18px;
@@ -22,19 +52,307 @@
     margin-bottom: 20px;
 }
 #landing-page #join-login .container .form-group {
-    margin-bottom: 66px;
+    margin-bottom: 53px;
+    position: relative;
+}
+#landing-page #join-login .container .form-group:before {
+    position: absolute;
+    content: 'Not a valid shopify shop address';
+    padding: 4px 6px;
+    right: 50px;
+    top: -60px;
+    background: #393939;
+    border-radius: 3px;
+    border-bottom: 1px solid #d7d7d7;
+    font-size: 14px;
+    font-family: 'open sans';
+    color: #fff;
+}
+#landing-page #join-login .container .form-group:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    right: 78px;
+    top: -25px;
+    height: 19px;
+    background: url('../../images/login/nhon-sai.png') no-repeat;
 }
 #landing-page #join-login .container .form-group input {
-    background: #e5e8ea;
+    background: #e5e8ea url('../../images/login/sai-login.png')no-repeat 97% 49%;
     height: 71px;
+    width: 100%;
+    max-width: 675px;
+    margin-left: 45px;
     font-size: 18px;
     font-family: 'open sans';
     text-align: center;
+    border-radius: 0;
+    position: relative;
+}
+
+#landing-page #join-login .container .button-login {
+    padding-bottom: 205px;
 }
 #landing-page #join-login .container .button-login a {
     font-size: 26px;
     font-family: 'open sans';
     color: #fff;
     background: #f71f80;
-    padding: 8px 28px 15px 28px;
+    padding: 17px 39px 17px 39px;
+    display: inline-block;
+}
+/*logo*/
+#landing-page .navigation-brand .brand-logo {
+    margin: 0;
+}
+/*footer*/
+#landing-page #footer-login {
+    background: url('../../images/login/footer-login.png') no-repeat;
+    margin-top: 0;
+}
+
+#landing-page footer:before {
+    height: 0;
+}
+/*mobile 340*/
+@media (max-width: 340px) {
+    #landing-page {
+        background: #f5f5f5 !important;
+    }
+    #landing-page #join-login {
+        padding: 12px 0 179px 0 !important;
+    }
+    #landing-page #join-login .container {
+        padding: 33px 10px 0 10px;
+    }
+    #landing-page #join-login .container .bg-login {
+        width: 100%!important;
+        height: 320px;
+        padding: 0 15px;
+    }
+    #landing-page #join-login .container .bg-login:before {
+        position: absolute;
+        content: '';
+        width: 98%;
+        left: 1% !important;
+        bottom: -4px !important;
+        height: 2px;
+        border: 1px solid #fff;
+        background: #fcfcfc;
+    }
+    #landing-page #join-login .container .bg-login:after {
+        position: absolute;
+        content: '';
+        width: 96%;
+        left: 2% !important;
+        bottom: -8px !important;
+        height: 2px;
+        border: 1px solid #fff;
+        background: #fcfcfc;
+    }
+    #landing-page #join-login .container h2 {
+        font-size: 15px !important;
+        margin-bottom: 29px !important;
+        padding-top: 7px !important;
+    }
+    #landing-page #join-login .container h2 span img {
+        height: 28px !important;
+        width: 98px !important;
+        vertical-align: -7px !important;
+    }
+    #landing-page #join-login .container p {
+        font-size: 15px;
+        margin-left: 36px;
+        max-width: 195px;
+        line-height: 20px;
+        margin-bottom: 35px;
+    }
+    #landing-page #join-login .container .form-group {
+        margin-bottom: 24px !important;
+    }
+    #landing-page #join-login .container .form-group input {
+        font-size: 14px !important;
+        height: 55px !important;
+        max-width: 100%;
+        margin: 0;
+    }
+    #landing-page #join-login .container .button-login a {
+        font-size: 20px;
+        padding: 10px 32px 10px 32px;
+    }
+}
+
+/*mobile 480*/
+@media (max-width: 480px) {
+    #landing-page {
+        background: #f5f5f5 !important;
+    }
+    #landing-page #join-login {
+        padding: 12px 0 179px 0 !important;
+    }
+    #landing-page #join-login .container {
+        padding: 33px 10px 0 10px;
+    }
+    #landing-page #join-login .container .bg-login {
+        width: 100%!important;
+        height: 320px;
+        padding: 0 15px;
+    }
+    #landing-page #join-login .container .bg-login:before {
+        position: absolute;
+        content: '';
+        width: 98%;
+        left: 1% !important;
+        bottom: -4px !important;
+        height: 2px;
+        border: 1px solid #fff;
+        background: #fcfcfc;
+    }
+    #landing-page #join-login .container .bg-login:after {
+        position: absolute;
+        content: '';
+        width: 96%;
+        left: 2% !important;
+        bottom: -8px !important;
+        height: 2px;
+        border: 1px solid #fff;
+        background: #fcfcfc;
+    }
+    #landing-page #join-login .container h2 {
+        font-size: 15px !important;
+        margin-bottom: 29px !important;
+        padding-top: 7px !important;
+    }
+    #landing-page #join-login .container h2 span img {
+        height: 28px !important;
+        width: 98px !important;
+        vertical-align: -7px !important;
+    }
+    #landing-page #join-login .container p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 35px;
+    }
+    #landing-page #join-login .container .form-group {
+        margin-bottom: 24px !important;
+    }
+    #landing-page #join-login .container .form-group input {
+        font-size: 14px !important;
+        height: 55px !important;
+        max-width: 100%;
+        margin: 0;
+    }
+    #landing-page #join-login .container .button-login a {
+        font-size: 20px;
+        padding: 10px 32px 10px 32px;
+    }
+}
+
+/*mobile 768*/
+@media (max-width: 768px) {
+    #landing-page {
+        background-size: 1920px 996px;
+        background-position: 36% 97%;
+        background-attachment: fixed;
+    }
+    #landing-page #join-login {
+        padding: 10px 0 225px 0;
+    }
+    #landing-page #join-login .container h2 {
+        font-size: 23px;
+        margin-bottom: 95px;
+        padding-top: 45px;
+    }
+    #landing-page #join-login .container h2 span img {
+        height: 42px;
+        width: 142px;
+        vertical-align: -9px;
+    }
+    #landing-page #join-login .container .bg-login {
+        width: 100%;
+        padding: 0 15px;
+    }
+    #landing-page #join-login .container .button-login {
+        padding-bottom: 58px;
+    }
+    #landing-page #join-login .container .form-group {
+        margin-bottom: 39px;
+    }
+    #landing-page #join-login .container .form-group input {
+        font-size: 23px;
+        height: 70px;
+        max-width: 100%;
+        margin: 0;
+    }
+    #landing-page #join-login .container .bg-login:before {
+        width: 98%;
+        left: 1%;
+        bottom: -6px;
+    }
+    #landing-page #join-login .container .bg-login:after {
+        width: 96%;
+        left: 2%;
+        bottom: -12px;
+    }
+}
+/*tablet 1024*/
+@media (max-width: 1024px) {
+    #landing-page {
+        background-size: 1920px 996px;
+        background-position: 18% 51%;
+        background-attachment: fixed;
+    }
+    #landing-page #join-login {
+        padding: 30px 0 253px 0;
+    }
+    #landing-page #join-login .container .bg-login {
+        width: 100%;
+        padding: 0 15px;
+    }
+    #landing-page #join-login .container h2 {
+        margin-bottom: 123px;
+        padding-top: 53px;
+    }
+    #landing-page #join-login .container .button-login {
+        padding-bottom: 87px;
+    }
+    #landing-page #join-login .container .form-group {
+        margin-bottom: 53px;
+    }
+    #landing-page #join-login .container .form-group input {
+        font-size: 23px;
+        height: 70px;
+        max-width: 95%;
+        margin: 15px;
+    }
+    #landing-page #join-login .container .bg-login:before {
+        width: 98%;
+        left: 1%;
+        bottom: -6px;
+    }
+    #landing-page #join-login .container .bg-login:after {
+        width: 96%;
+        left: 2%;
+        bottom: -12px;
+    }
+    
+}
+/*tablet 1366*/
+@media (max-width: 1366px) {
+    #landing-page #join-login {
+        padding: 116px 0 273px 0;
+    }
+    #landing-page #join-login .container h2 {
+        margin-bottom: 69px;
+        margin-top: 50px;
+    }
+    #landing-page #join-login .container .button-login {
+        padding-bottom: 83px;
+    }
+    #landing-page #join-login .container .bg-login:before {
+        bottom: -8px;
+    }
+    #landing-page #join-login .container .bg-login:after {
+        bottom: -16px;
+    }
 }

@@ -14,7 +14,7 @@ bk_core_login:
     path:   /login
     defaults: { _controller: BKCoreBundle:Login:login }
 
-bk_core_login:
+bk_core_sign_up:
     path:   /register
     defaults: { _controller: BKCoreBundle:Login:signUp }
 

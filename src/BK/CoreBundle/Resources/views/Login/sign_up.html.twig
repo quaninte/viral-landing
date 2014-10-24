@@ -4,28 +4,86 @@
     {#Html here#}
     <section id="join-signup">
         <div class="container">
-            <h2>Try with <span> <img src="{{ asset('bundles/bkcore/images/login/img-shopify.png') }}" alt="shopify"/></span> shop </h2>
-            <p>Enter your shopify address to get started </p>
-            <div class="col-md-offset-3 col-md-6">
-                <div class="form-group">
-                    <input type="email" required="required" class="form-control" placeholder="Enter your email address" id="email-input" name="email">
+            <div class="col-md-8 upleft">
+                <div class="upleft-top">
+                    <h2>Try with <span> <img src="{{ asset('bundles/bkcore/images/login/img-shopify.png') }}" alt="shopify"/></span> shop </h2>
+                    <p>Enter your shopify address to get started </p>
+                    <div class="form-group">
+                        <input type="email" required="required" class="form-control" placeholder="brodev-test.myshopify.com" id="email-input" name="email">
+                    </div>
+                    <div class="button-signup">
+                        <a class="modal-signup1" data-toggle="modal" href="#full-width1">Sign Up</a>
+                    </div>
                 </div>
-                <div class="button-login">
-                    <a href="#login">Login in</a>
+                <div class="upleft-bottom">
+                    <h2>Not using shopify</h2>
+                    <p>We are working hard to bring Shopify to your platform, please enter your email here 
+                    to recieve more updates from us.</p>
+                    <div class="form-button">
+                        <div class="form-group">
+                            <input type="email" required="required" class="form-control" placeholder="yourshop@email.com" id="email-input" name="email">
+                        </div>
+                        <div class="button-signup">
+                            <a class="modal-signup2" data-toggle="modal" href="#full-width2">Sign Up</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h2>Not using shopify  </h2>
-            <p>Enter your shopify address to get started </p>
-            <div class="col-md-offset-3 col-md-6">
-                <div class="form-group">
-                    <input type="email" required="required" class="form-control" placeholder="yourshop@email.com" id="email-input" name="email">
+            <div class="col-md-4 upright">
+                <p>Hi, We will give you the best customer service. Sign up now.</p>
+                <img src="{{ asset('bundles/bkcore/images/login/xinh-tuoi.png') }}" alt="xinh-tuoi"/>    
+            </div>
+            <div id="full-width1" class="modal container fade" tabindex="-1" style="display: none;">            
+                <div class="modal-body">
+                    <h2>Thank you! Just one last step</h2>
+                    <p>What platform are you using for your online store</p>
+                    <div class="img-tren">
+                        <img src="{{ asset('bundles/bkcore/images/login/volusion.png') }}" alt="volusion"/>
+                        <img src="{{ asset('bundles/bkcore/images/login/tictail.png') }}" alt="tictail"/>
+                        <img src="{{ asset('bundles/bkcore/images/login/woo.png') }}" alt="woo"/>
+                    </div>
+                    
+                    <div class="img-duoi">
+                        <img src="{{ asset('bundles/bkcore/images/login/virture.png') }}" alt="virture"/>
+                        <img src="{{ asset('bundles/bkcore/images/login/big.png') }}" alt="big"/>
+                    </div>
                 </div>
-
             </div>
-            <div class="button-login">
-                <a href="#signip">Sign Up</a>
+            <div id="full-width2" class="modal container fade" tabindex="-1" style="display: none;">            
+                <div class="modal-body">
+                    <img src="{{ asset('bundles/bkcore/images/login/tim.png') }}" alt="shopify"/>
+                    <h2>Sweet! We'll keep you posted</h2>
+                    <a href="#facebook">Share on facebook for free git</a>
+                </div>
             </div>
-
         </div>
     </section>
+
 {% endblock %}
+{% block footer %}
+    <footer id="footer-login" class="footer light">
+        <div class="container">
+            <div style="height: 39px;" class="space-height"></div>
+            <div class="social-links">
+                <ul class="nav nav-pills">
+                    <li class="facebook">
+                        <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbeeketing&amp;width=100&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21"
+                                scrolling="no" frameborder="0"
+                                style="border:none; overflow:hidden; width:100px; height:21px;"
+                                allowTransparency="true"></iframe>
+                    </li>
+                    <li class="twitter">
+                        <iframe allowtransparency="true" frameborder="0" scrolling="no"
+                                src="//platform.twitter.com/widgets/follow_button.html?screen_name=beeketing"
+                                style="width:200px; height:20px;"></iframe>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-mobile"><a style="color: white;" href="mailto:quan@beeketing.com">Contact Us</a>
+            <p>&copy; Beeketing 2014. All rights reserved.</p>
+        </div>
+        <div class="copyright"><a style="color: white;" href="mailto:quan@beeketing.com">Contact Us</a> | &copy; Beeketing 2014. All rights reserved.
+        </div>
+    </footer>
+{% endblock footer %}
