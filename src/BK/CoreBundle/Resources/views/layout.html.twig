@@ -111,17 +111,17 @@
                 <span class="icon-bar"></span>
             </button>
             <ul class="nav navbar-nav">
+                {#<li>#}
+                    {#<a href="#" data-hover="Features"><span>Features</span></a>#}
+                {#</li>#}
                 <li>
-                    <a href="#" data-hover="Features"><span>Features</span></a>
+                    <a href="{{ url('bk_core_pricing') }}" data-hover="Pricing"><span>Pricing</span></a>
                 </li>
                 <li>
-                    <a href="#" data-hover="Pricing"><span>Pricing</span></a>
-                </li>
-                <li>
-                    <a href="#" data-hover="Login"><span>Login</span></a>
+                    <a href="{{ url('bk_core_login') }}" data-hover="Login"><span>Login</span></a>
                 </li>
                 <li class="Get-started">
-                    <a href="#" data-hover="Get started"><span>Get started</span></a>
+                    <a href="{{ url('bk_core_sign_up') }}" data-hover="Get started"><span>Get started</span></a>
                 </li>
             </ul>
         </nav>
