@@ -55,7 +55,7 @@
     margin-bottom: 53px;
     position: relative;
 }
-#landing-page #join-login .container .form-group:before {
+/*#landing-page #join-login .container .form-group:before {
     position: absolute;
     content: 'Not a valid shopify shop address';
     padding: 4px 6px;
@@ -76,9 +76,10 @@
     top: -25px;
     height: 19px;
     background: url('../../images/login/nhon-sai.png') no-repeat;
-}
+}*/
 #landing-page #join-login .container .form-group input {
-    background: #e5e8ea url('../../images/login/sai-login.png')no-repeat 97% 49%;
+    /*background: #e5e8ea url('../../images/login/sai-login.png')no-repeat 97% 49%;*/
+    background: #e5e8ea;
     height: 71px;
     width: 100%;
     max-width: 675px;
@@ -105,6 +106,15 @@
 #landing-page .navigation-brand .brand-logo {
     margin: 0;
 }
+
+/*menu*/
+#landing-page .login-page .menu ul li a:hover {
+    color: #2386df;
+}
+#landing-page .login-page .menu ul li a:hover:before {
+    background: #2386df;
+}
+
 /*footer*/
 #landing-page #footer-login {
     background: url('../../images/login/footer-login.png') no-repeat;

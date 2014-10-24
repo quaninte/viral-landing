@@ -1,4 +1,54 @@
 {% extends '@BKCore/layout.html.twig' %}
+{% block header %}
+<header class="login-page">
+
+    <div class="container">
+        <nav class="navigation navigation-header">
+            {% block navigation %}
+                <div class="navigation-brand">
+                    <div class="brand-logo">
+                        <a href="{{ path('bk_core_homepage') }}" class="logo" title="Beeketing">
+                            <span class="sr-only">Beeketing</span></a>
+                    </div>
+                </div>
+            {% endblock navigation %}
+        </nav>
+        <div class="navbar-header">
+            <p>Menu</p>
+            <button class="navbar-toggle collapsed menu-button" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <nav class="navbar-collapse bs-navbar-collapse collapse menu" role="navigation" style="height: 1px;">
+            <p>Menu</p>
+            <button class="navbar-toggle collapsed menu-button" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#" data-hover="Features"><span>Features</span></a>
+                </li>
+                <li>
+                    <a href="#" data-hover="Pricing"><span>Pricing</span></a>
+                </li>
+                <li>
+                    <a href="#" data-hover="Login"><span>Login</span></a>
+                </li>
+                <li class="Get-started">
+                    <a href="#" data-hover="Get started"><span>Get started</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+{% endblock header %}
 
 {% block main_content %}
     {#Html here#}
@@ -12,7 +62,7 @@
                         <input type="email" required="required" class="form-control" placeholder="brodev-test.myshopify.com" id="email-input" name="email">
                     </div>
                     <div class="button-signup">
-                        <a class="modal-signup1" data-toggle="modal" href="#full-width1">Sign Up</a>
+                        <a class="modal-signup1" data-toggle="modal" data-target="#full-width1">Sign Up</a>
                     </div>
                 </div>
                 <div class="upleft-bottom">
@@ -24,7 +74,7 @@
                             <input type="email" required="required" class="form-control" placeholder="yourshop@email.com" id="email-input" name="email">
                         </div>
                         <div class="button-signup">
-                            <a class="modal-signup2" data-toggle="modal" href="#full-width2">Sign Up</a>
+                            <a class="modal-signup2" data-toggle="modal" data-target="#full-width2">Sign Up</a>
                         </div>
                     </div>
                 </div>
@@ -33,29 +83,39 @@
                 <p>Hi, We will give you the best customer service. Sign up now.</p>
                 <img src="{{ asset('bundles/bkcore/images/login/xinh-tuoi.png') }}" alt="xinh-tuoi"/>    
             </div>
-            <div id="full-width1" class="modal container fade" tabindex="-1" style="display: none;">            
-                <div class="modal-body">
-                    <h2>Thank you! Just one last step</h2>
-                    <p>What platform are you using for your online store</p>
-                    <div class="img-tren">
-                        <img src="{{ asset('bundles/bkcore/images/login/volusion.png') }}" alt="volusion"/>
-                        <img src="{{ asset('bundles/bkcore/images/login/tictail.png') }}" alt="tictail"/>
-                        <img src="{{ asset('bundles/bkcore/images/login/woo.png') }}" alt="woo"/>
-                    </div>
-                    
-                    <div class="img-duoi">
-                        <img src="{{ asset('bundles/bkcore/images/login/virture.png') }}" alt="virture"/>
-                        <img src="{{ asset('bundles/bkcore/images/login/big.png') }}" alt="big"/>
+            {#<div id="full-width1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header"></div>
+                        <div class="modal-body">
+                            <h2>Thank you! Just one last step</h2>
+                            <p>What platform are you using for your online store</p>
+                            <div class="img-tren">
+                                <img src="{{ asset('bundles/bkcore/images/login/volusion.png') }}" alt="volusion"/>
+                                <img src="{{ asset('bundles/bkcore/images/login/tictail.png') }}" alt="tictail"/>
+                                <img src="{{ asset('bundles/bkcore/images/login/woo.png') }}" alt="woo"/>
+                            </div>
+
+                            <div class="img-duoi">
+                                <img src="{{ asset('bundles/bkcore/images/login/virture.png') }}" alt="virture"/>
+                                <img src="{{ asset('bundles/bkcore/images/login/big.png') }}" alt="big"/>
+                            </div>
+                        </div>
+                        <div class="modal-footer"></div>
                     </div>
                 </div>
             </div>
-            <div id="full-width2" class="modal container fade" tabindex="-1" style="display: none;">            
-                <div class="modal-body">
-                    <img src="{{ asset('bundles/bkcore/images/login/tim.png') }}" alt="shopify"/>
-                    <h2>Sweet! We'll keep you posted</h2>
-                    <a href="#facebook">Share on facebook for free git</a>
+            <div id="full-width2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-content">
+                    <div class="modal-body">
+                    <div class="modal-body">
+                        <img src="{{ asset('bundles/bkcore/images/login/tim.png') }}" alt="shopify"/>
+                        <h2>Sweet! We'll keep you posted</h2>
+                        <a href="#facebook">Share on facebook for free git</a>
+                    </div>
+                    </div>
                 </div>
-            </div>
+            </div>#}
         </div>
     </section>
 

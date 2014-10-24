@@ -1,12 +1,54 @@
 {% extends '@BKCore/layout.html.twig' %}
-{% block navigation %}
-    <div class="navigation-brand">
-        <div class="brand-logo">
-            <a href="{{ path('bk_core_homepage') }}" class="logo" title="Beeketing">
-                <span class="sr-only">Beeketing</span></a>
+{% block header %}
+<header class="login-page">
+
+    <div class="container">
+        <nav class="navigation navigation-header">
+            {% block navigation %}
+                <div class="navigation-brand">
+                    <div class="brand-logo">
+                        <a href="{{ path('bk_core_homepage') }}" class="logo" title="Beeketing">
+                            <span class="sr-only">Beeketing</span></a>
+                    </div>
+                </div>
+            {% endblock navigation %}
+        </nav>
+        <div class="navbar-header">
+            <p>Menu</p>
+            <button class="navbar-toggle collapsed menu-button" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
+        <nav class="navbar-collapse bs-navbar-collapse collapse menu" role="navigation" style="height: 1px;">
+            <p>Menu</p>
+            <button class="navbar-toggle collapsed menu-button" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#" data-hover="Features"><span>Features</span></a>
+                </li>
+                <li>
+                    <a href="#" data-hover="Pricing"><span>Pricing</span></a>
+                </li>
+                <li>
+                    <a href="#" data-hover="Login"><span>Login</span></a>
+                </li>
+                <li class="Get-started">
+                    <a href="#" data-hover="Get started"><span>Get started</span></a>
+                </li>
+            </ul>
+        </nav>
     </div>
-{% endblock navigation %}
+
+</header>
+{% endblock header %}
 {% block main_content %}
     {#Html here#}
     <section id="join-login">
