@@ -120,10 +120,10 @@
     });
     $('.arrow5').click(function(e) {
         $('html, body').animate({
-            scrollTop: $("#sign-up-form-2 #email-input").offset().top,
+            scrollTop: $("#sign-up-form-2").offset().top,
             easing: 'linear'
         }, 1000, function() {
-            $('#sign-up-form-2 #email-input').focus();
+            $('#sign-up-form-2').focus();
         });
 
         e.preventDefault();
@@ -156,4 +156,5 @@
             });
         }
     });
+
 })();

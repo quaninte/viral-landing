@@ -473,7 +473,6 @@ article {
 .navigation-brand .brand-logo {
     width: 146px;
     height: 55px;
-    margin: auto;
 }
 
 .navigation-brand .brand-logo .logo {
@@ -1159,20 +1158,75 @@ blockquote:after {
 }
 
 /* Navigation Header */
+#landing-page header .menu > p,
+.navbar-header > p{
+    display: none;
+}
 .navigation-header {
     position: absolute;
     top: 10px;
     background: transparent;
     left: 0;
     right: 0;
-    width: 100%;
+    width: auto;
+    max-width: 146px;
     z-index: 99;
 }
-
-.navigation-header .navigation-brand {
-    margin-right: 0;
-    margin-top: 2px;
+header .menu{
+    position: absolute;
+    right: 0;
+    top: 28px;
+}
+header .menu ul li{
+    margin-left: 45px;
+}
+header .menu ul li a{
+    font-size: 20px;
+    font-family: 'ITCAvantGardeGothicStdBook';
+    color: #003d7c;
+    position: relative;
+    padding: 8px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+header .menu ul li a:before{
+    content:'';
     width: 100%;
+    height: 1px;
+    position: absolute;
+    top:0;
+    background: #003d7c;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+header .menu ul li a:hover{
+    background: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+header .menu ul li a:hover:before{
+    content:'';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    -webkit-transform: translateY(36px);
+    -moz-transform: translateY(36px);
+    transform: translateY(36px);
+}
+.navigation-header .navigation-brand {
+    margin-left: 16px;
+    margin-top: -3px;
+    width: auto;
     text-align: center;
 }
 
@@ -2877,6 +2931,46 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 /* Mobile device 767px */
 @media (max-width: 767px) {
+
+    #landing-page .navbar-header > p{
+        top: 33px;
+        right: 109px;
+    }
+    
+    #landing-page header nav.menu > p{
+        top: 5px;
+        left: 29px;
+    }
+    #landing-page header .menu-button{
+        right: 24px;
+        top: 16px;
+        margin-right: 24px!important;
+        margin-top: 16px!important;
+        padding: 23px 17px;
+    }
+    #landing-page header .navbar-header .menu-button{
+        top: 1px;
+        right: 0;
+    }
+    #landing-page .navbar-toggle .icon-bar + .icon-bar{
+        margin-top: 3px;
+    }
+    #landing-page header nav.menu.in{
+        height: 575px!important;
+        width: 186px;
+        margin: 0;
+    }
+    #landing-page header .menu.in ul.nav{
+        margin: 0;
+        padding-top: 133px;
+    }
+    #landing-page header .menu.in ul.nav li a{
+        width: 100%;
+        font-size: 17px;
+    }
+    header .navbar-header:before{
+        display: none;
+    }
     #landing-page #succeed + footer{
         height: 183px;
     }
@@ -3161,7 +3255,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
         margin-left: 0;
         float: none;
         display: inline-block;
-
+        margin-left: 20px;
     }
     .navigation-brand .brand-logo .logo{
         width: 111px;
@@ -4185,14 +4279,146 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 }
 @media (max-width: 997px) and (min-width: 768px){
     .static-header.register-version.light .text-heading .button-access{
-        bottom: 225px;
+        bottom: 94px;
     }
     #landing-page #hero.static-header{
         min-height: 705px;
     }
+    section#about .section-content .animated.Track article .sub-title ul{
+        padding-left: 10px;
+    }
 }
 /* Tablet device Landscape 1024px and 768px */
 @media (max-width: 1024px) and (min-width: 768px) {
+    .navbar-header >p{
+        top: 45px;
+        right: 113px;
+        position: absolute;
+        font-family: 'ITCAvantGardeGothicStdBook';
+        font-size: 17px;
+        color: #fff;
+        display: inline-block;
+    }
+    #landing-page header .menu{
+        display: none!important;
+    }
+    #landing-page header .menu.in{
+        display: block!important;
+        width: 254px;
+        height: 100%!important;
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-height: none;
+        height: 705px!important;
+        background: #0053A9;
+        -moz-box-shadow: -5px 0 0 rgba(0,0,0,.32); /* drop shadow */
+        -webkit-box-shadow: -5px 0 0 rgba(0,0,0,.32); /* drop shadow */
+        box-shadow: -5px 0 0 rgba(0,0,0,.32); /* drop shadow */
+        padding: 0;
+    }
+    #landing-page header .menu > p{
+        font-family: 'ITCAvantGardeGothicStdBook';
+        font-size: 17px;
+        color: #FFF;
+        display: inline-block;
+        margin-top: 27px;
+        position: absolute;
+        top: 19px;
+        left: 63px;
+    }
+    #landing-page header .menu button{
+        position: static;
+        margin-right: 64px;
+        margin-top: 27px;
+        background: #005bba;
+    }
+    #landing-page header .menu.in ul{
+        display: block;
+        padding-top: 55px;
+        width: 100%;
+    }
+    #landing-page header .menu.in ul li{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    #landing-page header .menu.in ul li.Get-started{
+        text-align: center;
+    }
+    #landing-page header .menu.in ul li.Get-started a{
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        padding: 0 15px;
+    }
+    #landing-page header .menu.in ul li.Get-started a:before{
+        background: #fff;
+        color: #0088ff;
+    }
+    #landing-page header .menu.in ul li a{
+        text-align: center;
+        overflow: hidden;
+        display: block;
+        width: 254px;
+        padding: 0;
+    }
+
+    #landing-page header .menu.in ul li a:hover{
+        background: #005bba;
+    }
+    #landing-page header .menu.in ul li a:hover:before{
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        transform: translateX(0%);
+        z-index: 1;
+    }
+    #landing-page header .menu.in ul li a span{
+        display: block;
+        padding: 15px 0px;
+        -webkit-transition: -webkit-transform 0.3s;
+        -moz-transition: -moz-transform 0.3s;
+        transition: transform 0.3s;
+    }
+    #landing-page header .menu.in ul li a:hover span{
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    #landing-page header .menu.in ul li a:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        line-height: 50px;
+        width: 100%;
+        height: 100%;
+        background: #005BBA;
+        color: #fff;
+        content: attr(data-hover);
+        -webkit-transition: -webkit-transform 0.3s;
+        -moz-transition: -moz-transform 0.3s;
+        transition: transform 0.3s;
+        -webkit-transform: translateX(-100%);
+    }
+    header .menu-button{
+        display: block;
+        top: 18px;
+        right: 19px;
+        position: absolute;
+        padding: 23px 17px;
+        background: #0053a9;
+    }
+    header .menu-button.collapsed{
+        background: #0053a9;
+    }
+    header .menu-button .icon-bar{
+        background: #fff;
+        width: 25px;
+    }
+    header .navbar-header:before{
+        display: none;
+    }
     .navigation-brand .brand-logo{
         margin: 0;
     }
@@ -4638,6 +4864,138 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
 
 }
 @media (max-width: 1024px) {
+    .navbar-header >p{
+        top: 45px;
+        right: 113px;
+        position: absolute;
+        font-family: 'ITCAvantGardeGothicStdBook';
+        font-size: 17px;
+        color: #fff;
+        display: inline-block;
+    }
+    #landing-page header .menu{
+        display: none!important;
+    }
+    #landing-page header .menu.in{
+        display: block!important;
+        width: 254px;
+        height: 100%!important;
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-height: none;
+        height: 705px!important;
+        background: #0053A9;
+        -moz-box-shadow: -5px 0 0 rgba(0,0,0,.32); /* drop shadow */
+        -webkit-box-shadow: -5px 0 0 rgba(0,0,0,.32); /* drop shadow */
+        box-shadow: -5px 0 0 rgba(0,0,0,.32); /* drop shadow */
+        padding: 0;
+    }
+    #landing-page header .menu > p{
+        font-family: 'ITCAvantGardeGothicStdBook';
+        font-size: 17px;
+        color: #FFF;
+        display: inline-block;
+        margin-top: 27px;
+        position: absolute;
+        top: 19px;
+        left: 63px;
+    }
+    #landing-page header .menu button{
+        position: static;
+        margin-right: 64px;
+        margin-top: 27px;
+        background: #005bba;
+    }
+    #landing-page header .menu.in ul{
+        display: block;
+        padding-top: 55px;
+        width: 100%;
+    }
+    #landing-page header .menu.in ul li{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    #landing-page header .menu.in ul li.Get-started{
+        text-align: center;
+    }
+    #landing-page header .menu.in ul li.Get-started a{
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        padding: 0 15px;
+    }
+    #landing-page header .menu.in ul li.Get-started a:before{
+        background: #fff;
+        color: #0088ff;
+    }
+    #landing-page header .menu.in ul li a{
+        text-align: center;
+        overflow: hidden;
+        display: block;
+        width: 254px;
+        padding: 0;
+    }
+
+    #landing-page header .menu.in ul li a:hover{
+        background: #005bba;
+    }
+    #landing-page header .menu.in ul li a:hover:before{
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        transform: translateX(0%);
+        z-index: 1;
+    }
+    #landing-page header .menu.in ul li a span{
+        display: block;
+        padding: 15px 0px;
+        -webkit-transition: -webkit-transform 0.3s;
+        -moz-transition: -moz-transform 0.3s;
+        transition: transform 0.3s;
+    }
+    #landing-page header .menu.in ul li a:hover span{
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    #landing-page header .menu.in ul li a:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        line-height: 50px;
+        width: 100%;
+        height: 100%;
+        background: #005BBA;
+        color: #fff;
+        content: attr(data-hover);
+        -webkit-transition: -webkit-transform 0.3s;
+        -moz-transition: -moz-transform 0.3s;
+        transition: transform 0.3s;
+        -webkit-transform: translateX(-100%);
+    }
+    header .menu-button{
+        display: block;
+        top: 18px;
+        right: 19px;
+        position: absolute;
+        padding: 22px 18px;
+        background: #0053a9;
+    }
+    header .menu-button.collapsed{
+        background: #0053a9;
+    }
+    header .menu-button .icon-bar{
+        background: #fff;
+        width: 25px;
+    }
+    header .navbar-header:before{
+        display: none;
+    }
+    header .container{
+        width: 100%;
+    }
     #landing-page #sign-up-form-2 {
         background-size: 2071px 1067px;
         background-position: 46% 0%;
