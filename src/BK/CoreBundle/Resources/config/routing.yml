@@ -9,3 +9,15 @@ bk_core_submit:
 bk_core_thank:
     path:   /thank/{code}
     defaults: { _controller: BKCoreBundle:Default:thank }
+
+bk_core_login:
+    path:   /login
+    defaults: { _controller: BKCoreBundle:Login:login }
+
+bk_core_sign_up:
+    path:   /register
+    defaults: { _controller: BKCoreBundle:Login:signUp }
+
+bk_core_pricing:
+    path:   /pricing
+    defaults: { _controller: BKCoreBundle:Default:pricing }

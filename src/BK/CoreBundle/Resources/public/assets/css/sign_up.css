@@ -1,0 +1,222 @@
+#landing-page #join-signup {
+	text-align: center;
+    padding: 152px 0 148px 0;
+}
+#landing-page #join-signup .container .upleft {
+    background: #fff;
+    width: 770px;
+    margin: auto;
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 58px;
+}
+#landing-page #join-signup .container .upleft:before {
+    position: absolute;
+    content: '';
+    left: 15px;
+    bottom: -7px;
+    height: 4px;
+    width: 750px;
+    border: 1px solid #fff;
+    background: #fcfcfc;
+}
+#landing-page #join-signup .container .upleft:after {
+    position: absolute;
+    content: '';
+    left: 25px;
+    bottom: -14px;
+    height: 4px;
+    width: 730px;
+    border: 1px solid #fff;
+    background: #fcfcfc;
+}
+#landing-page #join-signup .container .upleft .upleft-top h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: ITCAvantGardeGothicStdDemi;
+    color: #5c5761;
+    margin-bottom: 54px;
+    padding-top: 7px;
+    height: 65px;
+    line-height: 65px;
+}
+#landing-page #join-signup .container .upleft .upleft-top h2 span img {
+    vertical-align: top;
+}
+#landing-page #join-signup .container .upleft .upleft-top p {
+    font-size: 18px;
+    font-family: 'open sans';
+    margin-bottom: 20px;
+}
+#landing-page #join-signup .container .upleft .upleft-top .form-group {
+    margin-bottom: 34px;
+}
+#landing-page #join-signup .container .upleft .upleft-top .form-group input {
+    /*background: #e5e8ea url('../../images/login/tich-login.png')no-repeat 97% 49%;*/
+    background: #e5e8ea;
+    height: 71px;
+    width: 100%;
+    max-width: 675px;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'open sans';
+    text-align: center;
+    border-radius: 0;
+    position: relative;
+}
+#landing-page #join-signup .container .upleft .upleft-top .button-signup a {
+    font-size: 26px;
+    font-family: 'open sans';
+    color: #fff;
+    background: #f71f80;
+    padding: 17px 31px 17px 31px;
+    display: inline-block;
+}
+#landing-page #join-signup .container .upleft .upleft-bottom {
+    padding: 0px 30px;
+}
+#landing-page #join-signup .container .upleft .upleft-bottom h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: ITCAvantGardeGothicStdDemi;
+    color: #5c5761;
+    border-top: 1px solid #756f7c;
+    padding-top: 25px;
+    margin-bottom: 9px;
+    margin-top: 73px;
+    }
+#landing-page #join-signup .container .upleft .upleft-bottom p {
+    font-size: 14px;
+    font-family: 'open sans';
+    line-height: 21px;
+    max-width: 570px;
+    margin: auto;
+    padding-bottom: 42px;
+}
+#landing-page #join-signup .container .upleft .upleft-bottom .form-group {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 550px;
+}
+#landing-page #join-signup .container .upleft .upleft-bottom .button-signup {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+
+#landing-page #join-signup .container .upleft .upleft-bottom .form-group input {
+    height: 51px;
+    width: 100%;
+    max-width: 550px;
+    font-size: 18px;
+    font-family: 'open sans';
+    text-align: center;
+    border-radius: 0;
+}
+#landing-page #join-signup .container .upleft .upleft-bottom .button-signup a {
+    font-size: 22px;
+    font-family: 'open sans';
+    color: #fff;
+    background: #9d9d9d;
+    padding: 12px 21px;
+    display: inline-block;
+}
+#landing-page #join-signup .container .upright {
+    padding-left: 30px;
+    padding-right: 0;
+}
+#landing-page #join-signup .container .upright p {
+    font-size: 20px;
+    font-family: 'open sans';
+    background: #fff;
+    padding: 50px 60px 55px 40px;
+    max-width: 348px;
+    margin-top: 84px;
+    margin-bottom: 53px;
+    border: 1px solid #dedddf;
+    position: relative;
+}
+#landing-page #join-signup .container .upright p:before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    left: 25px;
+    bottom: -30px;
+    height: 30px;
+    background: url('../../images/login/nhon.png') no-repeat;
+}
+#landing-page #join-signup .container .upright img {
+    margin-left: 38px;
+}
+#landing-page #join-signup .container #full-width1 .modal-body {
+    background: #fff;
+    position: relative;
+}
+#landing-page #join-signup .container #full-width1 .modal-body:before {
+    position: absolute;
+    content: '';
+    left: 15px;
+    bottom: -7px;
+    height: 4px;
+    width: 750px;
+    border: 1px solid #fff;
+    background: #fcfcfc;
+}
+#landing-page #join-signup .container #full-width1 .modal-body:after {
+    position: absolute;
+    content: '';
+    left: 25px;
+    bottom: -14px;
+    height: 4px;
+    width: 730px;
+    border: 1px solid #fff;
+    background: #fcfcfc;
+}
+#landing-page #join-signup .container #full-width1 .modal-body h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: ITCAvantGardeGothicStdDemi;
+    margin: 81px 0 102px;
+}
+#landing-page #join-signup .container #full-width1 .modal-body p {
+    font-size: 20px;
+    font-family: 'open sans';
+    margin-bottom: 57px;
+}
+#landing-page #join-signup .container #full-width1 .modal-body .img-tren {
+    margin-bottom: 30px;
+}
+#landing-page #join-signup .container #full-width1 .modal-body .img-tren img{
+    padding: 0 20px;
+    vertical-align: bottom;
+}
+#landing-page #join-signup .container #full-width1 .modal-body .img-duoi {
+    margin-bottom: 40px;
+}
+#landing-page #join-signup .container #full-width1 .modal-body .img-duoi img{
+    padding: 0 40px;
+    vertical-align: bottom;
+}
+#landing-page #join-signup .container #full-width2 .modal-body {
+    background: #fff;
+    padding-bottom: 50px;
+}
+#landing-page #join-signup .container #full-width2 .modal-body h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: ITCAvantGardeGothicStdDemi;
+    margin-bottom: 33px;
+    margin-top: 75px;
+}
+#landing-page #join-signup .container #full-width2 .modal-body a {
+    font-size: 18px;
+    font-family: 'open sans';
+    background: #3f5f9f url('../../images/login/facebook.png')no-repeat 4% 50%;;
+    color: #C6CFE2;
+    padding: 17px 47px;
+    border-radius: 4px;
+}
+
+
+
