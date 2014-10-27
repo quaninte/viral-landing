@@ -1223,6 +1223,52 @@ header .menu ul li a:hover:before{
     -moz-transform: translateY(36px);
     transform: translateY(36px);
 }
+#landing-page header .menu ul li.Get-started{
+    text-align: center;
+}
+#landing-page header .menu ul li.Get-started a{
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    padding: 0 15px;
+    overflow: hidden;
+    color: #fff;
+    background: #0088ff ;
+}
+#landing-page header .menu ul li.Get-started a:before{
+    background: #fff;
+    color: #0088ff ;
+    content: attr(data-hover);
+    height: 36px;
+    line-height: 36px;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+    left: 0;
+}
+#landing-page header .menu ul li.Get-started a span {
+    display: block;
+    padding: 8px 0px;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+#landing-page header .menu ul li.Get-started a:hover:before {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    transform: translateX(0%);
+    z-index: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+    height: auto;
+}
+#landing-page header .menu ul li.Get-started a:hover span {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
 .navigation-header .navigation-brand {
     margin-left: 16px;
     margin-top: -3px;
