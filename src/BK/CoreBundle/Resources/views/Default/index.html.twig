@@ -1,4 +1,5 @@
-{% extends '@BKCore/layout.html.twig' %}
+{% extends 'BKCoreBundle::layout.html.twig' %}
+
 {% block navigation %}
     <div class="navigation-brand">
         <div class="brand-logo">
@@ -15,9 +16,9 @@
             <h1 class="animated hiding" data-animation="bounceInDown" data-delay="0">Marketing Automation Tool</h1>
             <p class="animated hiding" data-animation="fadeInDown" data-delay="500">for online sellers</p>
             <div class="button-access">
-                <div class="count">
+                {#<div class="count">
                     Join {{ businessesCount }} businesses all around the world
-                </div>
+                </div>#}
                 <div class="button-signup">
                     <a href="#sign-up" class="btn btn-success animated bounceIn visible to-sign-up-form"
                        data-animation="bounceIn"
@@ -41,9 +42,13 @@
                     Beeketing grows our revenue by 20% right after the first month!
                     Will the next be yours?
                 </div>
-                <p>
-                    {% include 'BKCoreBundle:Default:subscribe_form.html.twig' %}
-                </p>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">
+                        <div class="button-access top">
+                            <a href="{{ url('bk_core_sign_up') }}" class="btn btn-primary" >Let’s grow your sale now</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="arrow-down-red move-bounce">
                     <div class="arrow">
                         <a href="#arrow2" class="arrow2"><img src="{{ asset('bundles/bkcore/images/icons/arrow-down.png') }}" alt="arrow"/></a>
@@ -164,9 +169,14 @@
                 </div>
                 <br>
 
-                <p>
-                    {% include 'BKCoreBundle:Default:subscribe_form.html.twig' %}
-                </p>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">
+                        <div class="button-access bot">
+                            <a href="{{ url('bk_core_sign_up') }}" class="btn btn-primary" >Try beeketing now</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

@@ -1,4 +1,7 @@
-{% extends '@BKCore/layout.html.twig' %}
+{% extends 'BKCoreBundle::layout.html.twig' %}
+
+{% block page_title %}Pricing{% endblock page_title %}
+
 {% block header %}
 <header class="login-page">
 
@@ -93,6 +96,7 @@
         </div>
     </section>
 {% endblock %}
+
 {% block footer %}
     <footer id="footer-login" class="footer light">
         <div class="container">
