@@ -1760,7 +1760,7 @@ p.word-hard{
     position: relative;
     padding-bottom: 20px;
 }
-#landing-page footer:before{
+#landing-page .footer.landing:before{
     position: absolute;
     left: 0;
     height: 125px;
@@ -1770,6 +1770,7 @@ p.word-hard{
     content:'';
     background: rgba(0,0,0,0.6);
 }
+
 #landing-page footer .copyright{
     position: relative;
     z-index: 2;
